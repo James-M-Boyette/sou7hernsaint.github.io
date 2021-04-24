@@ -25,7 +25,7 @@
         <nav id="nav">
           <ul>
             <li class="current"><a href="index.html">Home</a></li>
-            <li>
+            <!-- <li>
               <a href="#">Dropdown</a>
               <ul>
                 <li><a href="#">Lorem ipsum</a></li>
@@ -46,7 +46,7 @@
             </li>
             <li><a href="left-sidebar.html">Left Sidebar</a></li>
             <li><a href="right-sidebar.html">Right Sidebar</a></li>
-            <li><a href="no-sidebar.html">No Sidebar</a></li>
+            <li><a href="no-sidebar.html">No Sidebar</a></li> -->
           </ul>
         </nav>
       </section>
@@ -55,38 +55,18 @@
       <section id="intro" class="wrapper style1">
         <div class="title">About</div>
         <div class="container">
-          <p class="style1 classIndieFlower">A brief bit about me:</p>
-          <p class="style2">
+          <!-- <p class="style1 classIndieFlower">A brief bit about me:</p> -->
+          <p class="style1 classIndieFlower\">A brief bit about me:</p>
+          <p class="style1">
             I've always loved to learn - in particular, I've been fascinated with how technology can make our lives
             easier, more enjoyable, and ultra-productive. I've *never* met an hotkey I didn't love and set about
             memorizing immediately!
           </p>
-          <!-- CHANGE THIS -->
-          <p class="style3">
-            It's
-            <strong>responsive</strong>
-            , built on
-            <strong>HTML5</strong>
-            and
-            <strong>CSS3</strong>
-            , and released for free under the
-            <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>
-            , so use it for any of your personal or commercial projects &ndash; just be sure to credit us!
-          </p>
-          <p class="style3">
-            It's
-            <strong>responsive</strong>
-            , built on
-            <strong>HTML5</strong>
-            and
-            <strong>CSS3</strong>
-            , and released for free under the
-            <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>
-            , so use it for any of your personal or commercial projects &ndash; just be sure to credit us!
-          </p>
-          <ul class="actions">
+					<p></p>
+					<p></p>
+          <!-- <ul class="actions">
             <li><a href="#" class="button style3 large">Proceed</a></li>
-          </ul>
+          </ul> -->
         </div>
       </section>
 
@@ -95,9 +75,10 @@
         <div class="title">Portfolio</div>
         <div class="container">
           <!-- Image -->
-          <a href="#" class="image featured">
+          <!-- Maybe put a banner image of all my characters, and auto-link it to my artstation -->
+          <!-- <a href="#" class="image featured">
             <img src="images/pic01.jpg" alt="" />
-          </a>
+          </a> -->
 
           <!-- Features -->
           <section id="features">
@@ -141,6 +122,7 @@
                     <a href="https://github.com/sou7hernsaint/">
                       <h3 class="icon solid fa-sync" target="_blank">Open, Collaborative Projects</h3>
                     </a>
+                    <p>(Disclaimer: one day soon, this will link to collaborations ;D)</p>
                     <p>
                       Here, I'm working on forked and/or communal projects. I love working on teams, contributing to
                       open source projects, and giving/receiving a second (or tenth) set of eyes to a frustrating
@@ -154,7 +136,7 @@
                   <section>
                     <!-- <h3 class="icon solid fa-check">Hotkey/Command Line of the day</h3>
 												<p>Here's my ever-expanding repo of hotkeys, command line commands, Earthsea True Names - hopefully it helps you, too, in bending the technology to your will</p> -->
-                    <a href="https://github.com/sou7hernsaint/Hotkeys" target="_blank">
+                    <a href="https://github.com/sou7hernsaint/Hotkeys/blob/main/Hotkeys.md" target="_blank">
                       <h3 class="icon solid fa-check">Hotkey/Command Line of the day</h3>
                     </a>
                     <p>
@@ -181,7 +163,7 @@
                   <section>
                     <!-- <h3 class="icon fa-image">3D Hobby Time!</h3>
 												<p>I changed careers to coding after spending 7 years learning 3D art on my own. It continues to be both my main artistic outlet (if you don't have one, let me strongly-recommend 3D to you - ctrl Z is SO. SOOTHING!!), and  a side-hustle.</p> -->
-                    <a href="https://www.artstation.com/activity" target="_blank">
+                    <a href="https://sou7hernsaint.artstation.com/" target="_blank">
                       <h3 class="icon fa-image">3D Hobby Time!</h3>
                     </a>
                     <p>
@@ -189,22 +171,23 @@
                       both my main artistic outlet (if you don't have one, let me strongly-recommend 3D to you - ctrl Z
                       is SO. SOOTHING!!), and a side-hustle.
                     </p>
+										<p></p>
                   </section>
                 </div>
               </div>
             </div>
-            <! CHANGE THIS >
-            <ul class="actions special">
+            <!-- <! CHANGE THIS > -->
+            <!-- <ul class="actions special">
               <li><a href="#" class="button style1 large">Get Started</a></li>
               <li><a href="#" class="button style2 large">More Info</a></li>
-            </ul>
+            </ul> -->
           </section>
         </div>
       </section>
 
       <!-- Highlights -->
-      <! CHANGE THIS >
-      <section id="highlights" class="wrapper style3">
+			<!-- We should create client accounts, and send them the login info + have this review require you to add said info -->
+      <!-- <section id="highlights" class="wrapper style3">
         <div class="title">The Endorsements</div>
         <div class="container">
           <div class="row aln-center">
@@ -217,7 +200,14 @@
                   months ...
                 </p>
                 <ul class="actions">
-                  <li><a href="https://formspree.io/f/xwkwgwqp" class="button style1">Write a Review!</a></li>
+                  <li>
+                    <form action="https://formspree.io/f/xwkwgwqp" method="post">
+                      <label for="email">Your Email</label>
+                      <input name="Email" id="email" type="email" />
+                      <button type="submit">Submit</button>
+                    </form>
+                    <a href="https://formspree.io/f/xwkwgwqp" class="button style1" method="POST">Write a Review!</a>
+                  </li>
                 </ul>
               </section>
             </div>
@@ -230,7 +220,7 @@
                   <li><a href="#" class="button style1">See some!</a></li>
                 </ul>
               </section>
-            </div>
+            </div> -->
             <!-- <div class="col-4 col-12-medium">
 								<section class="highlight">
 									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
@@ -326,12 +316,12 @@
                       </p>
                     </section>
                   </div>
-                  <div class="col-6 col-12-small">
+                  <!-- <div class="col-6 col-12-small">
                     <section>
                       <h3 class="icon solid fa-phone">Phone</h3>
                       <p>(646) 555-0000</p>
                     </section>
-                  </div>
+                  </div> -->
                 </div>
               </section>
             </div>

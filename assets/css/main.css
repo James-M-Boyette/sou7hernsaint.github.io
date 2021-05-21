@@ -1962,6 +1962,9 @@ input[type="radio"] + label:before {
   margin: 0 0 3em 0;
   width: 100%;
 }
+#profile_icon {
+  box-shadow: inset 0 0 0 2px #52606d, 0 0 0 2px #31383e !important;
+}
 /* About Hero Image */
 .main2 {
   display: block;

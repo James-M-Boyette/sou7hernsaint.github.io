@@ -3096,7 +3096,7 @@ button:disabled,
 /* Dopetrope Banner */
 #bannerDope {
   /* background: #cce8f4 url("../../images/pic01.jpg"); */
-  background: #cce8f4
+  background: #031321
     url("https://cdnb.artstation.com/p/assets/images/images/029/215/341/4k/oliver-martel-nuclearstore2-square.jpg?1596810441");
   background-position: center center;
   background-size: 100% auto;
@@ -3143,19 +3143,22 @@ button:disabled,
   margin: 0;
   padding: 0 !important;
   text-align: center;
-  color: #c2e4ff;
+  color: #031321;
   position: relative;
   height: 58px;
   /* width: 100%; */
 }
-.navbar_button {
+#fffdf3,
+#aaa9a1,
+#062744,
+#031321 .navbar_button {
   box-shadow: inset 0 0 0 2px #6b7e8f, 0 0 0 2px #31383e !important;
-  background: -webkit-radial-gradient(center, #7f95a7, #47535e);
-  background: -moz-radial-gradient(center, #7f95a7, #47535e);
-  background: radial-gradient(ellipse at center, #7f95a7, #47535e);
-  background-color: rgba(103, 115, 128, 0.95);
+  background: -webkit-radial-gradient(center, #aaa9a1, #062744);
+  background: -moz-radial-gradient(center, #aaa9a1, #062744);
+  background: radial-gradient(ellipse at center, #aaa9a1, #062744);
+  background-color: #031321 (103, 115, 128, 0.95);
 
-  color: #abc6df !important;
+  color: #fffdf3 !important;
   font-family: "Roboto Slab", serif;
   font-size: 1em;
   font-weight: 700;
@@ -3404,7 +3407,7 @@ button:disabled,
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 400px;
-  background-color: black;
+  background-color: #031321;
   color: #fff;
   text-align: center;
   padding: 5px 0;

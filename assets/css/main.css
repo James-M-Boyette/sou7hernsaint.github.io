@@ -2938,6 +2938,7 @@ button:disabled,
   font-weight: 900;
 }
 #sidebar .toggle:before {
+  /* The Font Awesome Hamburger ref is \f0c9 */
   content: "\f0c9";
   font-size: 2rem;
   height: inherit;
@@ -3132,7 +3133,7 @@ button:disabled,
 #navbar {
   box-shadow: inset 0 0 0 2px #52606d, 0 0 0 2px #31383e !important;
   border-radius: 5px;
-  background-color: #424f5a;
+  background-color: #031321;
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;

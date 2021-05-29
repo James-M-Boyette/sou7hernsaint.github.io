@@ -187,7 +187,6 @@ html {
 body {
   /* background: #ffffff; */
   background: #051f32;
-  , #
 }
 body.is-preload *,
 body.is-preload *:before,
@@ -214,11 +213,12 @@ body.is-resizing *:after {
 } */
 
 /* Type */
+/* Text color of body paragraphs etc */
 body,
 input,
 select,
 textarea {
-  color: #7f888f;
+  color: rgb(219, 217, 207);
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -285,7 +285,9 @@ a2:hover strong {
 
 strong,
 b {
-  color: #3d4449;
+  /* color: #3d4449; */
+  /* color: rgb(255, 253, 243); */
+  color: rgb(245, 199, 106);
   font-weight: 600;
 }
 
@@ -298,13 +300,14 @@ p {
   margin: 0 0 2em 0;
 }
 
+/* Text Colors */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #3d4449;
+  color: rgb(255, 253, 243);
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -2502,19 +2505,26 @@ button:disabled,
 .features article .icon:before {
   /* color: #f56a6a; */
   color: #fffdf3;
+  background: -webkit-radial-gradient(center, rgba(143, 142, 135, 0.2), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: -moz-radial-gradient(center, rgba(143, 142, 135, 0.2), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: radial-gradient(ellipse at center, rgba(143, 142, 135, 0.2) r, rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   font-size: 2.75rem;
   position: relative;
   top: 0.05em;
 }
 .myassets {
   box-shadow: inset 0 0 0 2px #6b7e8f, 0 0 0 2px #31383e !important;
-  background: -webkit-radial-gradient(center, #aaa9a1, #062744);
+
+  /* background: -webkit-radial-gradient(center, #aaa9a1, #062744); */
   color: #fffdf3, #aaa9a1, #062744, #031321;
 }
 .features article .icon:after {
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  background: -webkit-radial-gradient(center, rgba(143, 142, 135, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: -moz-radial-gradient(center, rgba(143, 142, 135, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: radial-gradient(ellipse at center, rgba(143, 142, 135, 0.4) r, rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   transform: rotate(45deg);
   border-radius: 0.25rem;
   border: solid 2px rgba(210, 215, 217, 0.75);
@@ -2915,7 +2925,7 @@ button:disabled,
   -webkit-transition: left 0.5s ease;
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: rgb(253, 248, 220);
   border: 0;
   display: block;
   height: 7.5em;
@@ -2947,6 +2957,10 @@ button:disabled,
   /* The Font Awesome Hamburger ref is \f0c9 */
   content: "\f0c9";
   font-size: 2rem;
+  color: #fffdf3;
+  background: -webkit-radial-gradient(center, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: -moz-radial-gradient(center, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: radial-gradient(square, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   height: inherit;
   left: 0;
   line-height: inherit;
@@ -2987,7 +3001,7 @@ button:disabled,
 }
 @media screen and (max-width: 1280px) {
   #sidebar {
-    box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+    box-shadow: 0 0 5em 0 rgba(179, 16, 216, 0.175);
     height: 100%;
     left: 0;
     position: fixed;
@@ -3038,7 +3052,7 @@ button:disabled,
     z-index: 1;
   }
   #sidebar .toggle:after {
-    background: rgba(222, 225, 226, 0.75);
+    background: rgba(9, 230, 9, 0.75);
     border-radius: 0.375em;
     content: "";
     height: 3.5em;
@@ -3404,7 +3418,9 @@ button:disabled,
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  background: #051f32;
+  /* If you want dots under the hoverable text */
+  /* border-bottom: 1px dotted black; */
 }
 
 /* Tooltip text */

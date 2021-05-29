@@ -3144,7 +3144,7 @@ button:disabled,
     z-index: 1;
   }
   #sidebar .toggle:after {
-    background: rgba(9, 230, 9, 0.75);
+    /* background: rgba(9, 230, 9, 0.75); */
     border-radius: 0.375em;
     content: "";
     height: 3.5em;

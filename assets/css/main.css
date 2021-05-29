@@ -186,7 +186,7 @@ html {
 
 body {
   /* background: #ffffff; */
-  background: #051f32;
+  background: rgb(5, 31, 50);
 }
 body.is-preload *,
 body.is-preload *:before,
@@ -257,7 +257,7 @@ a {
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   /* border-bottom: dotted 1px; */
   /* color: #f56a6a; */
-  color: #f5c76a;
+  color: rgb(245, 199, 106);
   text-decoration: none;
 }
 a2 {
@@ -274,9 +274,9 @@ a2 {
 a:hover,
 a2:hover {
   /* border-bottom-color: #f56a6a; */
-  /* border-bottom-color: #f5c76a; */
+  /* border-bottom-color: #rgb(245, 199, 106); */
   /* color: #f56a6a !important; */
-  color: #ffcd68 !important;
+  color: rgb(245, 199, 106) !important;
 }
 a:hover strong,
 a2:hover strong {
@@ -1586,7 +1586,7 @@ header p {
 /* Styles the underline for all headers */
 header.major > :last-child {
   /* border-bottom: solid 3px #f56a6a; */
-  border-bottom: solid 3px #f5c76a;
+  border-bottom: solid 3px rgb(245, 199, 106);
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0;
@@ -1810,10 +1810,16 @@ input[type="radio"] + label:before {
 }
 .card {
   /* background-color: coral; */
-  background: #c2e4ff;
-  background: -webkit-linear-gradient(bottom, #c2e4ff, #4a5661);
-  background: -moz-linear-gradient(bottom, #c2e4ff, #4a5661);
-  background: linear-gradient(to top, #c2e4ff, #4a5661);
+  /* background: rgb(210, 215, 217); */
+  /* background: -webkit-linear-gradient(bottom, #c2e4ff, #4a5661); */
+  /* background: -webkit-linear-gradient(bottom, rgb(134, 138, 141), rgb(49, 56, 62)); */
+  background: -webkit-linear-gradient(bottom, rgb(134, 138, 141), rgb(5, 31, 50));
+  /* background: -moz-linear-gradient(bottom, #c2e4ff, #4a5661); */
+  /* background: -moz-linear-gradient(bottom, rgb(134, 138, 141), rgb(49, 56, 62)); */
+  background: -moz-linear-gradient(bottom, rgb(134, 138, 141), rgb(5, 31, 50));
+  /* background: linear-gradient(to top, #c2e4ff, #4a5661); */
+  /* background: linear-gradient(bottom, rgb(134, 138, 141), rgb(49, 56, 62)); */
+  background: linear-gradient(bottom, rgb(134, 138, 141), rgb(5, 31, 50));
   border-radius: 0.475em;
   height: 500px;
   text-align: center;
@@ -1845,16 +1851,15 @@ input[type="radio"] + label:before {
 .card_title {
   padding-top: 5%;
   text-align: center;
-  color: #1d1f20 !important;
-  text-shadow: 0 0 10px #f5c76a, 0 0 22px #f3a60d;
+  color: rgb(255, 253, 243) !important;
+  text-shadow: 0 0 10px rgb(245, 199, 106), 0 0 22px rgb(243, 166, 13);
 }
 .card_desc {
   padding: 0 2em;
-  padding-bottom: 10%;
+  padding-bottom: 4%;
   text-align: justify !important;
-  color: #2a2d2e !important;
-
-  text-shadow: 0 0 5px #fde4b3;
+  color: rgb(255, 253, 243) !important;
+  text-shadow: 0 0 5px rgb(253, 228, 179);
 }
 .card_button {
   -moz-appearance: none;
@@ -1866,7 +1871,7 @@ input[type="radio"] + label:before {
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #6b7e8f, 0 0 0 2px #31383e !important;
+  box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
   background: -webkit-radial-gradient(center, #7f95a7, #47535e);
   background: -moz-radial-gradient(center, #7f95a7, #47535e);
   background: radial-gradient(ellipse at center, #7f95a7, #47535e);
@@ -1877,7 +1882,7 @@ input[type="radio"] + label:before {
   /* box-shadow: inset 0 0 0 2px #f56a6a; */
   box-shadow: inset 0 0 0 2px #8499ad, 0 0 0 2px #47535e;
   /* color: #f56a6a !important; */
-  color: #c2e4ff !important;
+  color: rgb(255, 253, 243) !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -1966,8 +1971,8 @@ input[type="radio"] + label:before {
   margin: 0 0 3em 0;
   width: 100%;
 }
-profile_icon {
-  box-shadow: inset 0 0 0 2px #52606d, 0 0 0 2px #31383e !important;
+#profile_icon {
+  box-shadow: inset 0 0 0 2px rgb(170, 169, 161), 0 0 0 2px rgb(49, 56, 62) !important;
 }
 /* About Hero Image */
 .main2 {
@@ -1984,7 +1989,7 @@ profile_icon {
   border: 0;
 }
 .f_image {
-  box-shadow: inset 0 0 0 3px #6b7e8f, 0 0 0 3px #31383e;
+  box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
   border-radius: 0.375em;
   margin-left: auto;
   margin-right: auto;
@@ -2160,7 +2165,8 @@ ul.contact li:before {
   font-weight: 400;
 }
 ul.contact li:before {
-  color: #f56a6a;
+  /* Envelope icon for email */
+  color: rgb(245, 199, 106);
   display: inline-block;
   font-size: 1.5em;
   height: 1.125em;
@@ -2504,7 +2510,7 @@ button:disabled,
 /* Controls "Portfolio" icon colors */
 .features article .icon:before {
   /* color: #f56a6a; */
-  color: #fffdf3;
+  color: rgb(255, 253, 243);
   background: -webkit-radial-gradient(center, rgba(143, 142, 135, 0.2), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   background: -moz-radial-gradient(center, rgba(143, 142, 135, 0.2), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   background: radial-gradient(ellipse at center, rgba(143, 142, 135, 0.2) r, rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
@@ -2513,10 +2519,10 @@ button:disabled,
   top: 0.05em;
 }
 .myassets {
-  box-shadow: inset 0 0 0 2px #6b7e8f, 0 0 0 2px #31383e !important;
+  box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
 
-  /* background: -webkit-radial-gradient(center, #aaa9a1, #062744); */
-  color: #fffdf3, #aaa9a1, #062744, #031321;
+  /* background: -webkit-radial-gradient(center, rgb(170, 169, 161), rgb(6, 39, 68)); */
+  color: rgb(6, 39, 68), rgb(3, 19, 33);
 }
 .features article .icon:after {
   -moz-transform: rotate(45deg);
@@ -2886,7 +2892,13 @@ button:disabled,
   -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #f5f6f7;
+  /* background-color: #f5f6f7; */
+  /* Sidebar's background color */
+  /* background-color: rgb(3, 19, 33); */
+  /* background-color: rgb(107, 126, 143); */
+  background-color: rgb(4, 21, 33);
+  box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75), 0 0 0 2px rgb(82, 96, 109) !important;
+  border-radius: 5px;
   font-size: 0.9em;
   position: relative;
   width: 26em;
@@ -2900,7 +2912,9 @@ button:disabled,
   width: 26em;
 }
 #sidebar > .inner > * {
-  border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+  /* border-bottom: solid 2px rgba(210, 215, 217, 0.75); */
+  /* Horizontal Dividers between elements in sidebar */
+  border-bottom: solid 2px rgb(245, 199, 106);
   margin: 0 0 3.5em 0;
   padding: 0 0 3.5em 0;
 }
@@ -2913,7 +2927,8 @@ button:disabled,
   padding-bottom: 0;
 }
 #sidebar > .inner > .alt {
-  background-color: #eff1f2;
+  /* background-color: #eff1f2; */
+  background-color: #45e514;
   border-bottom: 0;
   margin: -2.22222em 0 4.44444em -2.22222em;
   padding: 2.22222em;
@@ -2957,7 +2972,7 @@ button:disabled,
   /* The Font Awesome Hamburger ref is \f0c9 */
   content: "\f0c9";
   font-size: 2rem;
-  color: #fffdf3;
+  color: rgb(255, 253, 243);
   background: -webkit-radial-gradient(center, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   background: -moz-radial-gradient(center, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   background: radial-gradient(square, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
@@ -3071,7 +3086,7 @@ button:disabled,
   display: -ms-flex;
   display: flex;
   /* border-bottom: solid 5px #f56a6a; */
-  border-bottom: solid 5px #f5c76a;
+  border-bottom: solid 5px rgb(245, 199, 106);
   padding: 6em 0 1em 0;
   position: relative;
 }
@@ -3116,7 +3131,7 @@ button:disabled,
 /* Dopetrope Banner */
 #bannerDope {
   /* background: #cce8f4 url("../../images/pic01.jpg"); */
-  background: #031321
+  background: rgb(3, 19, 33)
     url("https://cdnb.artstation.com/p/assets/images/images/029/215/341/4k/oliver-martel-nuclearstore2-square.jpg?1596810441");
   background-position: center center;
   background-size: 100% auto;
@@ -3128,14 +3143,20 @@ button:disabled,
 }
 
 #bannerDope header {
-  background-color: rgba(13, 28, 33, 0.6);
+  /* background-color: rgba(13, 28, 33, 0.6); */
+  /* background-color: rgba(3, 18, 28, 0.7); */
+  background: -webkit-radial-gradient(center, rgb(0, 36, 54), rgba(4, 25, 39, 0.6));
+  background: -moz-radial-gradient(center, rgb(0, 36, 54), rgba(4, 25, 39, 0.6));
+  background: radial-gradient(ellipse at center, rgb(0, 36, 54), rgba(4, 25, 39, 0.6));
+  box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75), 0 0 0 2px rgb(82, 96, 109) !important;
   display: inline-block;
   padding: 2.5em 5em;
   border-radius: 5px;
 }
 
 #bannerDope header h2 {
-  color: #fff;
+  /* color: #fff; */
+  color: rgb(255, 253, 243);
   font-weight: 700;
   font-size: 2.5em;
   margin: 0 0 0.65em 0;
@@ -3143,7 +3164,8 @@ button:disabled,
 
 #bannerDope header p {
   /* color: #d52349; */
-  color: #fff;
+  /* color: #fff; */
+  color: rgb(255, 253, 243);
   padding: 0;
   font-style: normal;
   margin: 0;
@@ -3151,9 +3173,9 @@ button:disabled,
 }
 /* Navbar */
 #navbar {
-  box-shadow: inset 0 0 0 2px #52606d, 0 0 0 2px #051e35 !important;
+  box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75), 0 0 0 2px rgb(82, 96, 109) !important;
   border-radius: 5px;
-  background-color: #031321;
+  background-color: rgb(3, 19, 33);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -3163,19 +3185,19 @@ button:disabled,
   margin: 0;
   padding: 0 !important;
   text-align: center;
-  color: #031321;
+  color: rgb(239, 6, 208);
   position: relative;
   height: 58px;
   /* width: 100%; */
 }
 .navbar_button {
-  box-shadow: inset 0 0 0 2px #6b7e8f, 0 0 0 2px #31383e !important;
-  background: -webkit-radial-gradient(center, #aaa9a1, #062744);
-  background: -moz-radial-gradient(center, #aaa9a1, #062744);
-  background: radial-gradient(ellipse at center, #aaa9a1, #062744);
-  background-color: #031321 (103, 115, 128, 0.95);
+  box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
+  background: -webkit-radial-gradient(center, rgb(170, 169, 161), rgb(6, 39, 68));
+  background: -moz-radial-gradient(center, rgb(170, 169, 161), rgb(6, 39, 68));
+  background: radial-gradient(ellipse at center, rgb(170, 169, 161), rgb(6, 39, 68));
+  background-color: rgb(3, 19, 33) (103, 115, 128, 0.95);
 
-  color: #fffdf3 !important;
+  color: rgb(255, 253, 243) !important;
   font-family: "Roboto Slab", serif;
   font-size: 1em;
   font-weight: 700;
@@ -3310,12 +3332,14 @@ button:disabled,
 }
 
 /* Menu */
+/* Sidebar text color */
 #menu ul {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #3d4449;
+  /* color: #3d4449; */
+  color: rgb(255, 253, 243);
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -3336,7 +3360,8 @@ button:disabled,
 #menu ul a:hover,
 #menu ul span:hover {
   /* color: #f56a6a; */
-  color: #f56ae7;
+  color: rgb(245, 199, 106);
+  /* background: -webkit-radial-gradient(center, rgb(255, 253, 243), rgb(170, 169, 161), rgba(143, 142, 135, 0.4)); */
 }
 #menu ul a.opener,
 #menu ul span.opener {
@@ -3375,7 +3400,8 @@ button:disabled,
 #menu ul a.opener:hover:before,
 #menu ul span.opener:hover:before {
   /* color: #f56a6a; */
-  color: #ec6af5;
+  /* The Arrow for submenu etc */
+  color: rgb(245, 199, 106);
 }
 #menu ul a.opener.active + ul,
 #menu ul span.opener.active + ul {
@@ -3418,7 +3444,8 @@ button:disabled,
 .tooltip {
   position: relative;
   display: inline-block;
-  background: #051f32;
+  /* Background for *not the tooltip window* but the text being given a tooltip box */
+  /* background: rgb(5, 31, 50, 0.8); */
   /* If you want dots under the hoverable text */
   /* border-bottom: 1px dotted black; */
 }
@@ -3427,7 +3454,8 @@ button:disabled,
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 400px;
-  background-color: #031321;
+  background-color: rgb(3, 19, 33, 0.925);
+  box-shadow: 0px 0px 2px rgb(253, 248, 220) !important;
   color: #fff;
   text-align: center;
   padding: 5px 0;
@@ -3460,6 +3488,7 @@ button:disabled,
   text-align: left;
 }
 
+/* *Not the tooltip box* but the text/header that has tooltip associated with it */
 .header2 {
   margin: 0;
   padding: 0;
@@ -3467,7 +3496,7 @@ button:disabled,
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  color: #3d4449;
+  color: rgb(255, 253, 243);
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;

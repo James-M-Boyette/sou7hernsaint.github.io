@@ -276,11 +276,25 @@ a2:hover {
   /* border-bottom-color: #f56a6a; */
   /* border-bottom-color: #rgb(245, 199, 106); */
   /* color: #f56a6a !important; */
-  color: rgb(245, 199, 106) !important;
+  /* -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123); */
 }
 a:hover strong,
 a2:hover strong {
   color: inherit;
+}
+
+.link:hover {
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
 }
 
 strong,
@@ -1897,6 +1911,17 @@ input[type="radio"] + label:before {
   text-transform: uppercase;
   white-space: nowrap;
 }
+.card_button:hover {
+  /* border-bottom-color: #f56a6a; */
+  /* border-bottom-color: #rgb(245, 199, 106); */
+  /* color: #f56a6a !important; */
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
+}
 
 /* Icon */
 .icon {
@@ -2217,12 +2242,15 @@ ul.pagination li > .page {
   padding: 0 0.5em;
   text-align: center;
 }
+/* Coral */
 ul.pagination li > .page.active {
   background-color: #f56a6a;
   color: #ffffff !important;
 }
 ul.pagination li > .page.active:hover {
   background-color: #f67878;
+  /* color: rgb(255, 253, 243) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123); */
 }
 ul.pagination li > .page.active:active {
   background-color: #f45c5c;
@@ -2353,7 +2381,13 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: rgba(245, 106, 106, 0.05);
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  /* background-color: rgba(245, 106, 106, 0.05); */
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
 }
 input[type="submit"]:active,
 input[type="reset"]:active,
@@ -2409,8 +2443,14 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
   /* background-color: #f67878; */
-  background-color: #87f678;
+  /* background-color: #87f678; */
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
 }
 /* Styles the CLICK of solid buttons */
 input[type="submit"].primary:active,
@@ -2518,11 +2558,23 @@ button:disabled,
   position: relative;
   top: 0.05em;
 }
-.myassets {
-  box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
 
-  /* background: -webkit-radial-gradient(center, rgb(170, 169, 161), rgb(6, 39, 68)); */
-  color: rgb(6, 39, 68), rgb(3, 19, 33);
+.features article .icon:hover:before {
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
+}
+
+.features article h3:hover {
+  -moz-transition: color 2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
 }
 .features article .icon:after {
   -moz-transform: rotate(45deg);
@@ -2530,7 +2582,7 @@ button:disabled,
   -ms-transform: rotate(45deg);
   background: -webkit-radial-gradient(center, rgba(143, 142, 135, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   background: -moz-radial-gradient(center, rgba(143, 142, 135, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
-  background: radial-gradient(ellipse at center, rgba(143, 142, 135, 0.4) r, rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: radial-gradient(ellipse at center, rgba(143, 142, 135, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   transform: rotate(45deg);
   border-radius: 0.25rem;
   border: solid 2px rgba(210, 215, 217, 0.75);
@@ -2543,7 +2595,19 @@ button:disabled,
   top: 50%;
   width: 7em;
 }
+.features article .icon:hover:after {
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
+}
 .features article .content {
+  /* The text of these articles ... or at least the background */
+  /* background: -webkit-radial-gradient(center, rgba(143, 142, 135, 0.2), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: -moz-radial-gradient(center, rgba(143, 142, 135, 0.2), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
+  background: radial-gradient(ellipse at center, rgba(143, 142, 135, 0.2), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0)); */
   -moz-flex-grow: 1;
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
@@ -2940,15 +3004,16 @@ button:disabled,
   -webkit-transition: left 0.5s ease;
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
-  -webkit-tap-highlight-color: rgb(253, 248, 220);
+  -webkit-tap-highlight-color: rgb(245, 199, 106);
   border: 0;
   display: block;
   height: 7.5em;
+  /* absolute = fixed relative to the next parent element 26em from the left */
+  position: absolute;
   left: 26em;
   line-height: 7.5em;
   outline: 0;
   overflow: hidden;
-  position: absolute;
   text-align: center;
   text-indent: -15em;
   white-space: nowrap;
@@ -2956,6 +3021,16 @@ button:disabled,
   width: 6em;
   z-index: 10000;
 }
+
+#sidebar .toggle:hover {
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
+}
+
 #sidebar .toggle:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -2972,7 +3047,7 @@ button:disabled,
   /* The Font Awesome Hamburger ref is \f0c9 */
   content: "\f0c9";
   font-size: 2rem;
-  color: rgb(255, 253, 243);
+  color: rgb(243, 255, 243);
   background: -webkit-radial-gradient(center, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   background: -moz-radial-gradient(center, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
   background: radial-gradient(square, rgb(170, 169, 161, 0.4), rgb(6, 39, 68, 0), rgb(6, 39, 68, 0));
@@ -2984,6 +3059,8 @@ button:disabled,
   top: 0;
   width: inherit;
 }
+
+/* This "corrects" / hides the sidebar by 26 when the toggle is activated */
 #sidebar.inactive {
   margin-left: -26em;
 }
@@ -3359,8 +3436,14 @@ button:disabled,
 }
 #menu ul a:hover,
 #menu ul span:hover {
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
   /* color: #f56a6a; */
-  color: rgb(245, 199, 106);
+  /* "Sub Categories" hover */
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
   /* background: -webkit-radial-gradient(center, rgb(255, 253, 243), rgb(170, 169, 161), rgba(143, 142, 135, 0.4)); */
 }
 #menu ul a.opener,
@@ -3370,7 +3453,7 @@ button:disabled,
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   text-decoration: none;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: rgb(255, 211, 123);
   position: relative;
 }
 #menu ul a.opener:before,
@@ -3393,6 +3476,7 @@ button:disabled,
   -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
   color: #9fa3a6;
+  /* The SubMenu carrot arrow */
   content: "\f078";
   position: absolute;
   right: 0;
@@ -3401,7 +3485,12 @@ button:disabled,
 #menu ul span.opener:hover:before {
   /* color: #f56a6a; */
   /* The Arrow for submenu etc */
-  color: rgb(245, 199, 106);
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
 }
 #menu ul a.opener.active + ul,
 #menu ul span.opener.active + ul {
@@ -3449,6 +3538,12 @@ button:disabled,
   /* If you want dots under the hoverable text */
   /* border-bottom: 1px dotted black; */
 }
+.tooltip:hover {
+  /* border-bottom-color: #f56a6a; */
+  /* border-bottom-color: #rgb(245, 199, 106); */
+  /* color: #f56a6a !important; */
+  /* color: rgb(245, 199, 106) !important; */
+}
 
 /* Tooltip text */
 .tooltip .tooltiptext {
@@ -3463,6 +3558,15 @@ button:disabled,
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
+}
+
+.hover {
+  -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13), 0 0 22px rgb(255, 211, 123);
 }
 
 .tooltip-top {

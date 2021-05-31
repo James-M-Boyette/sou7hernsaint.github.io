@@ -2000,34 +2000,35 @@ input[type="radio"] + label:before {
 #profile_icon {
   box-shadow: inset 0 0 0 2px rgb(170, 169, 161), 0 0 0 2px rgb(49, 56, 62) !important;
 }
-/* About Hero Image */
+/* About Vader Hero Image */
 .main2 {
   display: block;
-  margin-left: 10%;
-  margin-right: 10%;
-  -webkit-background-size: cover;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
   border-top-left-radius: 0.475em;
   border-top-right-radius: 0.475em;
   border-radius: 0.375em;
   border: 0;
 }
 .f_image {
+  /* Vader Image */
   box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
   border-radius: 0.375em;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
   position: relative;
-  height: 100%;
-  width: auto;
+  /* height: auto; */
 }
 
 .image.main img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 a.image {

@@ -2395,7 +2395,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
-  background-color: rgba(245, 106, 106, 0.15);
+  background-color: rgba(223, 15, 15, 0.938);
 }
 input[type="submit"].icon:before,
 input[type="reset"].icon:before,
@@ -2434,7 +2434,8 @@ input[type="button"].primary,
 button.primary,
 .button.primary {
   /* background-color: #f56a6a; */
-  background-color: rgb(255, 211, 123);
+  /* background-color: rgb(255, 211, 123); */
+  background-color: rgb(123, 12, 241);
   box-shadow: none;
   color: #ffffff !important;
 }
@@ -3138,6 +3139,7 @@ button:disabled,
     text-indent: 7.25em;
     width: 7.25em;
   }
+  /* Hamburger color on iphone */
   #sidebar .toggle:before {
     color: rgb(243, 255, 243);
     margin-left: -0.0625em;

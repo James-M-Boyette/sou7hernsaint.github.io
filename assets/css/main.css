@@ -2021,6 +2021,9 @@ input[type="radio"] + label:before {
   margin-right: auto;
   text-align: center;
   display: block;
+  position: relative;
+  height: 100%;
+  width: auto;
 }
 
 .image.main img {
@@ -3007,6 +3010,7 @@ button:disabled,
   -webkit-transition: left 0.5s ease;
   -ms-transition: left 0.5s ease;
   transition: left 0.5s ease;
+  /* this controls the flash background color on iphone etc when you tap the hamburger */
   /* -webkit-tap-highlight-color: rgb(111, 245, 106); */
   border: 0;
   display: block;

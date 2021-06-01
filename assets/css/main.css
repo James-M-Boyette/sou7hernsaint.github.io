@@ -1857,7 +1857,7 @@ input[type="radio"] + label:before {
   z-index: 1;
 }
 .card_hero {
-  background: url("/images/portfolioProjects/dndAid/Logo1.png");
+  /* background: url("/images/portfolioProjects/dndAid/Logo1.png"); */
   text-align: center !important;
   color: #f45c5c;
   width: 100%;

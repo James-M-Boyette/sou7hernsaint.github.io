@@ -1876,7 +1876,7 @@ input[type="radio"] + label:before {
 }
 .card_title {
   padding-top: 5%;
-  text-align: center;
+  text-align: center !important;
   color: rgb(255, 253, 243) !important;
   text-shadow: 0 0 10px rgb(245, 199, 106), 0 0 22px rgb(243, 166, 13);
 }
@@ -1935,7 +1935,6 @@ input[type="radio"] + label:before {
   text-align: justify !important;
   padding: 0 0;
   padding-bottom: 4%;
-  
   color: rgb(255, 253, 243) !important;
   text-shadow: 0 0 5px rgb(253, 228, 179);
 }
@@ -1974,9 +1973,15 @@ input[type="radio"] + label:before {
   text-transform: uppercase;
   white-space: nowrap;
   position: relative;
+  -webkit-top: 50%;
+  -moz-top: 50%;
+  -ms-top: 50%;
   top: 50%;
-  transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
   /* left: 125px; */
   
 }

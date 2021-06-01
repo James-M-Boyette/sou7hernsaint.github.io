@@ -1933,7 +1933,7 @@ input[type="radio"] + label:before {
 
 .card_desc {
   text-align: justify !important;
-  padding: 0 2em;
+  padding: 0 0;
   padding-bottom: 4%;
   
   color: rgb(255, 253, 243) !important;

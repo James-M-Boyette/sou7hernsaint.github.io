@@ -2090,6 +2090,7 @@ dl dd {
   margin-left: 2em;
 }
 
+/* This may control navbar button position */
 /* Actions */
 ul.actions {
   display: -moz-flex;
@@ -3257,6 +3258,7 @@ button:disabled,
   margin: 0;
   font-size: 1.5em;
 }
+
 /* Navbar */
 #navbar {
   box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75), 0 0 0 2px rgb(82, 96, 109) !important;
@@ -3266,15 +3268,35 @@ button:disabled,
   background-size: 100%;
   background-repeat: no-repeat;
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0 !important;
-  text-align: center;
+  display: block !important;
+  /* display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important; */
+  /* margin: 0; */
+  /* padding-left: 10px !important;
+  padding-right: 10px !important; */
+  /* padding-top: 12px; */
+  /* align-items: center !important; */
+  /* padding-bottom: 5px; */
+  /* text-align: center !important; */
   color: rgb(239, 6, 208);
-  position: relative;
-  height: 58px;
+  /* position: relative; */
+  /* height: 58px; */
   /* width: 100%; */
+}
+#navbar_container {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  cursor: default;
+  list-style: none;
+  /* margin-left: -1em; */
+  /* padding-left: 0; */
 }
 .navbar_button {
   box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
@@ -3282,7 +3304,6 @@ button:disabled,
   background: -moz-radial-gradient(center, rgb(170, 169, 161), rgb(6, 39, 68));
   background: radial-gradient(ellipse at center, rgb(170, 169, 161), rgb(6, 39, 68));
   background-color: rgb(3, 19, 33) (103, 115, 128, 0.95);
-
   color: rgb(255, 253, 243) !important;
   font-family: "Roboto Slab", serif;
   font-size: 1em;
@@ -3298,10 +3319,12 @@ button:disabled,
   max-width: 250px !important;
   border-width: 42px !important;
   /* Controls spacing between nav buttons */
-  margin-top: 7.5px !important;
+  margin: 10px;
+  margin-top: 15px;
+  /* margin-top: 7.5px !important;
   margin-bottom: 4px !important;
   margin-left: 10px !important;
-  margin-right: 10px !important;
+  margin-right: 10px !important; */
   /* position: absolute imp !important; */
   cursor: pointer;
   /* display: inline-block; */

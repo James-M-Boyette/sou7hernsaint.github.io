@@ -1930,7 +1930,6 @@ input[type="radio"] + label:before {
   /* background-color: black !important; */
 }
 
-
 .card_desc {
   text-align: justify !important;
   padding: 0 0;
@@ -3329,7 +3328,6 @@ button:disabled,
   font-size: 1.5em;
 }
 
-}
 ul.actions.special {
   -moz-justify-content: center;
   -webkit-justify-content: center;

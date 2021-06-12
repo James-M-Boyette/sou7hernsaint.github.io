@@ -3296,6 +3296,7 @@ button:disabled,
   position: relative;
   padding: 8em 0;
   /* margin: 4em 0 0 0; */
+  color: rgb(255, 253, 243);
 }
 
 #bannerDope header {

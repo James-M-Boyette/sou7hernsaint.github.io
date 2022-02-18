@@ -1,0 +1,107 @@
+<!-- 6.2 Exit Assignment: Connect Four -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>"Connect Four" Exit Assignment</title>
+		<!-- <link rel="stylesheet" href="styles.css" /> -->
+		<script src="./connectFour.js" charset="UTF-8"></script>
+		<style>
+			#grid {
+				border: 1px solid;
+				border-radius: 10px;
+				height: 372px;
+				width: 434px;
+				display: flex;
+				flex-wrap: wrap;
+				background: rgb(24, 24, 24);
+			}
+
+			#grid div {
+				height: 60px;
+				width: 60px;
+				background: yellow;
+				border: 1px solid black;
+				border-radius: 10px;
+			}
+
+			.floor {
+				border: 1px solid white !important;
+				background: white !important;
+			}
+
+			.player-one {
+				background-color: red !important;
+				border-radius: 10px;
+			}
+
+			.player-two {
+				background-color: blue !important;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>
+			The current Player is:
+			<span id="current-player" style="padding-left: 8px">Player 1</span>
+		</h3>
+		<h3 id="result"></h3>
+		<div id="grid">
+			<div>1</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<!-- <div>35</div> -->
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<!-- <div>42</div> -->
+			<div></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+			<div class="taken floor"></div>
+		</div>
+	</body>
+</html>

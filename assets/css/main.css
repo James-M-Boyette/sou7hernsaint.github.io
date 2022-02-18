@@ -1950,7 +1950,8 @@ test {
 	margin-bottom: 455px;
 	z-index: 1;
 }
-.card_hero {
+.card_hero,
+dndAid {
 	/* background: url("/images/portfolioProjects/dndAid/Logo1.png"); */
 	text-align: center !important;
 	color: #f45c5c;
@@ -1962,6 +1963,11 @@ test {
 	margin-bottom: 450px;
 	/* top: 40px; */
 	z-index: 2;
+}
+.card_hero,
+connectFour {
+	margin-right: 50px;
+	scale: 50%;
 }
 .sect2 {
 	height: 250px;

@@ -107,6 +107,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 square3.classList.contains('player-one') &&
                 square4.classList.contains('player-one')
             ) {
+                displayCurrentPlayer.innerHTML = "GAME OVER"
+                document.getElementById("result").style = `
+                color: red;               
+                `
                 result.innerHTML = 'Player One Wins!'
             }
 
@@ -117,7 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 square3.classList.contains('player-two') &&
                 square4.classList.contains('player-two')
             ) {
+                displayCurrentPlayer.innerHTML = "GAME OVER"
+                document.getElementById("result").style = `
+                color: yellow;               
+                `
                 result.innerHTML = 'Player Two Wins!'
+                
             }
         }
     }
@@ -132,13 +141,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     squares[i].classList.add('player-one')
                     currentPlayer = "Player 2"
                     displayCurrentPlayer.innerHTML = currentPlayer
-                    displayCurrentPlayer.style = "background: white; color: blue; padding-left: 8px;"
+                    displayCurrentPlayer.style = "color: #ffc40c; padding-left: 8px;"
                 } else if (currentPlayer == "Player 2") {
                     squares[i].classList.add('taken')
                     squares[i].classList.add('player-two')
                     currentPlayer = "Player 1"
                     displayCurrentPlayer.innerHTML = currentPlayer
-                    displayCurrentPlayer.style = "background: white; color: red; padding-left: 8px;"
+                    displayCurrentPlayer.style = "color: red; padding-left: 8px;"
                 }
             } else alert("Can't go here!")
             verifyWin()

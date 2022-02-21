@@ -70,6 +70,8 @@ runMadLibButton.onclick = () => {
     // Output
     console.log(originalStory);
     document.write(originalStory); // **This is throwing the child node error: Uncaught DOMException: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+    // document.getElementById('target').innerHTML = "I wrote something";
+    document.getElementById('target').innerHTML = originalStory;
 }
 
 // For De-Bugging:

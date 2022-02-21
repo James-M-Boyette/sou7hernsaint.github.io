@@ -3462,8 +3462,9 @@ text {
 /* Dopetrope Banner */
 #bannerDope {
 	/* background: #cce8f4 url("../../images/pic01.jpg"); */
-	background: rgb(3, 19, 33)
-		url("https://cdnb.artstation.com/p/assets/images/images/029/215/341/4k/oliver-martel-nuclearstore2-square.jpg?1596810441");
+	/* background: rgb(3, 19, 33)
+		url("https://cdnb.artstation.com/p/assets/images/images/029/215/341/4k/oliver-martel-nuclearstore2-square.jpg?1596810441"); */
+	background: url("images\Boyette Consulting.png");
 	background-position: center center;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -3472,6 +3473,7 @@ text {
 	padding: 8em 0;
 	/* margin: 4em 0 0 0; */
 	color: rgb(255, 253, 243);
+	z-index: -1;
 }
 
 #bannerDope header {

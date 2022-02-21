@@ -1923,6 +1923,7 @@ test {
 	background: linear-gradient(bottom, rgb(134, 138, 141), rgb(5, 31, 50));
 	border-radius: 0.475em;
 	height: 500px;
+	width: 500px;
 	text-align: center;
 	position: relative;
 }
@@ -1940,35 +1941,43 @@ test {
 	position: relative;
 }
 .card_backer_image {
-	text-align: center;
-	color: #10c228;
-	position: absolute;
-	background: url("/images/portfolioProjects/dndAid/blackHex50.png");
+	position: relative;
+	/* background: url("/images/portfolioProjects/dndAid/blackHex50.png"); */
 	width: 100%;
 	height: 200px;
 	margin-top: 5%;
 	margin-bottom: 455px;
 	z-index: 1;
 }
-.card_hero,
-dndAid {
-	/* background: url("/images/portfolioProjects/dndAid/Logo1.png"); */
-	text-align: center !important;
-	color: #f45c5c;
+.card_hero {
+	position: relative;
 	width: 100%;
+}
+.connectFour {
+	/* width: auto; */
+	/* height: 80%; */
+	position: relative;
+	display: inline-block;
+	/* z-index: 3; */
+	width: auto;
+	height: 200px;
+	margin-top: 20px;
+	z-index: 3;
+	border-radius: 15px;
+}
+.dndAid {
+	/* background: url("/images/portfolioProjects/dndAid/Logo1.png"); */
+	/* width: 100%; */
+	/* position: absolute; */
 	position: relative;
 	display: inline-block;
 	margin-left: 23px;
 	margin-top: 40px;
 	margin-bottom: 450px;
 	/* top: 40px; */
-	z-index: 2;
+	z-index: 3;
 }
-.card_hero,
-connectFour {
-	margin-right: 50px;
-	scale: 50%;
-}
+
 .sect2 {
 	height: 250px;
 	position: relative;
@@ -2909,6 +2918,22 @@ button:disabled,
 	margin: 0 0 2em -6em;
 	width: calc(100% + 6em);
 }
+
+/* Added by me: */
+.posts span,
+details {
+	font-weight: bold;
+	font-style: italic;
+}
+.posts article,
+text {
+	/* Note: This is too much on the simple navy background */
+	/* color: rgb(255, 253, 243) !important; */
+	/* text-shadow: 0 0 10px rgb(245, 199, 106), 0 0 22px rgb(243, 166, 13); */
+	/* Note: This was also a bit too attention-grabbing */
+	/* color: rgb(224, 223, 214) !important; */
+}
+/* -- Resume Original -- */
 .posts article {
 	-moz-flex-grow: 0;
 	-webkit-flex-grow: 0;
@@ -3169,7 +3194,7 @@ button:disabled,
 	box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75),
 		0 0 0 2px rgb(82, 96, 109) !important;
 	border-radius: 5px;
-	/* Resume original */
+	/* -- Resume Original -- */
 	font-size: 0.9em;
 	position: relative;
 	width: 26em;
@@ -3857,7 +3882,8 @@ ul.actions.fit.stacked {
 /* Everything from here-on is from me ...  */
 /* REVISIT */
 
-* Tooltip container */ .tooltip {
+/* Tooltip container */
+.tooltip {
 	position: relative;
 	display: inline-block;
 	/* Background for *not the tooltip window* but the text being given a tooltip box */
@@ -3867,9 +3893,17 @@ ul.actions.fit.stacked {
 }
 .tooltip:hover {
 	/* border-bottom-color: #f56a6a; */
-	/* border-bottom-color: #rgb(245, 199, 106); */
+	/* border-bottom-color: rgb(245, 199, 106); */
 	/* color: #f56a6a !important; */
 	/* color: rgb(245, 199, 106) !important; */
+	/* -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out,
+		-webkit-transform 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+	color: rgb(255, 255, 255) !important;
+	text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13),
+		0 0 22px rgb(255, 211, 123); */
 }
 
 /* Tooltip text */

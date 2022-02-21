@@ -3464,9 +3464,10 @@ text {
 	/* background: #cce8f4 url("../../images/pic01.jpg"); */
 	/* background: rgb(3, 19, 33)
 		url("https://cdnb.artstation.com/p/assets/images/images/029/215/341/4k/oliver-martel-nuclearstore2-square.jpg?1596810441"); */
-	background: url("https://sou7hernsaint.github.io/public/code2.png");
+	background: url("https://sou7hernsaint.github.io/public/code.png");
 	background-position: center center;
-	background-size: 75% auto;
+	/* background-size: 100% auto; */
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 	text-align: center;
 	position: relative;

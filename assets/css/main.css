@@ -2548,6 +2548,11 @@ button,
 	text-transform: uppercase;
 	white-space: nowrap;
 }
+input[type="submit"],
+.button,
+contact {
+}
+
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
@@ -3474,7 +3479,8 @@ text {
 	padding: 8em 0;
 	/* margin: 4em 0 0 0; */
 	color: rgb(255, 253, 243);
-	z-index: -1;
+	/* z-index: -1; */
+	/* z-index turned-off my buttons/links */
 }
 
 #bannerDope header {

@@ -266,7 +266,7 @@ a2 {
 	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	border-bottom: dotted 1px;
 	/* color: #f56a6a; */
-	color: #10c228;
+	color: purple;
 	text-decoration: none;
 }
 
@@ -3592,7 +3592,7 @@ ul.actions.fit.stacked {
 	/* align-items: center !important; */
 	/* padding-bottom: 5px; */
 	/* text-align: center !important; */
-	color: rgb(45, 239, 6);
+	color: greenyellow;
 	/* position: relative; */
 	/* height: 58px; */
 	/* width: 100%; */
@@ -3610,7 +3610,7 @@ ul.actions.fit.stacked {
 	/* margin-left: -1em; */
 	/* padding-left: 0; */
 }
-.navbar_button {
+.navbar-button {
 	box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
 	background: -webkit-radial-gradient(
 		center,
@@ -3657,6 +3657,30 @@ ul.actions.fit.stacked {
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
+}
+
+.navbar-button > .dropdown {
+}
+
+.navbar-button > .dropdown > .dropdown-content {
+	display: none;
+	position: absolute;
+	/* background-color: #f9f9f9; */
+	/* min-width: 160px; */
+	/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+	z-index: 1;
+}
+.navbar-button > .dropdown:focus .dropdown-content {
+	display: block;
+}
+
+.navbar-button > .dropdown > .dropdown-content a {
+	float: none;
+	/* color: black; */
+	/* padding: 12px 16px; */
+	/* text-decoration: none; */
+	display: block;
+	text-align: left;
 }
 
 /* -- Resume Original -- */

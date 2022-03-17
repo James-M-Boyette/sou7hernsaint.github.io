@@ -2207,6 +2207,12 @@ test {
 	position: relative;
 	/* height: auto; */
 }
+#vader {
+	/* Vader Image */
+	box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
+	border-radius: 0.375em;
+	/* height: auto; */
+}
 
 .image.main img {
 	/* width: 100%; */

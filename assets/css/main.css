@@ -2207,11 +2207,41 @@ test {
 	position: relative;
 	/* height: auto; */
 }
+
+/* Vader Image */
 #vader {
-	/* Vader Image */
+	
 	box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
 	border-radius: 0.375em;
 	max-width: 100%;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+/* Attack the Day */
+#success {
+	box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
+	border-radius: 0.375em;
+	max-width: 50%;
+	margin: 10px auto;
+	/* margin-bottom: 20px !important; */
+	justify-self: center; 
+	/* opacity:85%; */
+}
+
+/* Scissors */
+#blow-out {
+	box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
+	border-radius: 0.375em;
+	max-width: 100%;
+	/* opacity:85%; */
+}
+
+.paragraph-divider {
+
+	/* box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
+	border-radius: 0.375em; */
+	max-width: 25%;
+	margin: 20px auto;
 	/* height: auto; */
 }
 

@@ -2161,6 +2161,7 @@ test {
 	padding: 0 1.5em 1em 0;
 	top: 0.25em;
 }
+
 .image.right {
 	float: right;
 	padding: 0 0 1em 1.5em;
@@ -3597,7 +3598,7 @@ ul.actions.fit.stacked {
 	/* height: 58px; */
 	/* width: 100%; */
 }
-#navbar_container {
+#navbar-container {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -3659,28 +3660,104 @@ ul.actions.fit.stacked {
 	white-space: nowrap;
 }
 
-.navbar-button > .dropdown {
+/* Navbar Dropdown section */
+/* .navbar-button .dropdown-button {
 }
 
-.navbar-button > .dropdown > .dropdown-content {
+.navbar-button .dropdown-button {
+	display: none !important;
+	position: absolute !important;
+	z-index: 1 !important;
+}
+.dropdown-button:focus .dropdown-content {
+	display: block !important;
+}
+
+.navbar-button .dropdown-button .dropdown-content a {
+	float: none !important;
+	display: block !important;
+	text-align: left !important;
+} */
+#navbar .navbar-button {
+}
+#navbar .dropdown-content {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	display: none;
-	position: absolute;
-	/* background-color: #f9f9f9; */
-	/* min-width: 160px; */
-	/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-	z-index: 1;
 }
-.navbar-button > .dropdown:focus .dropdown-content {
-	display: block;
+#navbar .navbar-button:active,
+#navbar .navbar-button:active .dropdown-content {
+	/* color: greenyellow !important; */
+	display: block !important;
+	/* height: 200px !important; */
+}
+#navbar ul a.opener,
+#navbar ul span.opener {
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	text-decoration: none;
+	/* -webkit-tap-highlight-color: rgba(255, 255, 255, 0); */
+	-webkit-tap-highlight-color: rgb(255, 211, 123);
+	position: relative;
+}
+#navbar ul a.opener:before,
+#navbar ul span.opener:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+#navbar ul a.opener:before,
+#navbar ul span.opener:before {
+	-moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out,
+		-webkit-transform 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+	color: #9fa3a6;
+	/* The SubMenu carrot arrow */
+	content: "\f078";
+	position: absolute;
+	right: 0;
 }
 
-.navbar-button > .dropdown > .dropdown-content a {
-	float: none;
-	/* color: black; */
-	/* padding: 12px 16px; */
-	/* text-decoration: none; */
-	display: block;
-	text-align: left;
+/* Third Option */
+.control-me {
+	/* Default state */
+}
+#toggle:checked ~ .control-me {
+	/* A toggled state! No JavaScript! */
+}
+
+.control-me::after {
+	content: "😃";
+	font-size: 100px;
+}
+
+#toggle:checked ~ .control-me::after {
+	: "😩";
+}
+
+label {
+	background: #a5d6a7;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+}
+
+.visually-hidden {
+	position: absolute;
+	left: -100vw;
+
+	/* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
 }
 
 /* -- Resume Original -- */

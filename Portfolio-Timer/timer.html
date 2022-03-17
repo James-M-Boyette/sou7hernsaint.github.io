@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- <title>James Boyette</title> -->
+		<title>James Boyette</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="timer.css" /> -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!-- <link rel="shortcut icon" type="image/png" href="/images/profilePics/Head3c.png"/> -->
+		<link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="../apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="../apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="../apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="../apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="../apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="../apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="../apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="../apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="../android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="../favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../favicon-16x16.png"
+		/>
+		<!-- <link rel="manifest" href="/manifest.json"> -->
+		<!-- <link rel="manifest" href="/manifest.txt"> -->
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<style>
+			#timer {
+				font-family: sans-serif;
+				display: inline-block;
+				padding: 25px 25px;
+				border-radius: 30px;
+				background: white;
+				box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75), 0 0 0 2px rgb(82, 96, 109) !important;
+				background: -webkit-radial-gradient(center, rgb(170, 169, 161),rgb(6, 39, 68)	);
+				/* color: rgb(255, 211, 123); */
+				color: rgb(250, 240, 219);
+				/* color: rgb(255, 255, 255); */
+				-webkit-text-stroke: 1px rgb(6, 39, 68);
+			}
+
+			.timer__part {
+				font-size: 36px;
+				font-weight: bold;
+			}
+
+			.timer__btn {
+				width: 50px;
+				height: 50px;
+				/* margin-left: 16px; */
+				border-radius: 50%;
+				/* border: none; */
+				color: white;
+				/* background: #e0a400; */
+				background: rgb(235, 157, 0);
+				cursor: pointer;
+			}
+
+			.timer__btn--start {
+				background: #03ff64;
+			}
+			.timer__btn--stop {
+				/* background: #ff0256; */
+				background: rgb(255, 0, 55);
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<!-- <div id="backer"> -->
+				<!-- **Top** -->
+				<!-- Banner -->
+				<section id="bannerDope">
+				<!-- <img src="images\pic01.jpg"> -->
+				<!-- Hero Section -->
+					<header style="border-radius: 20px;">
+						<h2>James <span style="opacity: 0%;">
+						</span> M <span style="opacity: 0%;">
+						</span> Boyette</h2>
+						
+						<ul class="icons">
+						<li>
+							<a href="https://www.linkedin.com/in/james-boyette/" target="_blank" class="icon brands fa-linkedin-in link">
+							<span class="label">LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/sou7hernsaint" target="_blank" class="icon brands fa-github link">
+							<span class="label">Github</span>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://sou7hernsaint.artstation.com/" target="_blank" class="icon brands fa-artstation link">
+							<span class="label">Artstation</span>
+							</a>
+						</li> -->
+						<li>
+							<a href="https://twitter.com/sou7hernsaint" target="_blank" class="icon brands fa-twitter link">
+							<span class="label">Twitter</span>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="https://www.instagram.com/sou7hernsaint/" target="_blank" class="icon brands fa-instagram link">
+							<span class="label">Instagram</span>
+							</a>
+						</li> -->
+						<!-- <li>
+							<a href="#" class="icon brands fa-deviantart"><span class="label">DeviantArt</span></a>
+						</li> -->
+						<!-- <li>
+							<a href="#" class="icon brands fa-"><span class="label">Blog</span></a>
+						</li> -->
+						</ul>
+						<p>Full-stack
+						<span style="opacity: 0%;">..</span>
+						<a href="" style="color: transparent;"><span class="far fa-keyboard link" style="color: rgb(118, 142, 161)"></span></a>
+						<span style="opacity: 0%;">..</span>
+						developer
+						</p>
+						<!-- <h4 style="color: rgba(255, 253, 243, 0.658)"><span style="opacity: 0%;">....</span>curiosity <span style="opacity: 0%;">......</span>
+						<a href="#top10" style="color: transparent;"><span class="fas fa-glasses link" style="color: rgb(83, 99, 112); margin-top: 15px"></span></a>
+						<span style="opacity: 0%;">.......</span>enthusiast</h4> -->
+						<h4 style="color: rgba(255, 253, 243, 0.658)"><span style="opacity: 0%;">....</span>curiosity <span style="opacity: 0%;">.</span>
+						<span style="opacity: 0%;">.</span>enthusiast</h4>
+					</header>
+				</section>
+
+				<!-- Navbar -->
+				<nav id="navbar">
+					<ul id="navbar-container">
+					  <li><a href="../index.html" class="button navbar-button"> Front Page</a></li>
+					  <li><a href="../background.html" class="button navbar-button"> About Me</a></li>
+					</ul>
+				</nav>
+
+				<div class="inner">
+					<!-- Portfolio / Portal Section -->
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<div class="tooltip header2">Timer</div>
+						</header>
+						<container style="display: flex">
+							<!-- <img src="images/pic01.jpg" alt="" /> -->
+							<div id="timer" style="width: 320px; min-width: 320px; height: 100px; min-height: 100px; padding-left: 3em; padding-right: 1em; ">
+								<!-- Timer's HTML is inserted here at runtime -->
+							</div>
+							
+						</container>
+					<!-- </section>
+					<section> -->
+						<div style="margin-top: 60px">
+							<h2>Controls :</h2>
+							<ul>
+								<li style="font-style: bold !important; font-size: large;"><span style="color:rgb(235, 157, 0); -webkit-text-stroke: 1px rgb(235, 157, 0);font-size:larger">Orange Button</span> : <span style="font-style: bold !important; font-size: large;">(re)sets the timer</span></li>
+								<li style="font-style: bold !important; font-size: large;"><span style="color:rgb(64, 255, 6); -webkit-text-stroke: 1px rgb(39, 235, 0);font-size:larger">Green Button</span> : <span style="font-style: bold !important; font-size: large;">starts the timer</span></li>
+								<li style="font-style: bold !important; font-size: large;"><span style="color:rgb(255, 6, 68); -webkit-text-stroke: 1px rgb(235, 0, 20);font-size:larger">Red Button</span> : <span style="font-style: bold !important; font-size: large;">stops the timer</span></li>
+							</ul>
+						</div>
+					</section>
+					
+					<!-- Description / Explanation Section -->
+					<section>
+						<!-- <header class="major" id="portfolio">
+							<div class="tooltip header2">About this app:</div>
+						</header>
+						<p>
+							<span class="image left"
+								><img src="../images/pic01.jpg" alt="" /> </span
+							>Lorem ipsum dolor sit accumsan interdum nisi, quis
+							tincidunt felis sagittis eget. tempus euismod.
+							Vestibulum ante ipsum primis in faucibus vestibulum.
+							Blandit adipiscing eu felis iaculis volutpat ac
+							adipiscing accumsan eu faucibus. Integer ac
+							pellentesque praesent tincidunt felis sagittis eget.
+							tempus euismod. Vestibulum ante ipsum primis
+							sagittis eget. tempus euismod. Vestibulum ante ipsum
+							primis in faucibus vestibulum. Blandit adipiscing eu
+							felis iaculis volutpat ac adipiscing accumsan eu
+							faucibus. Integer ac pellentesque praesent.
+						</p>
+					</section> -->
+				</div>
+				<!-- Content / "inner" end -->
+			</div>
+			<!-- "main" end -->
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+					<!-- Search the Site -->
+					<!-- Disabled for the time-being; I'm uncertain whether the juice is worth the squeeze in implementing this ... -->
+					<!-- <section id="search" class="alt">
+				  <form method="post" action="#">
+					<input type="text" name="query" id="query" placeholder="Search" />
+				  </form>
+				</section> -->
+
+					<!-- Navigation Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>
+								Navigation<span style="color: transparent"
+									>__________</span
+								><img
+									src="../images/profilePics/Head1b.png"
+									style="max-width: 25%"
+								/>
+							</h2>
+						</header>
+						<ul>
+							<li>
+								<a href="../index.html" class="fas fa-globe">
+									Frontpage</a
+								>
+							</li>
+							<li>
+								<a
+									href="../background.html"
+									class="fas fa-baby-carriage"
+								>
+									My background</a
+								>
+							</li>
+							<!-- <li><a href="https://sou7hernsaint.wordpress.com/" target="_blank" class="fas fa-flask"> Tech Blog</a><span style="text-align: right; padding-right: 25px; font-style: italic" class="opener">                             sub-categories</span>
+					  <ul>
+						<li><a href="https://sou7hernsaint.wordpress.com/category/code/" target="_blank">Coding</a></li>
+						<li><a href="https://sou7hernsaint.wordpress.com/category/3D/" target="_blank">3D Art / Game Dev.</a></li>
+						<li><a href="https://sou7hernsaint.wordpress.com/category/carpentry/" target="_blank">Carpentry</a></li>
+						<li><a href="https://sou7hernsaint.wordpress.com/category/cooking/" target="_blank">Cooking</a></li>
+					  </ul>
+					</li>
+					<li>
+					  <a href="https://github.com/users/sou7hernsaint/projects/1" target="_blank" class="fas fa-bullseye">
+						'To-Do'
+					  </a>
+					</li> -->
+						</ul>
+					</nav>
+
+					<!-- Twitter Feed -->
+					<section>
+						<header class="major">
+							<div
+								class="tooltip header2"
+								style="margin-bottom: 5px; font-size: 140%"
+							>
+								Mostly memes ...
+								<span
+									class="tooltiptext tooltip-right tooldisclaimer"
+									style="
+										margin-left: 20px;
+										width: 340px;
+										text-align: left;
+									"
+								>
+									Come inside my mind, and see what it's like
+									<br />
+									when a comedian 'bites the big one'
+									<br />
+									~ Robin Williams, "Off the Wall"
+								</span>
+							</div>
+						</header>
+						<br />
+						<div class="mini-posts">
+							<article>
+								<!-- Twitter Embed -->
+								<a
+									class="twitter-timeline"
+									href="https://twitter.com/sou7hernsaint?ref_src=twsrc%5Etfw"
+									data-tweet-limit="1"
+									data-chrome="noheader; nofooter; noscrollbar"
+									>Tweets by sou7hernsaint</a
+								>
+								<script
+									async
+									src="https://platform.twitter.com/widgets.js"
+									charset="utf-8"
+								></script>
+							</article>
+						</div>
+						<!-- <ul class="actions">
+					<li><a href="#" class="button"></a></li>
+					This button should send people to more stuff
+				  </ul> -->
+					</section>
+
+					<!-- Contact Me -->
+					<section>
+						<header class="major">
+							<h2>
+								<!-- <a href="#contact-form">Let's talk ! -->
+								<a href="#mailto:inquiries@james-boyette.com"
+									>Get in touch !
+									<span
+										class="tooltiptext tooltip-right tooldisclaimer"
+										style="
+											margin-left: 20px;
+											width: 340px;
+											text-align: left;
+										"
+									>
+									</span>
+								</a>
+							</h2>
+						</header>
+						<p>
+							<a href="#mailto:inquiries@james-boyette.com"
+								>inquiries@james-boyette.com
+								<span
+									class="tooltiptext tooltip-right tooldisclaimer"
+									style="
+										margin-left: 20px;
+										width: 340px;
+										text-align: left;
+									"
+								>
+								</span>
+							</a>
+						</p>
+					</section>
+
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">
+							&copy;
+							<a
+								href="https://www.linkedin.com/company/boyette-consulting/"
+								target="_blank"
+								>James Boyette. All rights reserved.</a
+							>
+						</p>
+						<p class="copyright">
+							Original Design:
+							<a href="https://html5up.net">HTML5 UP</a>
+						</p>
+					</footer>
+
+					<!-- Sidebar Temporary Fix -->
+					<section>
+						<h2 style="opacity: 0">
+							_
+							<br />
+							_
+							<br />
+							_
+							<br />
+							_
+							<br />
+							_
+							<br />
+							_
+							<br />
+							_
+							<br />
+							_
+							<br />
+							_
+							<br />
+						</h2>
+					</section>
+				</div>
+				<!-- sidebar "inner" end -->
+			</div>
+			<!-- "sidebar" end -->
+		</div>
+		<!-- "Wrapper" end -->
+
+		<!-- Scripts -->
+		<script src="app.js"></script>
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>

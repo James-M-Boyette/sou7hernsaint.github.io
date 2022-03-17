@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 square3.classList.contains('player-one') &&
                 square4.classList.contains('player-one')
             ) {
+                document.getElementById('player-tracker').innerHTML=""
                 displayCurrentPlayer.innerHTML = "GAME OVER"
                 document.getElementById("result").style = `
                 color: red;               
@@ -121,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 square3.classList.contains('player-two') &&
                 square4.classList.contains('player-two')
             ) {
+                document.getElementById('player-tracker').innerHTML=""
                 displayCurrentPlayer.innerHTML = "GAME OVER"
                 document.getElementById("result").style = `
                 color: yellow;               

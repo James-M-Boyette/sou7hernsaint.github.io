@@ -92,20 +92,26 @@
 		<!-- Connect Four Project-Specific CSS -->
 		<style>
 			#connectFourContainer {
-				position: absolute;
-				/* top: 75%; */
-				top: 1000px;
-				left: 50%;
-				margin-right: -50%;
-				transform: translate(-50%, -50%);
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				max-width: 500px !important;
+				margin: auto !important;
+			}
+			container #connectFourContainer {
+				display: flex;
+				justify-content: center;
 			}
 			#grid {
 				border: 1px solid;
 				border-radius: 10px;
 				height: 364px;
 				width: 434px;
+				margin: auto;
 				display: flex;
 				flex-wrap: wrap;
+				justify-content: center;
 				background: rgb(24, 24, 24);
 			}
 
@@ -116,11 +122,6 @@
 				border: 1px solid black;
 				border-radius: 10px;
 				margin: auto;
-			}
-
-			#grid player-tracker {
-				/* margin: auto; */
-				padding-top: 100px !important;
 			}
 
 			.floor {
@@ -143,14 +144,17 @@
 		<div id="wrapper">
 			<!-- Main -->
 			<div id="main">
+				<!-- **Top** -->
 				<!-- Banner -->
 				<section id="bannerDope">
+					<!-- <img src="images\pic01.jpg"> -->
 					<!-- Hero Section -->
 					<header style="border-radius: 20px">
 						<h2>
-							James <span style="opacity: 0%"></span> M
-							<span style="opacity: 0%"></span> Boyette
+							James <span style="opacity: 0%"> </span> M
+							<span style="opacity: 0%"> </span> Boyette
 						</h2>
+
 						<ul class="icons">
 							<li>
 								<a
@@ -171,14 +175,10 @@
 								</a>
 							</li>
 							<!-- <li>
-								<a
-									href="https://sou7hernsaint.artstation.com/"
-									target="_blank"
-									class="icon brands fa-artstation link"
-								>
-									<span class="label">Artstation</span>
-								</a>
-							</li> -->
+					<a href="https://sou7hernsaint.artstation.com/" target="_blank" class="icon brands fa-artstation link">
+					  <span class="label">Artstation</span>
+					</a>
+				  </li> -->
 							<li>
 								<a
 									href="https://twitter.com/sou7hernsaint"
@@ -189,20 +189,16 @@
 								</a>
 							</li>
 							<!-- <li>
-								<a
-									href="https://www.instagram.com/sou7hernsaint/"
-									target="_blank"
-									class="icon brands fa-instagram link"
-								>
-									<span class="label">Instagram</span>
-								</a>
-							</li> -->
+					<a href="https://www.instagram.com/sou7hernsaint/" target="_blank" class="icon brands fa-instagram link">
+					  <span class="label">Instagram</span>
+					</a>
+				  </li> -->
 							<!-- <li>
-										  <a href="#" class="icon brands fa-deviantart"><span class="label">DeviantArt</span></a>
-									  </li> -->
+					<a href="#" class="icon brands fa-deviantart"><span class="label">DeviantArt</span></a>
+				  </li> -->
 							<!-- <li>
-										  <a href="#" class="icon brands fa-"><span class="label">Blog</span></a>
-									  </li> -->
+					<a href="#" class="icon brands fa-"><span class="label">Blog</span></a>
+				  </li> -->
 						</ul>
 						<p>
 							Full-stack
@@ -216,68 +212,62 @@
 							<span style="opacity: 0%">..</span>
 							developer
 						</p>
+						<!-- <h4 style="color: rgba(255, 253, 243, 0.658)"><span style="opacity: 0%;">....</span>curiosity <span style="opacity: 0%;">......</span>
+				  <a href="#top10" style="color: transparent;"><span class="fas fa-glasses link" style="color: rgb(83, 99, 112); margin-top: 15px"></span></a>
+				  <span style="opacity: 0%;">.......</span>enthusiast</h4> -->
 						<h4 style="color: rgba(255, 253, 243, 0.658)">
 							<span style="opacity: 0%">....</span>curiosity
-							<span style="opacity: 0%">......</span>
-							<a href="#top10" style="color: transparent"
-								><span
-									class="fas fa-glasses link"
-									style="
-										color: rgb(83, 99, 112);
-										margin-top: 15px;
-									"
-								></span
-							></a>
-							<span style="opacity: 0%">.......</span>enthusiast
+							<span style="opacity: 0%">.</span>
+							<span style="opacity: 0%">.</span>enthusiast
 						</h4>
 					</header>
-					<!-- <a href="https://www.thefactsite.com/top-100-technology-facts/" target="_blank"></a> -->
 				</section>
 
 				<!-- Navbar -->
-				<div id="navbar">
-					<!-- <ul class="actions"> -->
-					<ul id="navbar_container">
-						<!-- <li><a href="#" class="button fit navbar_button">Portfolio</a></li> -->
+				<nav id="navbar">
+					<ul id="navbar-container">
 						<li>
 							<a
-								href="../index.html#portfolio"
-								class="button navbar_button"
+								href="../index.html"
+								class="button navbar-button"
 							>
-								Portfolio</a
+								Front Page</a
 							>
 						</li>
-						<!-- <li>
-							<a
-								href="../index.html#blog"
-								class="button navbar_button"
-								style="padding-left: 52px; padding-right: 52px"
-								>Blog</a
-							>
-						</li> -->
 						<li>
 							<a
-								href="../index.html#highlights"
-								class="button navbar_button"
-								>Portal</a
+								href="../background.html"
+								class="button navbar-button"
+							>
+								About Me</a
 							>
 						</li>
 					</ul>
-				</div>
+				</nav>
 				<div class="inner">
 					<!-- <div class="inner"> --><!-- Same as connectFourContainer? -->
 
 					<!-- Connect Four -->
 					<div id="connectFourContainer">
-						<h3 id="player-tracker">
+						<!-- <h3 id="player-tracker">
 							The current Player is:
 							<span
 								id="current-player"
 								style="padding-left: 8px; color: red"
 								>Player 1</span
 							>
-						</h3>
-						<h3 id="result"></h3>
+						</h3> -->
+						<div style="display: flex; justify-content: center">
+							<h3 id="player-tracker">The current Player is:</h3>
+							<h3
+								id="current-player"
+								style="padding-left: 8px; color: red"
+							>
+								Player 1
+							</h3>
+						</div>
+						<h3 id="result">_</h3>
+
 						<div id="grid">
 							<div></div>
 							<div></div>

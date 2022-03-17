@@ -2211,6 +2211,7 @@ test {
 	/* Vader Image */
 	box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
 	border-radius: 0.375em;
+	max-width: 100%;
 	/* height: auto; */
 }
 

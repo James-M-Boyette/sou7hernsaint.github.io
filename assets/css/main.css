@@ -1589,6 +1589,15 @@ header.major > :last-child {
 	margin: 0 0 2em 0;
 	padding: 0 0.75em 0.5em 0;
 }
+header.major-projects > :last-child {
+	/* border-bottom: solid 3px #f56a6a; */
+	border-bottom: solid 3px rgb(245, 199, 106);
+	display: inline-block;
+	margin: auto !important;
+	/* margin-bottom: 10em !important; */
+	padding: 0 0.5em 0 0.5em;
+	text-align: center;
+}
 
 header.main > :last-child {
 	margin: 0 0 1em 0;
@@ -2187,7 +2196,6 @@ test {
 }
 
 .paragraph-divider {
-
 	/* box-shadow: inset 0 0 0 3px rgb(107, 126, 143), 0 0 0 3px rgb(49, 56, 62);
 	border-radius: 0.375em; */
 	max-width: 25%;
@@ -2644,74 +2652,6 @@ button:disabled,
 .button:disabled {
 	pointer-events: none;
 	opacity: 0.25;
-}
-
-.button-james {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	-webkit-transition: background-color 0.2s ease-in-out,
-		color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-
-	border: 0;
-	box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
-	background: -webkit-radial-gradient(
-		center,
-		rgb(170, 169, 161),
-		rgb(6, 39, 68)
-	);
-	background: -moz-radial-gradient(
-		center,
-		rgb(170, 169, 161),
-		rgb(6, 39, 68)
-	);
-	background: radial-gradient(
-		ellipse at center,
-		rgb(170, 169, 161),
-		rgb(6, 39, 68)
-	);
-	background-color: rgb(3, 19, 33) (103, 115, 128, 0.95);
-	/* color: rgb(255, 211, 123) !important; */
-	color: rgb(255, 253, 243) !important;
-	display: inline-block;
-	font-family: "Roboto Slab", serif;
-	font-size: 1em;
-	font-weight: 700;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	white-space: nowrap;
-	/* height: 3.5em; */
-	height: 2.5em !important;
-	letter-spacing: 0.175em !important;
-	line-height: 2.5em !important;
-	/* Controls padding in buttons */
-	/* padding: 0 5 0 5 !important; */
-	padding: auto;
-	white-space: nowrap !important;
-	overflow: hidden !important;
-	/* border-radius: 0.375em; */
-	border-radius: 8px;
-	/* max-width: 250px !important; */
-	border-width: 42px !important;
-	/* Controls spacing between nav buttons */
-	margin: 10px;
-	margin-top: 15px !important;
-	/* margin-top: 7.5px !important;
-  margin-bottom: 4px !important;
-  margin-left: 10px !important;
-  margin-right: 10px !important; */
-	/* position: absolute imp !important; */
-	cursor: pointer;
-	/* display: inline-block; */
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	white-space: nowrap;
 }
 
 /* Mini Posts */
@@ -3518,70 +3458,6 @@ text {
 		top: 0;
 	}
 }
-
-/* Imported Dopetrope Banner & made bespoke navbar */
-/* Dopetrope Banner */
-#bannerDope {
-	/* background: #cce8f4 url("../../images/pic01.jpg"); */
-	/* background: rgb(3, 19, 33)
-		url("https://cdnb.artstation.com/p/assets/images/images/029/215/341/4k/oliver-martel-nuclearstore2-square.jpg?1596810441"); */
-	background: url("https://sou7hernsaint.github.io/public/code.png");
-	background-position: center center;
-	/* background-size: 100% auto; */
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	text-align: center;
-	position: relative;
-	padding: 8em 0;
-	/* margin: 4em 0 0 0; */
-	color: rgb(255, 253, 243);
-	/* z-index: -1; */
-	/* z-index turned-off my buttons/links */
-}
-
-#bannerDope header {
-	/* background-color: rgba(13, 28, 33, 0.6); */
-	/* background-color: rgba(3, 18, 28, 0.7); */
-	background: -webkit-radial-gradient(
-		center,
-		rgb(0, 36, 54),
-		rgba(4, 25, 39, 0.6)
-	);
-	background: -moz-radial-gradient(
-		center,
-		rgb(0, 36, 54),
-		rgba(4, 25, 39, 0.6)
-	);
-	background: radial-gradient(
-		ellipse at center,
-		rgb(0, 36, 54),
-		rgba(4, 25, 39, 0.6)
-	);
-	box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75),
-		0 0 0 2px rgb(82, 96, 109) !important;
-	display: inline-block;
-	padding: 2.5em 5em;
-	border-radius: 5px;
-}
-
-#bannerDope header h2 {
-	/* color: #fff; */
-	color: rgb(255, 253, 243);
-	font-weight: 700;
-	font-size: 2.5em;
-	margin: 0 0 0.65em 0;
-}
-
-#bannerDope header p {
-	/* color: #d52349; */
-	/* color: #fff; */
-	color: rgb(255, 253, 243);
-	padding: 0;
-	font-style: normal;
-	margin: 0;
-	font-size: 1.5em;
-}
-
 ul.actions.special {
 	-moz-justify-content: center;
 	-webkit-justify-content: center;
@@ -3626,152 +3502,6 @@ ul.actions.fit li > * {
 ul.actions.fit.stacked {
 	width: 100%;
 }
-/* Navbar */
-#navbar {
-	box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75),
-		0 0 0 2px rgb(82, 96, 109) !important;
-	border-radius: 5px;
-	background-color: rgb(3, 19, 33);
-	background-position: center center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	list-style-type: none;
-	display: block !important;
-	/* display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important; */
-	/* margin: 0; */
-	/* padding-left: 10px !important;
-  padding-right: 10px !important; */
-	/* padding-top: 12px; */
-	/* align-items: center !important; */
-	/* padding-bottom: 5px; */
-	/* text-align: center !important; */
-	color: greenyellow;
-	/* position: relative; */
-	/* height: 58px; */
-	/* width: 100%; */
-}
-#navbar-container {
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	flex-direction: row !important;
-	flex-wrap: wrap !important;
-	justify-content: center !important;
-	cursor: default;
-	list-style: none;
-	padding-left: 0 !important;
-	/* margin-left: -1em; */
-	/* padding-left: 0; */
-}
-.navbar-button {
-
-}
-
-/* Navbar Dropdown section */
-/* .navbar-button .dropdown-button {
-}
-
-.navbar-button .dropdown-button {
-	display: none !important;
-	position: absolute !important;
-	z-index: 1 !important;
-}
-.dropdown-button:focus .dropdown-content {
-	display: block !important;
-}
-
-.navbar-button .dropdown-button .dropdown-content a {
-	float: none !important;
-	display: block !important;
-	text-align: left !important;
-} */
-#navbar .navbar-button {
-}
-#navbar .dropdown-content {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: none;
-}
-#navbar .navbar-button:active,
-#navbar .navbar-button:active .dropdown-content {
-	/* color: greenyellow !important; */
-	display: block !important;
-	/* height: 200px !important; */
-}
-#navbar ul a.opener,
-#navbar ul span.opener {
-	-moz-transition: color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out;
-	text-decoration: none;
-	/* -webkit-tap-highlight-color: rgba(255, 255, 255, 0); */
-	-webkit-tap-highlight-color: rgb(255, 211, 123);
-	position: relative;
-}
-#navbar ul a.opener:before,
-#navbar ul span.opener:before {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	font-style: normal;
-	font-variant: normal;
-	text-rendering: auto;
-	line-height: 1;
-	text-transform: none !important;
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-}
-#navbar ul a.opener:before,
-#navbar ul span.opener:before {
-	-moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out,
-		-webkit-transform 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-	color: #9fa3a6;
-	/* The SubMenu carrot arrow */
-	content: "\f078";
-	position: absolute;
-	right: 0;
-}
-
-/* Third Option */
-.control-me {
-	/* Default state */
-}
-#toggle:checked ~ .control-me {
-	/* A toggled state! No JavaScript! */
-}
-
-.control-me::after {
-	content: "😃";
-	font-size: 100px;
-}
-
-#toggle:checked ~ .control-me::after {
-	: "😩";
-}
-
-label {
-	background: #a5d6a7;
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
-}
-
-.visually-hidden {
-	position: absolute;
-	left: -100vw;
-
-	/* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
-}
-
-/* -- Resume Original -- */
 
 /* Banner */
 #banner {
@@ -4000,8 +3730,225 @@ label {
 	padding-top: 0;
 }
 
-/* Everything from here-on is from me ...  */
+/* --+ My Bespoke Content +-- */
 /* REVISIT */
+
+/* Imported Dopetrope Banner & made bespoke navbar */
+/* Dopetrope Banner */
+#bannerDope {
+	/* background: #cce8f4 url("../../images/pic01.jpg"); */
+	/* background: rgb(3, 19, 33)
+		url("https://cdnb.artstation.com/p/assets/images/images/029/215/341/4k/oliver-martel-nuclearstore2-square.jpg?1596810441"); */
+	background: url("https://sou7hernsaint.github.io/public/code.png");
+	background-position: center center;
+	/* background-size: 100% auto; */
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	padding: 8em 0;
+	/* margin: 4em 0 0 0; */
+	color: rgb(255, 253, 243);
+	/* z-index: -1; */
+	/* z-index turned-off my buttons/links */
+}
+
+#bannerDope header {
+	/* background-color: rgba(13, 28, 33, 0.6); */
+	/* background-color: rgba(3, 18, 28, 0.7); */
+	background: -webkit-radial-gradient(
+		center,
+		rgb(0, 36, 54),
+		rgba(4, 25, 39, 0.6)
+	);
+	background: -moz-radial-gradient(
+		center,
+		rgb(0, 36, 54),
+		rgba(4, 25, 39, 0.6)
+	);
+	background: radial-gradient(
+		ellipse at center,
+		rgb(0, 36, 54),
+		rgba(4, 25, 39, 0.6)
+	);
+	box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75),
+		0 0 0 2px rgb(82, 96, 109) !important;
+	display: inline-block;
+	padding: 2.5em 5em;
+	border-radius: 5px;
+}
+
+#bannerDope header h2 {
+	/* color: #fff; */
+	color: rgb(255, 253, 243);
+	font-weight: 700;
+	font-size: 2.5em;
+	margin: 0 0 0.65em 0;
+}
+
+#bannerDope header p {
+	/* color: #d52349; */
+	/* color: #fff; */
+	color: rgb(255, 253, 243);
+	padding: 0;
+	font-style: normal;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+/* Navbar */
+#navbar {
+	box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75),
+		0 0 0 2px rgb(82, 96, 109) !important;
+	border-radius: 5px;
+	background-color: rgb(3, 19, 33);
+	background-position: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	display: block !important;
+	/* display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important; */
+	/* margin: 0; */
+	/* padding-left: 10px !important;
+  padding-right: 10px !important; */
+	/* padding-top: 12px; */
+	/* align-items: center !important; */
+	/* padding-bottom: 5px; */
+	/* text-align: center !important; */
+	color: greenyellow;
+	/* position: relative; */
+	/* height: 58px; */
+	/* width: 100%; */
+}
+#navbar-container {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: row !important;
+	flex-wrap: wrap !important;
+	justify-content: center !important;
+	cursor: default;
+	list-style: none;
+	padding-left: 0 !important;
+	/* margin-left: -1em; */
+	/* padding-left: 0; */
+}
+.button-navbar {
+	margin: 0.5em 1em !important;
+}
+/* Rotate the drop-down arrow */
+#navbar-container i:active .fa-angle-down {
+	-moz-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+/* Navbar Dropdown section */
+/* .navbar-button .dropdown-button {
+}
+
+.navbar-button .dropdown-button {
+	display: none !important;
+	position: absolute !important;
+	z-index: 1 !important;
+}
+.dropdown-button:focus .dropdown-content {
+	display: block !important;
+}
+
+.navbar-button .dropdown-button .dropdown-content a {
+	float: none !important;
+	display: block !important;
+	text-align: left !important;
+} */
+#navbar .navbar-button {
+}
+#navbar .dropdown-content {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+}
+#navbar .navbar-button:active,
+#navbar .navbar-button:active .dropdown-content {
+	/* color: greenyellow !important; */
+	display: block !important;
+	/* height: 200px !important; */
+}
+#navbar ul a.opener,
+#navbar ul span.opener {
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	text-decoration: none;
+	/* -webkit-tap-highlight-color: rgba(255, 255, 255, 0); */
+	-webkit-tap-highlight-color: rgb(255, 211, 123);
+	position: relative;
+}
+#navbar ul a.opener:before,
+#navbar ul span.opener:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+#navbar ul a.opener:before,
+#navbar ul span.opener:before {
+	-moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out,
+		-webkit-transform 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+	color: #9fa3a6;
+	/* The SubMenu carrot arrow */
+	content: "\f078";
+	position: absolute;
+	right: 0;
+}
+
+/* Third Option */
+.control-me {
+	/* Default state */
+}
+#toggle:checked ~ .control-me {
+	/* A toggled state! No JavaScript! */
+}
+
+.control-me::after {
+	content: "😃";
+	font-size: 100px;
+}
+
+#toggle:checked ~ .control-me::after {
+	content: "😩";
+}
+
+label {
+	background: #a5d6a7;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+}
+
+.visually-hidden {
+	position: absolute;
+	left: -100vw;
+
+	/* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+/* -- Resume Original -- */
 
 /* Tooltip container */
 .tooltip {
@@ -4099,6 +4046,100 @@ label {
 	font-family: "VT323", monospace;
 }
 
+.toolaleft.toolaleft {
+	text-align: left;
+}
+
+/* Drop-Down Menu */
+.menu-parent .menu-element {
+	visibility: hidden;
+	width: 400px;
+	background-color: rgb(3, 19, 33, 0.925);
+	box-shadow: 0px 0px 2px rgb(253, 248, 220) !important;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+}
+.menu-parent:active .menu-element {
+	visibility: visible;
+}
+
+/* My Button */
+.button-james {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out,
+		color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+	border: 0;
+	box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
+	background: -webkit-radial-gradient(
+		center,
+		rgb(170, 169, 161),
+		rgb(6, 39, 68)
+	);
+	background: -moz-radial-gradient(
+		center,
+		rgb(170, 169, 161),
+		rgb(6, 39, 68)
+	);
+	background: radial-gradient(
+		ellipse at center,
+		rgb(170, 169, 161),
+		rgb(6, 39, 68)
+	);
+	background-color: rgb(3, 19, 33) (103, 115, 128, 0.95);
+	/* color: rgb(255, 211, 123) !important; */
+	color: rgb(255, 253, 243) !important;
+	display: inline-block;
+	font-family: "Roboto Slab", serif;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	/* height: 3.5em; */
+	height: 2.5em !important;
+	letter-spacing: 0.175em !important;
+	line-height: 2.5em !important;
+	/* Controls padding in buttons */
+	/* padding: 0 5 0 5 !important; */
+	padding-top: auto !important;
+	padding-bottom: auto !important;
+	padding-right: 1em !important;
+	padding-left: 1em !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	/* border-radius: 0.375em; */
+	border-radius: 8px;
+	/* max-width: 250px !important; */
+	border-width: 42px !important;
+	/* Controls spacing between nav buttons */
+	margin: auto;
+	/* margin-top: 15px !important; */
+	/* margin-top: 7.5px !important;
+  margin-bottom: 4px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important; */
+	/* position: absolute imp !important; */
+	cursor: pointer;
+	/* display: inline-block; */
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
 /* --+ PAGE-SPECIFIC +-- */
 
 /* -- ABOUT ME -- */
@@ -4113,7 +4154,7 @@ label {
 	max-width: 50%;
 	margin: 10px auto;
 	/* margin-bottom: 20px !important; */
-	justify-self: center; 
+	justify-self: center;
 	/* opacity:85%; */
 }
 

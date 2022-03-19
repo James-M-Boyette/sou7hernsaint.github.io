@@ -249,7 +249,9 @@
 						event.preventDefault();
 
 					// Toggle.
+						// Remove 'active' from other drop-downs (if they're currently open)
 						$menu_openers.not($this).removeClass('active');
+						// Open this element's drop-down
 						$this.toggleClass('active');
 
 					// Trigger resize (sidebar lock).
@@ -258,5 +260,29 @@
 				});
 
 			});
-
 })(jQuery);
+
+
+// My Drop-down Menu Toggle
+window.onload = function() {
+    const elements = document.getElementsByClassName('opener-james');
+    
+    for (const element of elements) {
+        element.addEventListener("click", e => {
+            // console.log("element was clicked", e.target.id, e.target.innerHTML);
+			if (e.target.classList.contains('active-james')) {
+				e.target.classList.remove('active-james');
+			} else {
+				for (const element of elements) {
+					// console.log('logging the elements to be removed')
+					// console.log(element.classList)
+					element.classList.remove('active-james')
+					// console.log(element.classList);
+				}
+				e.target.classList.add('active-james');
+				
+			}
+        })
+    }
+}
+

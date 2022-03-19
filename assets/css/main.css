@@ -2647,6 +2647,17 @@ button:disabled,
 }
 
 .button-james {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out,
+		color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+	border: 0;
 	box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
 	background: -webkit-radial-gradient(
 		center,
@@ -2664,23 +2675,32 @@ button:disabled,
 		rgb(6, 39, 68)
 	);
 	background-color: rgb(3, 19, 33) (103, 115, 128, 0.95);
+	/* color: rgb(255, 211, 123) !important; */
 	color: rgb(255, 253, 243) !important;
+	display: inline-block;
 	font-family: "Roboto Slab", serif;
 	font-size: 1em;
 	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	/* height: 3.5em; */
 	height: 2.5em !important;
 	letter-spacing: 0.175em !important;
 	line-height: 2.5em !important;
 	/* Controls padding in buttons */
-	padding: 0 3 !important;
+	/* padding: 0 5 0 5 !important; */
+	padding: auto;
 	white-space: nowrap !important;
 	overflow: hidden !important;
+	/* border-radius: 0.375em; */
 	border-radius: 8px;
-	max-width: 250px !important;
+	/* max-width: 250px !important; */
 	border-width: 42px !important;
 	/* Controls spacing between nav buttons */
 	margin: 10px;
-	margin-top: 15px;
+	margin-top: 15px !important;
 	/* margin-top: 7.5px !important;
   margin-bottom: 4px !important;
   margin-left: 10px !important;

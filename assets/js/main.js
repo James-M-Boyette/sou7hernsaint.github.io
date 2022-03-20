@@ -234,55 +234,257 @@
 
 				});
 
-	// Menu.
-		var $menu = $('#menu'),
-			$menu_openers = $menu.children('ul').find('.opener');
+		// Menu.
+			var $menu = $('#menu'),
+			// Go a single level down to find 'ul' element; then search for all .opener classes
+				$menu_openers = $menu.children('ul').find('.opener');
+				console.log(`here's the $menu`);
+				console.log($menu);
+				console.log(`here's the $menu_openers`);
+				console.log($menu_openers);
+				
 
-		// Openers.
-			$menu_openers.each(function() {
+			// Openers.
+				$menu_openers.each(function() {
 
-				var $this = $(this);
+					var $this = $(this);
+					console.log(`here's the $this`);
+					console.log($this);
 
-				$this.on('click', function(event) {
+					$this.on('click', function(event) {
 
-					// Prevent default.
-						event.preventDefault();
+						// Prevent default.
+							event.preventDefault();
 
-					// Toggle.
-						// Remove 'active' from other drop-downs (if they're currently open)
-						$menu_openers.not($this).removeClass('active');
-						// Open this element's drop-down
-						$this.toggleClass('active');
+						// Toggle.
+							// Remove 'active' from other drop-downs (if they're currently open)
+							$menu_openers.not($this).removeClass('active');
+							// Open this element's drop-down
+							$this.toggleClass('active');
 
-					// Trigger resize (sidebar lock).
-						$window.triggerHandler('resize.sidebar-lock');
+						// Trigger resize (sidebar lock).
+							$window.triggerHandler('resize.sidebar-lock');
+
+					});
 
 				});
+		// NavBar.
+			// Store the navbar-container ...
+			var $container = $('#navbar-container'),
+				// $container_openers = $container.children('.dropdown').find('.dropdown-content');
 
-			});
+				// And then store the navbar buttons with class 'opener-james'
+				$buttons = $container.children('.dropdown').find('.opener-james');
+
+			// Openers.
+				$buttons.each(function() {
+
+					var $this = $(this);
+					// console.log(`here's the $this`);
+					// console.log($this);
+
+					$this.on('click', function(event) {
+						// console.log(event);
+						// Prevent default.
+							event.preventDefault();
+
+						// Toggle.
+							// Select all other buttons, and remove 'active' from their next sibbilng (the dropdown-content div)
+							$buttons.not($this).next().removeClass('active-james');
+							// Toggle this button's next sibbilig element's class
+							$this.next().toggleClass('active-james');
+
+						// Trigger resize (sidebar lock).
+							// $window.triggerHandler('resize.sidebar-lock');
+
+					});
+
+				});
+	// Menu.
+	// $(document).on('click', function(e) {
+	// 	// $('.dropdown > div').hide();
+	// 	console.log(e);
+	// 	var $this = $(this);
+	// 	console.log($this);
+	// 	var $container = $('#navbar-container')
+	// 	console.log($container);
+	// 	var $container_openers = $container.children('div').find('.dropdown');
+	// 	console.log($container_openers);
+
+		// $container_openers.each(function() {
+
+		// }
+
+
+
+		// $('.dropdown > div').removeClass('active-james');
+	  
+		// if ($(e.target).parent().hasClass('dropdown')) {
+		//   $(e.target).siblings('div').toggleClass('active-james');
+		// }
+	  
+
+		// if(!$(".dropdown-content").is(e.target) && !$(".dropdown-content").has(e.target).length){
+		// 	$('.dropdown').slideUp("fast");
+		// }                       
+
+		// const elseElements = document.querySelectorAll(".dropdown-content:not(.active)")
+	// });
 })(jQuery);
 
 
 // My Drop-down Menu Toggle
-window.onload = function() {
-    const elements = document.getElementsByClassName('opener-james');
+// window.onload = function() {
+// 	// Store all elements with the class 'opener-james'
+//     const elements = document.getElementsByClassName('opener-james');
     
-    for (const element of elements) {
-        element.addEventListener("click", e => {
-            // console.log("element was clicked", e.target.id, e.target.innerHTML);
-			if (e.target.classList.contains('active-james')) {
-				e.target.classList.remove('active-james');
-			} else {
-				for (const element of elements) {
-					// console.log('logging the elements to be removed')
-					// console.log(element.classList)
-					element.classList.remove('active-james')
-					// console.log(element.classList);
-				}
-				e.target.classList.add('active-james');
+// 	// For all those elements ...
+//     for (const element of elements) {
+// 		// Add an event listener that  ...
+//         element.addEventListener("click", e => {
+// 			// If the clicked element's class contains 'active-james', remove that class
+// 			if (e.target.classList.contains('active-james')) {
+// 				e.target.classList.remove('active-james');
+// 			// Else, for all 'opener-james' elements, remove the class 'active-james', and then ...
+// 			} else {
+// 				for (const element of elements) {
+// 					element.classList.remove('active-james')
+// 				}
+// 				// Add the class of 'active-james' to the currently-clicked element
+// 				e.target.classList.add('active-james');
 				
-			}
-        })
-    }
-}
+// 			}
+// 			console.log(e)
+//         })
+//     }
+// }
+// window.onload = function() {
+// 	// Store all elements with the parent class 'dropdown'
+//     const parents = document.getElementsByClassName('dropdown');
+// 	console.log(`Here's the parents:`);
+//     console.log(parents)
+// 	// Store all elements with the class of 'dropdown-content'
+// 	const containers = document.getElementsByClassName('dropdown-content');
+// 	console.log(`Here's the containers:`);
+//     console.log(containers)
+//     // Both of these return HTMLCollections - which have array-like properties (indeces, length etc) but aren't arrays
+// 	// For all those elements ...
+//     for (const element of parents) {
+// 		// Add an event listener that  ...
+//         element.addEventListener("click", e => {
+// 			const elseElements = document.querySelectorAll(".dropdown-content:not(.active)");
+// 			// const elseElements = document.querySelectorAll(".dropdown-content");
+// 			console.log(`Here's elseElements`);
+// 			console.log(elseElements);
+// 			// This is the current parent that's been clicked - dropdown, button, and dropdown-content etc
+// 			// console.log(`Here's current element`);
+// 			// console.log(element);
+// 			const currentElement = document.activeElement.nextElementSibling
+// 			console.log(`Here's current element`);
+// 			console.log(currentElement);
+
+// 			console.log(e);
+
+
+
+// 			// let elements = [document.querySelectorAll('.dropdown-content')];
+// 			// const targetsInArray = document.getElementsByClassName('dropdown-content');
+// 			// console.log(`Herea are the targetsInArray:`);
+// 			// console.log(targetsInArray);
+// 			// console.log(typeof targetsInArray);
+
+// 			// Test that targetsInArray is an array
+// 			// for (const target of targetsInArray) {
+// 			// 	console.log(`Here's target:`)
+// 			// 	console.log(target)
+// 			// }
+			
+
+// 			// const otherElements = targetsInArray.filter(thing => thing !== e);
+// 			// console.log(`Here are the other elements`);
+// 			// console.log(otherElements);
+			
+// 			// console.log(otherElements);
+// 			// console.log(document.querySelectorAll('.dropdown-content'));
+// 			element.querySelector('.dropdown-content').classList.add('active-james');
+//         });
+		
+
+		// console.log(`Here's the specific parent element:`);
+		// console.log(element);
+		// console.log(`here are the 'dropdown content' elements:`)
+		// console.log(document.getElementsByClassName('dropdown-content'));
+		// // Stores all the 'dropdown-content' elements 
+		// const targetsInArray = document.getElementsByClassName('dropdown-content');
+		// // Removes 'active-james' class from all 'dropdown-content' elements
+		// for (const target of targetsInArray) {
+		// 	target.classList.remove('active-james');
+		// }
+		// // Add 
+		// // element.querySelector('.dropdown-content').classList.toggle('active-james');
+		// console.log(`this specific child element:`);
+		// console.log(element.querySelector('.dropdown-content').classList)
+		// // I think this is always 'off' and then toggled 'on'
+		// if (element.querySelector('.dropdown-content').classList.contains('active-james')) {
+		// 	element.querySelector('.dropdown-content').classList.remove('active-james');
+		// } else {
+		// element.querySelector('.dropdown-content').classList.add('active-james');
+		// }
+
+//     }
+// }
+// window.onload = function() {
+// 	// Store all elements with the parent class 'dropdown'
+//     const parents = document.getElementsByClassName('dropdown');
+// 	console.log(`Here's the parents:`);
+//     console.log(parents)
+// 	// For all those elements ...
+//     for (const element of parents) {
+// 		// Add an event listener that  ...
+// 		// console.log(`Here's the element:`);
+// 		// console.log(element);
+//         element.addEventListener("click", e => {
+// 			// If the clicked element's class contains 'active-james', remove that class
+// 			// if (e.target.classList.contains('active-james')) {
+// 			// 	e.target.classList.remove('active-james');
+// 			// // Else, for all 'opener-james' elements, remove the class 'active-james', and then ...
+// 			// } else {
+// 			// 	for (const element of parents) {
+// 			// 		element.classList.remove('active-james')
+// 			// 	}
+// 			// 	// Add the class of 'active-james' to the currently-clicked element
+// 			// 	e.target.classList.add('active-james');
+				
+// 			// }
+// 			// console.log(e)
+// 			// console.log(`Here's the dropdown-content:`)
+// 			// console.log(element.querySelector('.dropdown-content'));
+// 			// for (const element of parents) {
+// 			// 	console.log('Here are the dropdown-contents:')
+// 			// 	console.log(element.querySelector('.dropdown-content'))
+// 			// 	// element.querySelector('.dropdown-content').classList.remove('active-james')
+// 			// }
+// 			console.log(`Here's the specific parent element:`);
+// 			console.log(element);
+// 			console.log(`here are the 'dropdown content' elements:`)
+// 			console.log(document.getElementsByClassName('dropdown-content'));
+// 			// Stores all the 'dropdown-content' elements 
+// 			const targetsInArray = document.getElementsByClassName('dropdown-content');
+// 			// Removes 'active-james' class from all 'dropdown-content' elements
+// 			for (const target of targetsInArray) {
+// 				target.classList.remove('active-james');
+// 			}
+// 			// Add 
+// 			// element.querySelector('.dropdown-content').classList.toggle('active-james');
+// 			console.log(`this specific child element:`);
+// 			console.log(element.querySelector('.dropdown-content').classList)
+// 			// I think this is always 'off' and then toggled 'on'
+// 			if (element.querySelector('.dropdown-content').classList.contains('active-james')) {
+// 				element.querySelector('.dropdown-content').classList.remove('active-james');
+// 			} else {
+// 			element.querySelector('.dropdown-content').classList.add('active-james');
+// 			}
+//         })
+//     }
+// }
 

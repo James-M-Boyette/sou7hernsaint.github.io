@@ -3797,7 +3797,7 @@ ul.actions.fit.stacked {
 }
 
 /* Navbar */
-#navbar {
+#navbar-james {
 	box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75),
 		0 0 0 2px rgb(82, 96, 109) !important;
 	border-radius: 5px;
@@ -3823,6 +3823,7 @@ ul.actions.fit.stacked {
 	/* height: 58px; */
 	/* width: 100%; */
 }
+/*  */
 #navbar-container {
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -3837,10 +3838,112 @@ ul.actions.fit.stacked {
 	/* margin-left: -1em; */
 	/* padding-left: 0; */
 }
+/* Give button-james some additional styling when used as a navbar button */
 .button-navbar {
 	margin: 0.5em 1em !important;
 }
-/* Rotate the drop-down arrow */
+
+.dropdown {
+	/* height: 500px; */
+}
+/* Style of the container for the links */
+.dropdown-content {
+	visibility: hidden;
+	display: flex !important;
+	flex-direction: column !important;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out,
+		color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	/* Delete border? */
+	border: 0;
+	box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 2px rgb(49, 56, 62) !important;
+	background: -webkit-radial-gradient(
+		center,
+		rgb(170, 169, 161),
+		rgb(6, 39, 68)
+	);
+	background: -moz-radial-gradient(
+		center,
+		rgb(170, 169, 161),
+		rgb(6, 39, 68)
+	);
+	background: radial-gradient(
+		ellipse at center,
+		rgb(170, 169, 161),
+		rgb(6, 39, 68)
+	);
+	background-color: rgb(3, 19, 33) (103, 115, 128, 0.95);
+	color: rgb(255, 253, 243) !important;
+	display: inline-block;
+	font-family: "Roboto Slab", serif;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	/* height: 3.5em; */
+	letter-spacing: 0.175em !important;
+	line-height: 2.5em !important;
+	padding: auto 1em auto 1em !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	/* border-width: 42px !important; */
+	cursor: pointer;
+
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	/* margin: auto; */
+	margin-left: 1em !important;
+	height: auto !important;
+	position: absolute;
+	z-index: 1;
+}
+/* Style of the individual drop-down links */
+.dropdown-content .dropdown-link {
+	margin: auto;
+	padding: 0 1em;
+	justify-content: left;
+}
+
+.dropdown-link a {
+	/* Added in-line because it's being overridden anyway */
+	color: rgb(255, 253, 243) !important;
+}
+.dropdown-link a:hover {
+	-moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out,
+		-webkit-transform 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+	color: rgb(255, 255, 255) !important;
+	text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13),
+		0 0 22px rgb(255, 211, 123);
+}
+
+/* Note: When clicked, a navbar button with opener-james will be given active-james */
+.active-james {
+	visibility: visible !important;
+	/* display: block; */
+}
+
+/* Select all elements with both of these classes */
+.button-navbar.opener-james {
+	/* position: relative; */
+	/* display: inline-block; */
+}
+/* Rotate the drop-down arrow - fix this later*/
+/* Also, active is being applied to it on click, but not removed when other things are clicked */
 #navbar-container i:active .fa-angle-down {
 	-moz-transform: rotate(-180deg);
 	-webkit-transform: rotate(-180deg);
@@ -3848,24 +3951,7 @@ ul.actions.fit.stacked {
 	transform: rotate(-180deg);
 }
 
-/* Navbar Dropdown section */
-/* .navbar-button .dropdown-button {
-}
-
-.navbar-button .dropdown-button {
-	display: none !important;
-	position: absolute !important;
-	z-index: 1 !important;
-}
-.dropdown-button:focus .dropdown-content {
-	display: block !important;
-}
-
-.navbar-button .dropdown-button .dropdown-content a {
-	float: none !important;
-	display: block !important;
-	text-align: left !important;
-} */
+/*  */
 #navbar .navbar-button {
 }
 #navbar .dropdown-content {
@@ -3917,38 +4003,6 @@ ul.actions.fit.stacked {
 	position: absolute;
 	right: 0;
 }
-
-/* Third Option */
-.control-me {
-	/* Default state */
-}
-#toggle:checked ~ .control-me {
-	/* A toggled state! No JavaScript! */
-}
-
-.control-me::after {
-	content: "😃";
-	font-size: 100px;
-}
-
-#toggle:checked ~ .control-me::after {
-	content: "😩";
-}
-
-label {
-	background: #a5d6a7;
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
-}
-
-.visually-hidden {
-	position: absolute;
-	left: -100vw;
-
-	/* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
-}
-
-/* -- Resume Original -- */
 
 /* Tooltip container */
 .tooltip {

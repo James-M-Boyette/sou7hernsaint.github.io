@@ -108,23 +108,92 @@
         </section>
 
         <!-- Navbar -->
-        <nav id="navbar">
+        <nav id="navbar-james">
 					<container id="navbar-container">
-            <button class="button-james button-navbar"><a href="#portfolio" style="color: rgb(255, 253, 243) !important;">Portfolio</a></button>
-            <button class="button-james button-navbar"><a href="background.html" style="color: rgb(255, 253, 243) !important;">About Me</a></button>
-            <button class="button-james button-navbar opener-james">Drop Down <i class="fa-solid fa-angle-down"></i></button>
-            <button class="button-james button-navbar opener-james">Drop Down #2 <i class="fa-solid fa-angle-down"></i></button>
-          </container>
-					</ul>
+						<button class="button-james button-navbar">
+							<a
+								href="index.html"
+								style="color: rgb(255, 253, 243) !important"
+								>Front Page</a
+							>
+						</button>
+						<div class="dropdown">
+							<button
+								class="button-james button-navbar opener-james"
+							>
+								Page Navigation
+								<i class="fa-solid fa-angle-down"></i>
+							</button>
+							<div
+								class="dropdown-content"
+								style="
+									position: absolute;
+									list-style-type: none;
+									margin-bottom: 0.5em;
+									width: 15em;
+								"
+							>
+								<div class="dropdown-link">
+									<a href="#about-me">I am ...</a>
+								</div>
+								<div class="dropdown-link">
+									<a href="#curious">curious</a>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button
+								class="button-james button-navbar opener-james"
+							>
+								Porfolio Projects
+								<i class="fa-solid fa-angle-down"></i>
+							</button>
+							<div
+								class="dropdown-content"
+								style="
+									position: absolute;
+									list-style-type: none;
+									margin-bottom: 0.5em;
+									width: 16.65em;
+								"
+							>
+								<div class="dropdown-link">
+									<a
+										href="Portfolio-ConnectFour/connectFour.html"
+										>Connect Four</a
+									>
+								</div>
+								<div class="dropdown-link">
+									<a href="Portfolio-MadLibs/madLibs.html"
+										>Mad Libs</a
+									>
+								</div>
+								<div class="dropdown-link">
+									<a href="https://dnd-aid.netlify.app/"
+										>DnD Aid</a
+									>
+								</div>
+								<div class="dropdown-link">
+									<a href="Portfolio-Encryptor/encryptor.html"
+										>A1Z26 Encryptor</a
+									>
+								</div>
+								<div class="dropdown-link">
+									<a href="Portfolio-Timer/timer.html"
+										>Work Timer</a
+									>
+								</div>
+							</div>
+						</div>
+						<button class="button-james button-navbar">
+							<a
+								href="actualizeCert.html"
+								style="color: rgb(255, 253, 243) !important"
+								>Bootcamp certificate</a
+							>
+						</button>
+					</container>
 				</nav>
-        <!-- <div id="navbar">
-          <ul id="navbar_container">
-            <li><a href="#quick" class="button navbar_button">I'm a ...</a></li>
-            <li><a href="#curious" class="button navbar_button">Curious</a></li>
-            <li><a href="#creative" class="button navbar_button">Creative</a></li>
-            <li><a href="#polymath" class="button navbar_button">Polymath</a></li>
-          </ul>
-        </div> -->
         <div class="inner">
           <!-- </div> -->
 
@@ -169,7 +238,7 @@
             <!-- <div class="row"> -->
               <!-- <hr class="major" /> -->
               <br />
-              <div class="row">
+              <div id="about-me" class="row">
                 <div class="col-6 col-12-small" style="padding-right: 40px">
                   <h2 class="tooltip header2">I'm a ...
                     <span class="tooltiptext tooltip-right tooldisclaimer"

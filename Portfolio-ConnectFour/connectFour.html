@@ -98,17 +98,15 @@
 		<style>
 			#connectFourContainer {
 				text-align: center;
-				display: flex;
-				justify-content: center;
 				flex-direction: column;
-				max-width: 500px !important;
+				
 				/* The auto margin (after flex) fixed the "Always justified to the left" problem! */
-				margin: auto !important;
+				/* margin: auto !important; */
 			}
-			container #connectFourContainer {
+			/* container #connectFourContainer {
 				display: flex;
 				justify-content: center;
-			}
+			} */
 			#grid {
 				border: 1px solid;
 				border-radius: 10px;
@@ -326,273 +324,279 @@
 						</button>
 					</container>
 				</nav>
+				<!-- Connect Four -->
 				<div class="inner">
-					<!-- Connect Four
-					 -->
-					 <section style="display:flex; justify-content: center; flex-direction: column;">
-						<header class="major-projects" style="margin:auto !important;">
-							<div class="tooltip header2" style="padding-bottom: .425em; margin-bottom: 2em !important;">Connect Four</div>
-						</header>
-						<div
-							id="connect-four-content"
-							style="display: flex; justify-content: space-around; align-items: flex-start;"
+					<div
+						style="
+							display: flex !important;
+							margin: auto !important;
+						"
+					>
+						<header
+							class="major-projects"
+							style="
+								margin: auto !important;
+								margin-top: 2em !important;
+								padding: auto !important;
+							"
 						>
 							<div
-								id="app-content"
+								class="tooltip header2"
 								style="
-									
-									justify-content: center;
-									margin-right: 5% !important;
-									flex-direction: column;
-									max-width: 34% !important;
-									align-items: flex-start;
+									margin: auto !important;
+									padding: auto !important;
+									padding-bottom: 0.425em;
+									margin-bottom: 2em !important;
 								"
 							>
-								<!-- Connect Four -->
-								<h3>The App</h3>
-								<div class="box story">
-									<p>
-										My <span style="font-weight:bold">Connect Four</span> app
-									is below.
-									</p>
-									<h5>Instructions:</h5>
-									<ul>To begin ...
-										<li style="list-style-type:none">click on any of the bottom seven squares.</li>
-									</ul>
-									<ul>Continue ...
-										<li style="list-style-type:none">to select squares, but make sure to only 
-											click those that have something <span style="font-style:italic">underneath</span>
-										 them (clicking on floating spaces, or those at the top will 
-											display an error). Once a player has connected four of their tokens in 
-											a row, they have won the game!
-										</li>
-									</ul>
-								</div>
-								<div id="connectFourContainer" style="margin-bottom: 2em !important;">
-									<!-- <h3 id="player-tracker">
-										The current Player is:
-										<span
-											id="current-player"
-											style="padding-left: 8px; color: red"
-											>Player 1</span
-										>
-									</h3> -->
-									<div style="display: flex; justify-content: center">
-										<h3 id="player-tracker">The current Player is:</h3>
-										<h3
-											id="current-player"
-											style="padding-left: 8px; color: red"
-										>
-											Player 1
-										</h3>
-									</div>
-									<h3 id="result">_</h3>
-
-									<div id="grid">
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<!-- <div>35</div> -->
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<!-- <div>42</div> -->
-										<div></div>
-										<div class="taken floor"></div>
-										<div class="taken floor"></div>
-										<div class="taken floor"></div>
-										<div class="taken floor"></div>
-										<div class="taken floor"></div>
-										<div class="taken floor"></div>
-										<div class="taken floor"></div>
-									</div>
-								</div>
-								<h3>The Basics</h3>
-									<div class="box story">
-										<h5>The Rules :</h5>
-										<p>
-											Connect Four is a two-player board game, 
-											in which players (after choosing a color) 
-											take turns dropping colored discs into a verticlally-suspended grid. 
-											The grid itself is seven spaces across and six spaces high. 
-										</p>
-										<h5>The Goal :</h5>
-										<p>
-											The first player to connect four of their discs - 
-											either horizontally, vertically, or diagonally - wins. 
-										</p>
-										<!-- <p>(also known as Four Up, Plot Four, Find Four, Captain's Mistress, 
-											Four in a Row, Drop Four, and Gravitrips in the Soviet Union)</p>									 -->
-									</div>
+								Connect Four
 							</div>
-							<div
-								id="developer-content"
-								style="
-									max-width: 66% !important;
-									
-									justify-content: center;
-									margin: auto;
-									margin-left: 5% !important;
-									flex-direction: column;
-								"
-							>
-								
-								<h3>Conceptual Challenges</h3>
-									<div class="box story">
-										<h5>Faking Gravity ...</h5>
-										<p>On its face, this app could have been a lot like Checkers, Go, or Minesweeper: 
-											each game has a horizontal board that allows players to place pieces at-will.
-											However, Connect Four's grid-board stands up <span style="font-style:italic">vertically</span>. Gravity's essential
-											role, here, produces two key problems:
-										</p>
+						</header>
+					</div>
+					<section
+						style="
+							display: flex;
+							flex-direction: row !important;
+							flex-wrap: wrap !important;
+							align-items: flex-start !important;
+							justify-content: center !important;
+							margin-top: 0em !important;
+							padding-top: 0em !important;
+						"
+					>
+						<!-- <div
+							style="
+								margin: 1em !important;
+								margin-top: 0em !important;
+							"
+						> -->
+							<!-- The app -->
+							<div style="margin: 1em !important">
+								<!-- <div style="padding-left: 0em !important;"> -->
+									<div id="connectFourContainer" style="margin-bottom: 2em !important;">
+										<!-- <h3 id="player-tracker">
+											The current Player is:
+											<span
+												id="current-player"
+												style="padding-left: 8px; color: red"
+												>Player 1</span
+											>
+										</h3> -->
+										<!-- <div style="display: flex; justify-content: center"> -->
+										<div style="display: flex; justify-content: center">
+											<h3 id="player-tracker">The current Player is:</h3>
+											<h3
+												id="current-player"
+												style="padding-left: 8px; color: red"
+											>
+												Player 1
+											</h3>
+										</div>
+										<h3 id="result">_</h3>
 
-										<ol>
-											<li>
-												"Replicate a 'Falling' action"
-											</li>
-											<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
-												While using the app, if a player were to click, say, a space on the top row 
-												one might expect that specific grid space to be taken. However, what ultimately needs to happen 
-												is for the player's piece to fall. The 
-											</p>
-											<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
-												<span style="font-weight:bold">The solution: </span> for a MVP app, I chose to force users 
-												to do most of the work - they have to find the final landing place of their token on their 
-												own (rather than have the app do it for them). 
-											</p>
-											<li>
-												"It needs a floor"
-											</li>
-											<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
-												If a player inserts a piece into one of the seven columns, 
-												it falls until it collides with <span style="font-style:italic">something</span>. 
-												In the physical game, there is a slider at the bottom of the grid, which blocks
-												any piece from falling out onto the table. Once a piece has been deposited on the
-												first row, more pieces can be stacked on top of it. 
-											</p>
-											<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
-												<span style="font-weight:bold">The solution: </span> replicate that slider with an eighth 
-												<span style="font-style:italic">hidden</span> row. All the spaces in that row are pre-set
-												to "taken," which then allows them to be checked just like any other. 
-											</p>
-											
-											<h5>Improvements: </h5>
-											<p>March, 2022</p>
-											<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
-												<span style="font-weight:bold">(Planned): </span> One of the next changes I plan on making is 
-												an actual simulation of the following action. My initial idea is to upgrade the app's conditional:
-												currently, it checks 7 spaces ahead in the square order to see if it's already occupied. That 
-												process could be repeated, row by row, and the color of the spaces animated to replicate the player token falling.
-											</p>
-											
-										</ol>
+										<div id="grid">
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<!-- <div>35</div> -->
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<!-- <div>42</div> -->
+											<div></div>
+											<div class="taken floor"></div>
+											<div class="taken floor"></div>
+											<div class="taken floor"></div>
+											<div class="taken floor"></div>
+											<div class="taken floor"></div>
+											<div class="taken floor"></div>
+											<div class="taken floor"></div>
+										</div>
 									</div>
+								<!-- </div> -->
+								<div style="width: 500px !important;">
+									<h3>The App</h3>
 									<div class="box story">
-										<h5>Confirming Win Condition ...</h5>
 										<p>
-											In theory, both human and app should be able to look at currently-occupied spaces on
-											the board, and then track the vectors outwards in any of the nine possible directions.
-											However this log is far more complicated than is needed in order to amek the app work.
-											In order to	make this app reach MVP status, I used a work around ...
-											 <span style="font-style:italic">vertically</span>. 
-										</p>										
-											<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
-												<span style="font-weight:bold">The solution: </span> I chose to use an array of "winning number" solutions.
-												Given that each space on the vertical board is uniquely-numbered, if one took the time, one could work out
-												every set of four grid spaces that creates a straight line.
-											</p> 
-											<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
-												<code style="margin: 20px !important">
-													const winningArrays = [
-														[0, 1, 2, 3],
-														[0, 7, 14, 21],
-														[0, 8, 16, 24],
-														etc
-													]
-												</code>
-											</p>
-											<p>
-												With this, the app can then confirm whether all spaces refered to in a set or owned by one player; 
-												if 'yes', then that player has won! Thankfully, this list already existed online.
-											</p>
-
-											
-											<h5>Improvements: </h5>
-											<p>March, 2022</p>
-											<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
-												<span style="font-weight:bold">(Planned): </span> I'd really like to figure out the logic that 
-												would allow the app to
-												<ol>
-													<li>check neighboring spaces for matching player tokens, and</li>
-													<li>continue outward in a radial pattern</li>
-												</ol>
-												I wonder whether I'll still need a list of valid possibilities in order to account for direction, 
-												or whether math will be enough. I'm thinking I could store the distance of the neighbor space, 
-												and then use that distance to continue out in a line. Ex: if the neighbor is 6 spaces away, it's 
-												diagonally-adjacent, and so-to would any valid neighbors. 
-											</p>
-											
-										
-									</div>
-								<h3>Development Challenges (& their Solutions)</h3>
-									<div class="box story">
-										<p id="target" style="font-style: italic">
-											Personal stories
+											My <span style="font-weight:bold">Connect Four</span> app
+										is above.
 										</p>
-										<p id="target" style="font-style: italic">
-											
-										</p>
-										<ul>
-											Next week, this section will be expanded to cover
-											<li>How the app works</li>
-											<li>What some struggles and solutions during the development process were (
-												I couldn't figure out how to target specific squares until I learned more about 
-												DOM elements and HTML Collections.)
+										<h5>Instructions:</h5>
+										<ul>To begin ...
+											<li style="list-style-type:none">click on any of the bottom seven squares.</li>
+										</ul>
+										<ul>Continue ...
+											<li style="list-style-type:none">to select squares, but make sure to only 
+												click those that have something <span style="font-style:italic">underneath</span>
+											them (clicking on floating spaces, or those at the top will 
+												display an error). Once a player has connected four of their tokens in 
+												a row, they have won the game!
 											</li>
-											<li>Perhaps some other fun stories!</li>
 										</ul>
 									</div>
+								</div>
+								
 							</div>
-						</div>
-					</section>
-					<section>
-						<div>
-						</div>
+							<!-- Coding Challenges -->
+							<!-- The Basics -->
+							<div style="width: 500px !important; margin: 1em !important">
+								<h3>The Basics</h3>
+								<div class="box story">
+									<h5>Faking Gravity ...</h5>
+									<p>On its face, this app could have been a lot like Checkers, Go, or Minesweeper: 
+										each game has a horizontal board that allows players to place pieces at-will.
+										However, Connect Four's grid-board stands up <span style="font-style:italic">vertically</span>. Gravity's essential
+										role, here, produces two key problems:
+									</p>
+
+									<ol>
+										<li>
+											"Replicate a 'Falling' action"
+										</li>
+										<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
+											While using the app, if a player were to click, say, a space on the top row 
+											one might expect that specific grid space to be taken. However, what ultimately needs to happen 
+											is for the player's piece to fall. The 
+										</p>
+										<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
+											<span style="font-weight:bold">The solution: </span> for a MVP app, I chose to force users 
+											to do most of the work - they have to find the final landing place of their token on their 
+											own (rather than have the app do it for them). 
+										</p>
+										<li>
+											"It needs a floor"
+										</li>
+										<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
+											If a player inserts a piece into one of the seven columns, 
+											it falls until it collides with <span style="font-style:italic">something</span>. 
+											In the physical game, there is a slider at the bottom of the grid, which blocks
+											any piece from falling out onto the table. Once a piece has been deposited on the
+											first row, more pieces can be stacked on top of it. 
+										</p>
+										<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
+											<span style="font-weight:bold">The solution: </span> replicate that slider with an eighth 
+											<span style="font-style:italic">hidden</span> row. All the spaces in that row are pre-set
+											to "taken," which then allows them to be checked just like any other. 
+										</p>
+										
+										<h5>Improvements: </h5>
+										<p>March, 2022</p>
+										<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
+											<span style="font-weight:bold">(Planned): </span> One of the next changes I plan on making is 
+											an actual simulation of the following action. My initial idea is to upgrade the app's conditional:
+											currently, it checks 7 spaces ahead in the square order to see if it's already occupied. That 
+											process could be repeated, row by row, and the color of the spaces animated to replicate the player token falling.
+										</p>
+										
+									</ol>
+								</div>
+							</div>
+							<!-- Conceptual Challenges -->
+							<div style="width: 500px !important; margin: 1em !important">
+								<h3>Conceptual Challenges</h3>
+								<div class="box story">
+									<h5>Confirming Win Condition ...</h5>
+									<p>
+										In theory, both human and app should be able to look at currently-occupied spaces on
+										the board, and then track the vectors outwards in any of the nine possible directions.
+										However this log is far more complicated than is needed in order to amek the app work.
+										In order to	make this app reach MVP status, I used a work around ...
+										<span style="font-style:italic">vertically</span>. 
+									</p>										
+									<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
+										<span style="font-weight:bold">The solution: </span> I chose to use an array of "winning number" solutions.
+										Given that each space on the vertical board is uniquely-numbered, if one took the time, one could work out
+										every set of four grid spaces that creates a straight line.
+									</p> 
+									<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
+										<code style="margin: 20px !important">
+											const winningArrays = [
+												[0, 1, 2, 3],
+												[0, 7, 14, 21],
+												[0, 8, 16, 24],
+												etc
+											]
+										</code>
+									</p>
+									<p>
+										With this, the app can then confirm whether all spaces refered to in a set or owned by one player; 
+										if 'yes', then that player has won! Thankfully, this list already existed online.
+									</p>
+
+									
+									<h5>Improvements: </h5>
+									<p>March, 2022</p>
+									<p style="margin-left: .75em !important; margin-top: .25em !important; margin-bottom: .25 !important">
+										<span style="font-weight:bold">(Planned): </span> I'd really like to figure out the logic that 
+										would allow the app to
+										<ol>
+											<li>check neighboring spaces for matching player tokens, and</li>
+											<li>continue outward in a radial pattern</li>
+										</ol>
+										I wonder whether I'll still need a list of valid possibilities in order to account for direction, 
+										or whether math will be enough. I'm thinking I could store the distance of the neighbor space, 
+										and then use that distance to continue out in a line. Ex: if the neighbor is 6 spaces away, it's 
+										diagonally-adjacent, and so-to would any valid neighbors. 
+									</p>
+								</div>
+							</div>
+							<!-- Development Challenges -->
+							<div  style="width: 500px !important; margin: 1em !important">
+								<h3>Development Challenges (& their Solutions)</h3>
+								<div class="box story">
+									<p id="target" style="font-style: italic">
+										Personal stories
+									</p>
+									<p id="target" style="font-style: italic">
+										
+									</p>
+									<ul>
+										Next week, this section will be expanded to cover
+										<li>How the app works</li>
+										<li>What some struggles and solutions during the development process were (
+											I couldn't figure out how to target specific squares until I learned more about 
+											DOM elements and HTML Collections.)
+										</li>
+										<li>Perhaps some other fun stories!</li>
+									</ul>
+								</div>
+							</div>
+						<!-- </div> -->
 					</section>
 				</div>
 			</div>

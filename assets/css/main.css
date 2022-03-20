@@ -4248,3 +4248,50 @@ ul.actions.fit.stacked {
 	position: relative;
 	/* height: auto; */
 }
+
+#app-content {
+	display: flex;
+	justify-content: center;
+	margin-right: 5% !important;
+	flex-direction: column;
+	max-width: 34% !important;
+	align-items: flex-start;
+}
+
+#developer-content {
+	display: flex;
+	max-width: 66% !important;
+
+	justify-content: center;
+	margin: auto;
+	margin-left: 5% !important;
+	flex-direction: column;
+}
+
+/* @media screen and (max-width: 1680px) {
+	#developer-content, #app-content {
+		font-size: 3.5em;
+	}
+} */
+@media screen and (max-width: 1568px) {
+	#connect-four-content {
+		flex-direction: column !important;
+	}
+	#developer-content,
+	#app-content {
+		flex-direction: row !important;
+	}
+}
+
+/* @media screen and (max-width: 980px) {
+	#developer-content, #app-content {
+		font-size: 3.25em;
+	}
+} */
+
+/* @media screen and (max-width: 736px) {
+	#developer-content, #app-content {
+		font-size: 2em;
+		line-height: 1.4;
+
+} */

@@ -3733,20 +3733,6 @@ ul.actions.fit.stacked {
 /* --+ My Bespoke Content +-- */
 /* REVISIT */
 
-/* Branding */
-
-#colors {
-	color: rgb(255, 255, 255);
-	color: rgb(255, 253, 243);
-	text-shadow: 0 0 7px rgb(205, 137, 0), 0 0 15px rgb(243, 166, 13),
-		0 0 22px rgb(255, 211, 123);
-	box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75),
-		0 0 0 2px rgb(82, 96, 109) !important;
-	border-radius: 5px;
-	background-color: rgb(3, 19, 33);
-	color: rgb(170, 169, 161), rgb(6, 39, 68);
-}
-
 /* Imported Dopetrope Banner & made bespoke navbar */
 /* Dopetrope Banner */
 #bannerDope {
@@ -4208,26 +4194,6 @@ ul.actions.fit.stacked {
 	white-space: nowrap;
 }
 
-.code-block {
-	background: rgba(230, 235, 237, 0.25);
-	border-radius: 0.375em;
-	border: solid 1px rgba(210, 215, 217, 0.75);
-	font-family: "Courier New", monospace;
-	font-size: 0.9em;
-	margin: 0.25em 0.25em;
-	padding: 0.25em 0.65em;
-}
-
-.break-james {
-	opacity: 0;
-	margin-top: 0.33 !important;
-	margin-bottom: 0.33 !important;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-	line-height: 0.5 !important;
-}
-
-/* This is used for every Portfolio Project box */
 .box.story {
 	background-color: rgb(3, 19, 33);
 }
@@ -4254,14 +4220,6 @@ ul.actions.fit.stacked {
 #blow-out {
 	max-width: 100%;
 	/* opacity:85%; */
-}
-
-/* Mad Libs */
-.story-bordered {
-	background-color: rgb(3, 19, 33);
-	box-shadow: inset 0 0 0 1px rgb(107, 126, 143), 0 0 0 3px rgb(243, 166, 13),
-		0 0 0 3px rgb(49, 56, 62) !important;
-	border-radius: 0.375em !important;
 }
 
 /* 'About' page: Vader Hero Image */

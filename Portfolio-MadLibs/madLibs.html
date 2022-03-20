@@ -308,6 +308,7 @@
 							padding-top: 0em !important;
 						"
 					>
+						<!-- The App: explanation & buttons  -->
 						<div
 							style="
 								margin: 1em !important;
@@ -316,6 +317,7 @@
 						>
 							<!-- The app -->
 							<h3>The App</h3>
+							<!-- Start Button -->
 							<div
 								class="box story"
 								style="width: 400px !important"
@@ -330,18 +332,9 @@
 										<h5>Instructions:</h5>
 										<!-- <ul style="list-style-type:none"> -->
 										<ul>
-											<li>
-												My
-												<span style="font-weight: bold"
-													>Mad Libs</span
-												>
-												app is below.
-											</li>
-
-											<li>
-												To start it up, click this
-												'start' button
-											</li>
+											<span style="font-weight: bold"
+												>To start the app</span
+											>, click this 'start' button.
 										</ul>
 									</div>
 									<div id="start-button-section">
@@ -354,26 +347,34 @@
 										</button>
 									</div>
 								</div>
-								<p>
-									Clicking this button will display a pop-up.
-									You'll be asked 28 questions, like "Please
-									provide a verb (present tense)" or "a
-									popular 80's musician's name." Input your
-									ideas and click 'ok' to save each of them.
-									Once finished, you'll get one final alert
-									before the text is generated!
-								</p>
-								<p>
-									<span style="font-weight: bold"
-										>Remember:
-									</span>
-									you can be as literal, or as silly as you
-									like. Mad Libs is a great game to get
-									super-silly with!
-								</p>
+								<h5>Next:</h5>
+								<ul>
+									<p>
+										<span style="font-weight: bold"
+											>Clicking</span
+										>
+										this button will display a pop-up.
+										You'll be asked 28 questions, like
+										"Please provide a verb (present tense)"
+										or "a popular 80's musician's name."
+										Input your ideas and click 'ok' to save
+										each of them. Once finished, you'll get
+										one final alert before the text is
+										generated! You will find your story in
+										the gold-borderd box near-by.
+									</p>
+									<p>
+										<span style="font-weight: bold"
+											>Remember:
+										</span>
+										you can be as literal, or as silly as
+										you like. Mad Libs is a great game to
+										get creative with!
+									</p>
+								</ul>
 							</div>
 
-							<!-- <h3>The App</h3> -->
+							<!-- Auto-Populate Button -->
 							<div
 								class="box story"
 								style="
@@ -389,12 +390,11 @@
 								>
 									<div style="flex-direction: column">
 										<h5>Auto-populate:</h5>
-										<!-- <ul style="list-style-type:none"> -->
 										<ul>
-											<li>
-												To auto-populate the answers
-												click this button
-											</li>
+											<span style="font-weight: bold"
+												>To auto-populate</span
+											>
+											the answers click this button!
 										</ul>
 									</div>
 									<div id="prepopulate-button-section">
@@ -407,29 +407,19 @@
 										</button>
 									</div>
 								</div>
-								<p>
-									But maybe you don't want to go through
-									nearly 30 questions. You just want to see
-									the app work. I completely understand! Click
-									'Auto-Populate,' and the app will run
-									through an array of stored answers and
-									return a completed demo story.
-								</p>
-								<p>
-									<span style="font-weight: bold"
-										>Note:
-									</span>
-									This will make the app run normally - a
-									pre-populated array of strings will be fed
-									into the template story. The app uses
-									JavaScript concatonation to grab specific
-									indeces in the 'responses' array and input
-									them into the story. Then, whatever is
-									currently in the 'story' window is removed,
-									and the new story is inserted into the
-									webpage's HTML.
-								</p>
+								<h5>Why ?</h5>
+								<ul>
+									<p>
+										Maybe you don't want to go through
+										nearly 30 questions - you just want to
+										see the app work. Completely fair! Click
+										'Auto-Populate,' and the app will run as
+										if you actually did supply answers!
+									</p>
+								</ul>
 							</div>
+
+							<!-- Original Story Button -->
 							<div
 								class="box story"
 								style="width: 400px !important"
@@ -443,15 +433,22 @@
 									<div style="flex-direction: column">
 										<h5>Original Story:</h5>
 										<!-- <ul style="list-style-type:none"> -->
-										<ul>
-											<li>
-												Curious what the original story
-												looked like?
-											</li>
-											<li>
-												Click 'Original Story' to see it
-												without any any Mad-Libbing!
-											</li>
+										<ul
+											style="
+												padding-bottom: 0 !important;
+												margin-bottom: 0 !important;
+											"
+										>
+											<span style="font-weight: bold"
+												>Curious
+											</span>
+											what the original story looked like?
+											<br />
+											<span style="font-weight: bold"
+												>Click
+											</span>
+											'Original Story' to see it without
+											any any Mad-Libbing!
 										</ul>
 									</div>
 									<div id="original-button-section">
@@ -469,6 +466,7 @@
 									<span style="font-weight: bold"> </span>
 								</p>
 							</div>
+							<!-- Template Version Button -->
 							<div
 								class="box story"
 								style="width: 400px !important"
@@ -477,22 +475,35 @@
 									style="
 										display: flex;
 										justify-content: space-around;
+										padding-bottom: 0 !important;
+										margin-bottom: 0 !important;
 									"
 								>
 									<div style="flex-direction: column">
-										<h5>Reset to "_":</h5>
+										<h5>Reset to "_" template:</h5>
 										<!-- <ul style="list-style-type:none"> -->
-										<ul>
-											<li>
-												Want to see the "blank" Mad Lib
-												version again?
-											</li>
-											<li>
-												Click 'Rest' to see it again!
-											</li>
+										<ul
+											style="
+												padding-bottom: 0 !important;
+												margin-bottom: 0 !important;
+											"
+										>
+											<span style="font-weight: bold"
+												>Want
+											</span>
+											to see the "blank," template version
+											again?
+											<br />
+
+											<span style="font-weight: bold"
+												>Click
+											</span>
+											'Reset' to reload it!
 										</ul>
 									</div>
-									<div id="reset-button-section">
+									<div
+										id="reset-button-section; padding-bottom: 0 !important; margin-bottom: 0 !important"
+									>
 										<button
 											id="resetStory"
 											class="button-james"
@@ -509,6 +520,7 @@
 							</div>
 						</div>
 
+						<!-- Story Container -->
 						<div
 							style="
 								margin: 1em !important;
@@ -522,7 +534,7 @@
 								<i class="fa-solid fa-arrow-turn-down"></i>
 							</h3>
 							<div
-								class="box story"
+								class="box story-bordered"
 								style="
 									background-color: rgb(3, 19, 33);
 									width: 600px !important;
@@ -602,70 +614,384 @@
 								</p>
 							</div>
 						</div>
+
+						<!-- The Basics -->
+						<div style="width: 400px !important">
+							<h3>The Basics</h3>
+							<div class="box story">
+								<h5>What is Mad Libs ?</h5>
+								<ul style="list-style-type: none">
+									Mad Libs is a
+									<span style="font-style: italic"
+										>phrasal template </span
+									>word game (created by Leonard Stern and
+									Roger Price). During play, ramatical
+									elements of a story are identified and
+									chosen for replacement:
+									<li
+										style="
+											margin-top: 1em !important;
+											margin-left: 1em !important;
+										"
+									>
+										if, say, the original story was about
+										Albert Einstein's discovery of
+										<span style="font-weight: bold"
+											>Physics'</span
+										>
+										Special
+										<span style="font-weight: bold"
+											>Relativity</span
+										>, a player could choose to alter it so
+										that we learned of his discovery of
+										<span
+											style="
+												font-weight: bold;
+												font-style: italic;
+											"
+											>McDonalds'</span
+										>
+										Special
+										<span
+											style="
+												font-weight: bold;
+												font-style: italic;
+											"
+											>Secret Sauce</span
+										>.
+									</li>
+								</ul>
+								<h5>The Goal ?</h5>
+								<ul>
+									One or more players take turns suggesting
+									and substituting-in nouns, verbs,
+									adjectives, and adverbs for elements of the
+									original story.
+								</ul>
+								<ul>
+									( This game is particularly useful for
+									reinforcing essential grammar, reading
+									comprehension, and vocabulary skills )
+								</ul>
+								<h5>The Challenge ?</h5>
+								<ol>
+									Much more of a "party" game, Mad Libs has
+									two essential challenges:
+									<li style="margin-left: 1.2em !important">
+										use one's pre-existing grammatical
+										knowledge and inferential logic to
+										supply categorically-correct words, and
+									</li>
+									<li style="margin-left: 1.2em !important">
+										be creative. Given that a literal win
+										condition is nearly non-existant,
+										players are encouraged to be as clever
+										as they can. Novel refrences, ironic
+										replacements, "inside-jokes," and even
+										taboo subjects are all ways both an
+										individual and the group can both "win"
+										and score 'bonus points' in the game.
+									</li>
+								</ol>
+								<ol>
+									<span style="font-weight: bold">Note: </span
+									>often, in order to increase the challenge,
+									are neither shown the story, nor told where
+									their word-subsitutions will go. Instead,
+									the gramatical categories are declared on
+									their own, player inputs are recorded, and
+									<span style="font-style: italic"
+										>then
+									</span>
+									the entirety of the story is read-aloud, to
+									the surprise and delight of the group~
+								</ol>
+							</div>
+						</div>
+
+						<!-- Conceptual Challenges -->
 						<div
 							style="
+								width: 500px !important;
 								margin: 1em !important;
-								margin-top: 0em !important;
 							"
 						>
-							<h3>Stories<span style="opacity: 0"> </span></h3>
-							<!-- Game Explanation -->
-							<div
-								class="box story"
-								style="width: 400px !important"
-							>
-								<p id="target" style="font-style: italic">
-									Mad Libs is a phrasal template word game
-									created by Leonard Stern and Roger Price. It
-									consists of one player prompting others for
-									a list of words to substitute for blanks in
-									a story before reading aloud.
-								</p>
-								<p id="target" style="font-style: italic">
-									One player chooses a story and then replaces
-									words with blanks containing (noun, verb,
-									part of body plural, celebrity male, etc.).
-									The other player fills in the blanks by
-									saying the type of the word, but without
-									showing where it is in the story and the
-									words around it. A usually nonsensical story
-									will be made.
-								</p>
-								<p id="target" style="font-style: italic">
-									Mad Libs provide an entertaining and
-									engaging way to teach kids about nouns,
-									verbs, adjectives, and adverbs, and they can
-									be used to reinforce essential grammar,
-									reading comprehension, and vocabulary
-									skills.
-								</p>
-							</div>
-
-							<!-- War Stories -->
-							<div
-								class="box story"
-								style="width: 400px !important"
-							>
-								<p id="target" style="font-style: italic">
-									Personal stories
-								</p>
-								<p id="target" style="font-style: italic"></p>
-								<ul>
-									Next week, this section will be expanded to
-									cover
-									<li>How the app works</li>
-									<li>
-										What some struggles and solutions during
-										the development process were (I copied
-										the original story without adding html
-										at one point, and then realized the
-										cause of the problem when I saw "//"
-										where "< p>" was supposed to be)
-									</li>
-									<li>Perhaps some other fun stories!</li>
+							<h3>Conceptual Challenge</h3>
+							<div class="box story">
+								<h5>Properly-Scoped ...</h5>
+								<ul style="list-style-type: none">
+									The central challenge of this app wasn't
+									"figure out how to make a Mad Libs app" - it
+									was to create "literally
+									<span style="font-style: italic">any</span>
+									app" that would be
+									<div class="break-james">-</div>
+									<ol
+										style="
+											margin-top: 0 !important;
+											margin-bottom: 0 !important;
+										"
+									>
+										<li>interesting,</li>
+										<li>challenging, and yet</li>
+										<li>
+											not involve
+											<span
+												style="
+													font-style: italic;
+													font-weight: bold;
+												"
+												>objects</span
+											>
+											. . .
+										</li>
+									</ol>
+									<div class="break-james">-</div>
+									. . . because the cirriculum hadn't-yet
+									introduced the concept.
+									<!-- <br /> -->
+									Up to this point, students had only been
+									exposed to
+									<div class="break-james">-</div>
+									<ul
+										style="
+											margin-bottom: 0 !important;
+											border-left: solid 1px
+												rgba(210, 215, 217, 0.75);
+										"
+									>
+										integers, strings, concatenation,
+										variables, arrays, 'while' loops, and
+										'for' loops.
+									</ul>
+									<div class="break-james">-</div>
+									They
+									<span style="font-style: italic"
+										>had not</span
+									>, however, learned about 'key:value' pairs,
+									'DOM' manipulation, or even 'forEach' loops.
+									My working assumption was that students
+									should be treated as if this project was
+									being given to them within the first two
+									weeks of a bootcamp.
+									<div class="break-james">-</div>
+									<span style="font-weight: bold"
+										>Problem:
+									</span>
+									How were students going to be able to insert
+									the user data into the story?
+									<div class="break-james">-</div>
+									My instinct was to store the user's entries
+									in an object, or use loops to insert them
+									directly into the story's string. Habit and
+									familiarity turned out to be surprising
+									stumbling blocks, because the inability to
+									use the hash objects and nested loops I'd
+									grown so accustomed-to really hung me up for
+									a while. Eventually, I realized that if the
+									user's inputs could be stored individually,
+									that list could be run-through and used to
+									populate the templated story. Mad Libs was
+									going to be an interesting use-case for a
+									"beginner's" substitution algorithm. It
+									would allow students to
+									<ul>
+										<li>
+											Store multiple user entries in an
+											array,
+										</li>
+										<li>
+											Store a target string (the story),
+											and then
+										</li>
+										<li>
+											Use both concatenation
+											<span style="font-style: italic"
+												>and</span
+											>
+											a loop to replace specific words
+											with the user data,
+										</li>
+									</ul>
 								</ul>
 							</div>
 						</div>
+
+						<!-- Development Challenges -->
+						<div
+							style="
+								width: 500px !important;
+								margin: 1em !important;
+							"
+						>
+							<h3>Development Challenge # 1</h3>
+							<div class="box story">
+								<h5>Expanded Options & the UI</h5>
+								<ul style="list-style-type: none">
+									One main challenge I've encountered during
+									development of this app, post-launch, has
+									been
+									<div class="break-james">-</div>
+									- how to expand the app's abilities, and
+									then
+									<div class="break-james">-</div>
+									- how to design the web page's UI so that
+									those options are intuitive.
+								</ul>
+								<h5>'Pre-Populated' Inefficiency</h5>
+								<ul>
+									Originally, the app required the user to go
+									through 28 pop-up questions (because the
+									'alert' element was a quick and simple way
+									to give students a basic UI for their app).
+									But it seemed obvious that someone
+									(including me) might want to just click a
+									button and see the result. Thankfully,
+									during its original creation, I made a
+									pre-filled list of user answers to expidite
+									the itterative-testing of the algorithm.
+									<div class="break-james">-</div>
+									... I just didn't make it until half-way
+									through process. I know that eventually,
+									I'll get super fast and savvy at this coding
+									thing, but right now, I tend to still
+									'brute-force' problems more than I feel good
+									about ... After re-running this code file
+									numerous times to work out the bugs, it
+									occured to me, "Hey - maybe speed-clicking
+									the alert 28^ nth times isn't strictly
+									necessary." Then the light dawned and I made
+									the second, "developer" array of user
+									submissions. [face-palm]
+									<div class="break-james">-</div>
+									The added logic and array were
+									re-incorporated to produce the
+									"Pre-Populate" action you currently see.
+								</ul>
+							</div>
+						</div>
+						<div
+							style="
+								width: 500px !important;
+								margin: 1em !important;
+							"
+						>
+							<h3>Development Challenge # 2</h3>
+							<div class="box story">
+								<h5>'Original' Tunnel-Vision</h5>
+								<ul>
+									Are all development stories good ones? What
+									about dumb-in-the-face embarrassing ones?
+									Well, here'goes:
+									<div class="break-james">-</div>
+									The next feature to add was a
+									templated-version of the story - one with
+									lots of "fill in the blank" spaces so that
+									people unfamiliar with the game could see
+									what the game looked like at the beginning.
+									This was easy-enough - copy/paste the
+									concatenated story-string a third time and
+									replace ${} with _.
+									<div class="break-james">-</div>
+									Then it occured to me: "some people might
+									want to see the actual, original, complete
+									story." I went looking for it, but could
+									only find a back-up copy stored in an early
+									version of the app. I copy-pasted it, and
+									then ran the app ... only to discover that I
+									wasn't getting the pretty, HTML-infused
+									version I'd been serving before. Instead, it
+									was one giant block of text with "//" where
+									the 'p' tags should've been. After 30
+									minutes of frustration, it occured to me
+									that this wasn't a case of bad JavaScript
+									logic, or bad
+									<div class="break-james">-</div>
+									My bootcamp instructor required us to take
+									breaks on the hour, every hour. Up until
+									now, I've scoffed at that. "Power-through!!"
+									I've said - but now, I'm thinking tunnel
+									vision and exhaustion might be causing more
+									problems than I thought. Anyway, this is
+									what led to the 'Original' and 'Reset'
+									actions you now see in the app.
+								</ul>
+							</div>
+						</div>
+						<div
+							style="
+								width: 500px !important;
+								margin: 1em !important;
+							"
+						>
+							<h3>Future Improvements</h3>
+							<div class="box story">
+								<h5>March, 2022</h5>
+								<ul style="list-style-type: none">
+									<li>
+										<span style="font-weight: bold"
+											>(Planned):
+										</span>
+										The buttons of this app need some
+										tweaking and polish.
+										<ul>
+											<li>
+												<span style="font-weight: bold"
+													>Alert Pop-Up:
+												</span>
+												currently, the 'alert' pop-up's
+												'cancel' button does not break
+												the execution of the app. In
+												theory, I would like this to
+												maintain-state - and allow users
+												to pick-up where they left off
+												by clicking 'start' again.
+											</li>
+											<li>
+												<span style="font-weight: bold"
+													>App Buttons:
+												</span>
+												currently, the buttons are
+												siloed. This is in-part due to
+												my inexperience with flex-box.
+												In theory, I would like the have
+												the story window first, and then
+												the buttons in the next row
+												after (and then the various
+												stories after that, etc.) TBD.
+											</li>
+											<li>
+												<span style="font-weight: bold"
+													>App "Refresh" Button: </span
+												>I'd also like to create a
+												"refresh page" button that
+												hard-resets the page, so that
+												all expected options are
+												available to the user in one
+												place
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- How the app works -->
+						<!-- <div>
+							<p>How does the app work?
+								<span style="font-weight: bold">Note: </span>
+								the app will run through an array of stored
+								answers and return a completed demo story. This
+								will make the app run normally - a pre-populated
+								array of strings will be fed into the template
+								story. The app uses JavaScript concatenation to
+								grab specific indices in the 'responses' array
+								and input them into the story. Then, whatever is
+								currently in the 'story' window is removed, and
+								the new story is inserted into the webpage's
+								HTML.
+							</p>
+						</div> -->
 					</section>
 				</div>
 			</div>

@@ -4273,7 +4273,7 @@ ul.actions.fit.stacked {
 		font-size: 3.5em;
 	}
 } */
-@media screen and (max-width: 1568px) {
+/* @media screen and (max-width: 1568px) {
 	#connect-four-content {
 		flex-direction: column !important;
 	}
@@ -4281,7 +4281,7 @@ ul.actions.fit.stacked {
 	#app-content {
 		flex-direction: row !important;
 	}
-}
+} */
 
 /* @media screen and (max-width: 980px) {
 	#developer-content, #app-content {

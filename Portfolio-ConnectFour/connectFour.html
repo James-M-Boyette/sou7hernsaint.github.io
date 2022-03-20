@@ -113,7 +113,8 @@
 				border: 1px solid;
 				border-radius: 10px;
 				height: 364px;
-				max-width: 434px;
+				/* max-width: 434px; */
+				width: 434px;
 				margin: auto;
 				display: flex;
 				flex-wrap: wrap;
@@ -326,83 +327,186 @@
 					</container>
 				</nav>
 				<div class="inner">
-					<!-- <div class="inner"> --><!-- Same as connectFourContainer? -->
-
-					<!-- Connect Four -->
-					<div id="connectFourContainer">
-						<!-- <h3 id="player-tracker">
-							The current Player is:
-							<span
-								id="current-player"
-								style="padding-left: 8px; color: red"
-								>Player 1</span
+					<!-- Connect Four
+					 -->
+					 <section style="display:flex; justify-content: center; flex-direction: column;">
+						<header class="major-projects" style="margin:auto !important; mar">
+							<div class="tooltip header2" style="padding-bottom: .425em; margin-bottom: 2em !important;">Connect Four</div>
+						</header>
+						<div
+							id="mad-libs-content"
+							style="display: flex; justify-content: space-around"
+						>
+							<div
+								id="app-content"
+								style="
+									display: flex;
+									justify-content: center;
+									margin: auto;
+									margin-right: 5% !important;
+									flex-direction: column;
+									max-width: 50%;
+								"
 							>
-						</h3> -->
-						<div style="display: flex; justify-content: center">
-							<h3 id="player-tracker">The current Player is:</h3>
-							<h3
-								id="current-player"
-								style="padding-left: 8px; color: red"
-							>
-								Player 1
-							</h3>
-						</div>
-						<h3 id="result">_</h3>
+								<!-- Connect Four -->
+								<h3>The App</h3>
+								<div class="box">
+									<p>
+										My <span style="font-weight:bold">Connect Four</span> app
+									is below.
+									</p>
+									<h5>Instructions:</h5>
+									<ul>To begin ...
+										<li style="list-style-type:none">Click on any of the bottom squares</li>
+									</ul>
+									<ul>Continue ...
+										<li style="list-style-type:none">to select squares, but make sure to only 
+											click those that have <span style="font-style:italic">something</span>
+											underneath them (clicking on floating spaces, or those at the top will 
+											display an error). Once one player has connected four of their tokens in 
+											a row, they have won the game!
+										</li>
+									</ul>
+								</div>
+								<div id="connectFourContainer">
+									<!-- <h3 id="player-tracker">
+										The current Player is:
+										<span
+											id="current-player"
+											style="padding-left: 8px; color: red"
+											>Player 1</span
+										>
+									</h3> -->
+									<div style="display: flex; justify-content: center">
+										<h3 id="player-tracker">The current Player is:</h3>
+										<h3
+											id="current-player"
+											style="padding-left: 8px; color: red"
+										>
+											Player 1
+										</h3>
+									</div>
+									<h3 id="result">_</h3>
 
-						<div id="grid">
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<!-- <div>35</div> -->
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<!-- <div>42</div> -->
-							<div></div>
-							<div class="taken floor"></div>
-							<div class="taken floor"></div>
-							<div class="taken floor"></div>
-							<div class="taken floor"></div>
-							<div class="taken floor"></div>
-							<div class="taken floor"></div>
-							<div class="taken floor"></div>
+									<div id="grid">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<!-- <div>35</div> -->
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<!-- <div>42</div> -->
+										<div></div>
+										<div class="taken floor"></div>
+										<div class="taken floor"></div>
+										<div class="taken floor"></div>
+										<div class="taken floor"></div>
+										<div class="taken floor"></div>
+										<div class="taken floor"></div>
+										<div class="taken floor"></div>
+									</div>
+								</div>
+							</div>
+							<div
+								id="developer-content"
+								style="
+									max-width: 50%;
+									display: flex;
+									justify-content: center;
+									margin: auto;
+									margin-left: 5% !important;
+									flex-direction: column;
+								"
+							>
+								<h3>The Basics</h3>
+									<div class="box">
+										<h5>The Rules :</h5>
+										<p>
+											Connect Four is a two-player board game, 
+											in which players (after choosing a color) 
+											take turns dropping colored discs into a verticlally-suspended grid. 
+											The grid itself is seven spaces across and six spaces high. 
+										</p>
+										<h5>The Goal :</h5>
+										<p>
+											The first player to connect four of their discs - 
+											either horizontally, vertically, or diagonally - wins. 
+										</p>
+										<!-- <p>(also known as Four Up, Plot Four, Find Four, Captain's Mistress, 
+											Four in a Row, Drop Four, and Gravitrips in the Soviet Union)</p>									 -->
+									</div>
+								<h3>The Coding Challenges</h3>
+									<div class="box">
+										<h5>Gravity</h5>
+										<p>On its face, this app could have been a lot like Checkers, Go, or Minesweeper: 
+											each game has a horizontal board that allows players to place pieces at-will.
+											However, Connect Four's grid-board stands up vertically. If a player inserts a 
+											piece into one of the seven columns, it falls until it collides with <span style="font-style:italic">something</span>. 
+											In the physical game, there is a slider at the bottom of the grid, which blocks
+											any piece from falling out onto the table. 
+										</p>
+									</div>
+								<h3>The Problems & Their Solutions</h3>
+									<div class="box">
+										<p id="target" style="font-style: italic">
+											Personal stories
+										</p>
+										<p id="target" style="font-style: italic">
+											
+										</p>
+										<ul>
+											Next week, this section will be expanded to cover
+											<li>How the app works</li>
+											<li>What some struggles and solutions during the development process were (
+												I couldn't figure out how to target specific squares until I learned more about 
+												DOM elements and HTML Collections.)
+											</li>
+											<li>Perhaps some other fun stories!</li>
+										</ul>
+									</div>
+							</div>
 						</div>
-					</div>
+					</section>
+					<section>
+						<div>
+						</div>
+					</section>
 				</div>
 			</div>
 			<!-- Sidebar -->

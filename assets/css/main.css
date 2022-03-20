@@ -4194,6 +4194,10 @@ ul.actions.fit.stacked {
 	white-space: nowrap;
 }
 
+.box.story {
+	background-color: rgb(3, 19, 33);
+}
+
 /* --+ PAGE-SPECIFIC +-- */
 
 /* -- ABOUT ME -- */

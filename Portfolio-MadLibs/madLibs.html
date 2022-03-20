@@ -190,9 +190,21 @@
 				<!-- Navbar -->
 				<nav id="navbar-james">
 					<container id="navbar-container">
-						<button class="button-james button-navbar"><a href="../index.html" style="color: rgb(255, 253, 243) !important;">Front Page</a></button>
-						<button class="button-james button-navbar"><a href="../background.html" style="color: rgb(255, 253, 243) !important;">About Me</a></button>
-						
+						<button class="button-james button-navbar">
+							<a
+								href="../index.html"
+								style="color: rgb(255, 253, 243) !important"
+								>Front Page</a
+							>
+						</button>
+						<button class="button-james button-navbar">
+							<a
+								href="../background.html"
+								style="color: rgb(255, 253, 243) !important"
+								>About Me</a
+							>
+						</button>
+
 						<!-- Page Navigation -->
 						<!-- <div class="dropdown">
 							<button class="button-james button-navbar opener-james">Page Navigation <i class="fa-solid fa-angle-down"></i></button>
@@ -202,365 +214,459 @@
 							</div>
 						</div> -->
 						<div class="dropdown">
-							<button class="button-james button-navbar opener-james">Porfolio Projects <i class="fa-solid fa-angle-down"></i></button>
-							<div class="dropdown-content" style="position:absolute; list-style-type: none; margin-bottom: .5em; width: 16.65em">
-								<div class="dropdown-link"><a href="../Portfolio-ConnectFour/connectFour.html">Connect Four</a></div>
-								<div class="dropdown-link"><a href="../Portfolio-MadLibs/madLibs.html">Mad Libs</a></div>
-								<div class="dropdown-link"><a href="../https://dnd-aid.netlify.app/">DnD Aid</a></div>
-								<div class="dropdown-link"><a href="../Portfolio-Encryptor/encryptor.html">A1Z26 Encryptor</a></div>
-								<div class="dropdown-link"><a href="../Portfolio-Timer/timer.html">Work Timer</a></div>
+							<button
+								class="button-james button-navbar opener-james"
+							>
+								Porfolio Projects
+								<i class="fa-solid fa-angle-down"></i>
+							</button>
+							<div
+								class="dropdown-content"
+								style="
+									position: absolute;
+									list-style-type: none;
+									margin-bottom: 0.5em;
+									width: 16.65em;
+								"
+							>
+								<div class="dropdown-link">
+									<a
+										href="../Portfolio-ConnectFour/connectFour.html"
+										>Connect Four</a
+									>
+								</div>
+								<div class="dropdown-link">
+									<a href="../Portfolio-MadLibs/madLibs.html"
+										>Mad Libs</a
+									>
+								</div>
+								<div class="dropdown-link">
+									<a href="../https://dnd-aid.netlify.app/"
+										>DnD Aid</a
+									>
+								</div>
+								<div class="dropdown-link">
+									<a
+										href="../Portfolio-Encryptor/encryptor.html"
+										>A1Z26 Encryptor</a
+									>
+								</div>
+								<div class="dropdown-link">
+									<a href="../Portfolio-Timer/timer.html"
+										>Work Timer</a
+									>
+								</div>
 							</div>
 						</div>
-						<button class="button-james button-navbar"><a href="../actualizeCert.html" style="color: rgb(255, 253, 243) !important;">Bootcamp certificate</a></button>
+						<button class="button-james button-navbar">
+							<a
+								href="../actualizeCert.html"
+								style="color: rgb(255, 253, 243) !important"
+								>Bootcamp certificate</a
+							>
+						</button>
 					</container>
 				</nav>
 
 				<div class="inner">
 					<!-- Mad Libs -->
-					<section style="display:flex; justify-content: center; flex-direction: column;">
-						<header class="major-projects" style="margin:auto !important; ">
-							<div class="tooltip header2" style="padding-bottom: .425em;  margin-bottom: 2em !important;">Mad Libs</div>
-						</header>
-						<div
-							id="mad-libs-content"
-							style="display: flex; justify-content: space-around"
+					<div
+						style="
+							display: flex !important;
+							margin: auto !important;
+						"
+					>
+						<header
+							class="major-projects"
+							style="
+								margin: auto !important;
+								margin-top: 2em !important;
+								padding: auto !important;
+							"
 						>
 							<div
-								id="app-content"
+								class="tooltip header2"
 								style="
-									display: flex;
-									justify-content: center;
-									margin: auto;
-									margin-right: 5% !important;
-									flex-direction: column;
-									max-width: 50%;
+									margin: auto !important;
+									padding: auto !important;
+									padding-bottom: 0.425em;
+									margin-bottom: 2em !important;
 								"
 							>
+								Mad Libs
+							</div>
+						</header>
+					</div>
+					<section
+						style="
+							display: flex;
+							flex-direction: row;
+							flex-wrap: wrap;
+							align-items: flex-start;
+							justify-content: flex-start;
+							margin-top: 0em !important;
+							padding-top: 0em !important;
+						"
+					>
+						<div
+							style="
+								margin: 1em !important;
+								margin-top: 0em !important;
+							"
+						>
+							<!-- The app -->
+							<h3>The App</h3>
+							<div
+								class="box story"
+								style="width: 400px !important"
+							>
 								<div
-									id="start-button-section"
 									style="
 										display: flex;
-										flex-direction: row;
-										justify-content: space around;
-										margin: 1em;
+										justify-content: space-around;
 									"
 								>
 									<div style="flex-direction: column">
+										<h5>Instructions:</h5>
+										<!-- <ul style="list-style-type:none"> -->
+										<ul>
+											<li>
+												My
+												<span style="font-weight: bold"
+													>Mad Libs</span
+												>
+												app is below.
+											</li>
+
+											<li>
+												To start it up, click this
+												'start' button
+											</li>
+										</ul>
+									</div>
+									<div id="start-button-section">
 										<button
 											id="runMadLibs"
 											class="button-james"
-											style="
-										
-												margin-right: 10px !important;
-											"
+											style=""
 										>
 											Start
 										</button>
 									</div>
-									<div
-										style="
-											flex-direction: column;
-											margin-left: 10px !important;
-										"
-									>
-										<h4>Click This !</h4>
-										<p>
-												Clicking this button will
-												display a pop-up. You'll be
-												asked 28 questions, like "Please
-												provide a verb (present tense)"
-												or "a popular 80's musician's
-												name." Input your ideas and
-												click 'ok' to save each of them.
-												Once finished, you'll get one
-												final alert before the text is
-												generated!
-										</p>
-											<p>
-												Remember: you can be as literal,
-												or as silly as you like. Mad
-												Libs is a great game to get
-												super-silly with!
-											</p>
-										</ul>
-									</div>
 								</div>
-								<!-- <div
-									id="prepopulate-button-section"
-									style="
-										flex-direction: row;
-										justify-content: space around;
-									"
-								>
-									<button
-										id="fillMadLibs"
-										class="button-james"
-										style="
-											margin: auto !important;
-											padding: auto !important;
-											margin-left: 5px !important;
-										"
-									>
-										Pre-Populate
-									</button>
-									<div style="flex-direction: column">
-										<h4>stuff</h4>
-										<p>stuff</p>
-									</div>
-								</div> -->
+								<p>
+									Clicking this button will display a pop-up.
+									You'll be asked 28 questions, like "Please
+									provide a verb (present tense)" or "a
+									popular 80's musician's name." Input your
+									ideas and click 'ok' to save each of them.
+									Once finished, you'll get one final alert
+									before the text is generated!
+								</p>
+								<p>
+									<span style="font-weight: bold"
+										>Remember:
+									</span>
+									you can be as literal, or as silly as you
+									like. Mad Libs is a great game to get
+									super-silly with!
+								</p>
+							</div>
+
+							<!-- <h3>The App</h3> -->
+							<div
+								class="box story"
+								style="
+									width: 400px !important;
+									margin-top: 3em !important;
+								"
+							>
 								<div
-									id="prepopulate-button-section"
 									style="
 										display: flex;
-										flex-direction: row;
-										justify-content: space around;
-										margin: 1em;
+										justify-content: space-around;
 									"
 								>
 									<div style="flex-direction: column">
+										<h5>Auto-populate:</h5>
+										<!-- <ul style="list-style-type:none"> -->
+										<ul>
+											<li>
+												To auto-populate the answers
+												click this button
+											</li>
+										</ul>
+									</div>
+									<div id="prepopulate-button-section">
 										<button
 											id="fillMadLibs"
 											class="button-james"
-											style="
-										
-												margin-right: 5px !important;
-											"
+											style="margin-right: 5px !important"
 										>
 											Pre-Populate
 										</button>
 									</div>
-									<div
-										style="
-											flex-direction: column;
-											margin-left: 5px !important;
-										"
-									>
-										<h4>Auto-Populate</h4>
-										<p>
-											But maybe you don't want to go
-											through nearly 30 questions. You
-											just want to see the app work. I
-											completely understand! Click
-											'Auto-Populate,' and the app will
-											run through an array of stored
-											answers and return a completed demo
-											story.
-										</p>
-										<p>
-											<span style="font-weight: bold"
-												>Note:</span
-											>
-											This will make the app run normally
-											- a pre-populated array of strings
-											will be fed into the template story.
-											The app uses JavaScript
-											concatonation to grab specific
-											indeces in the 'responses' array and
-											input them into the story. Then,
-											whatever is currently in the 'story'
-											window is removed, and the new story
-											is inserted into the webpage's HTML.
-										</p>
-									</div>
 								</div>
-								<br />
-								<br />
-								<br />
-								<h3>
-									Your story will go here<span
-										style="opacity: 0"
-										>__
+								<p>
+									But maybe you don't want to go through
+									nearly 30 questions. You just want to see
+									the app work. I completely understand! Click
+									'Auto-Populate,' and the app will run
+									through an array of stored answers and
+									return a completed demo story.
+								</p>
+								<p>
+									<span style="font-weight: bold"
+										>Note:
 									</span>
-									<i class="fa-solid fa-arrow-turn-down"></i>
-								</h3>
-								<div class="box story" style="background-color: rgb(3, 19, 33);">
-									<p id="target" style="font-style: italic; ">
-										( After you've clicked the button, make
-										sure to answer each prompt in the pop-up
-										window! )
-									</p>
-									<p class="remove-me">
-										In <span class="subs">___</span>,
-										computer pioneer
-										<span class="subs">___</span> found
-										herself working on a
-										<span class="subs">___</span> at
-										<span class="subs">___</span>. It was at
-										this time that
-										<span class="subs">___</span> discovered
-										a <span class="subs">___</span> had
-										gotten trapped in one of the
-										<span class="subs">___</span> and was
-										causing an error. The
-										<span class="subs">___</span> removed
-										the <span class="subs">___</span> and
-										taped it in their
-										<span class="subs">___</span>,
-										identifying it as the "first actual case
-										of bug being
-										<span class="subs">___</span>."
-									</p>
-
-									<p class="remove-me">
-										Word got out that the team had "<span
-											class="subs"
-											>___</span
-										>" the <span class="subs">___</span>,
-										hence leading to the phrase’s use in
-										computing and
-										<span class="subs">___</span> culture.
-										<span class="subs">___</span> readily
-										admitted that
-										<span class="subs">___</span> was not
-										there when the incident occurred, but
-										that didn’t stop it from becoming one of
-										<span class="subs">___</span>'s favorite
-										<span class="subs">___</span>s.
-										<span class="subs">___</span>
-										<span class="subs">___</span> of natural
-										causes on January 1,
-										<span class="subs">___</span>, at the
-										age of <span class="subs">___</span>.
-										For those interested, the offending
-										<span class="subs">___</span>'s
-										<span class="subs">___</span>, along
-										with the original
-										<span class="subs">___</span>, can be
-										seen at the
-										<span class="subs">___}</span> in
-										<span class="subs">___</span>.
-									</p>
-
-									<p class="remove-me">
-										And while this is the "<span
-											class="subs"
-											>___</span
-										>" use case of finding a
-										<span class="subs">___</span>
-										<span class="subs">___</span>, the
-										original use of the word dates further
-										back in <span class="subs">___</span> to
-										<span class="subs">___</span>, who in an
-										<span class="subs">___</span>
-										<span class="subs">___</span> used the
-										term "<span class="subs">___</span>" to
-										refer to a technological
-										<span class="subs">___</span>. While he
-										worked on the quadruplex
-										<span class="subs">___</span>, he said
-										it needed a "<span class="subs"
-											>___</span
-										>
-										<span class="subs">___</span>" to
-										<span class="subs">___</span> properly.
-									</p>
-								</div>
+									This will make the app run normally - a
+									pre-populated array of strings will be fed
+									into the template story. The app uses
+									JavaScript concatonation to grab specific
+									indeces in the 'responses' array and input
+									them into the story. Then, whatever is
+									currently in the 'story' window is removed,
+									and the new story is inserted into the
+									webpage's HTML.
+								</p>
+							</div>
+							<div
+								class="box story"
+								style="width: 400px !important"
+							>
 								<div
-									id="original-button-section"
 									style="
 										display: flex;
-										flex-direction: row;
-										justify-content: space around;
+										justify-content: space-around;
 									"
 								>
 									<div style="flex-direction: column">
+										<h5>Original Story:</h5>
+										<!-- <ul style="list-style-type:none"> -->
+										<ul>
+											<li>
+												Curious what the original story
+												looked like?
+											</li>
+											<li>
+												Click 'Original Story' to see it
+												without any any Mad-Libbing!
+											</li>
+										</ul>
+									</div>
+									<div id="original-button-section">
 										<button
 											id="fillStory"
 											class="button-james"
-											style="
-										
-												margin-right: 5px !important;
-											"
+											style="margin-right: 5px !important"
 										>
 											Original
 										</button>
 									</div>
-									<div
-										style="
-											flex-direction: column;
-											margin-left: 5px !important;
-										"
-									>
-										<h4>Original Story</h4>
-										<p>
-											Curious what the original story looked like? Click 'Original Story' to see it without any any Mad-Libbing!
-										</p>
-									</div>
 								</div>
+								<p></p>
+								<p>
+									<span style="font-weight: bold"> </span>
+								</p>
+							</div>
+							<div
+								class="box story"
+								style="width: 400px !important"
+							>
 								<div
-									id="original-button-section"
 									style="
 										display: flex;
-										flex-direction: row;
-										justify-content: space around;
+										justify-content: space-around;
 									"
 								>
 									<div style="flex-direction: column">
+										<h5>Reset to "_":</h5>
+										<!-- <ul style="list-style-type:none"> -->
+										<ul>
+											<li>
+												Want to see the "blank" Mad Lib
+												version again?
+											</li>
+											<li>
+												Click 'Rest' to see it again!
+											</li>
+										</ul>
+									</div>
+									<div id="reset-button-section">
 										<button
 											id="resetStory"
 											class="button-james"
-											style="
-										
-												margin-right: 5px !important;
-											"
+											style="margin-right: 5px !important"
 										>
 											Reset
-											
 										</button>
-										<div class="tooltip">Test-parent
-											<span class="tooltiptext tooltip-right">Test</span>
-										</div>
-									</div>
-									<div
-										style="
-											flex-direction: column;
-											margin-left: 5px !important;
-										"
-									>
-										<h4>Reset to "_"</h4>
-										<p>
-											Want to see the "blank" Mad Lib version again? Click 'Rest' to see it again!
-										</p>
 									</div>
 								</div>
+								<p></p>
+								<p>
+									<span style="font-weight: bold"> </span>
+								</p>
 							</div>
+						</div>
+
+						<div
+							style="
+								margin: 1em !important;
+								margin-top: 0em !important;
+							"
+						>
+							<h3>
+								Your story will go here<span style="opacity: 0"
+									>__
+								</span>
+								<i class="fa-solid fa-arrow-turn-down"></i>
+							</h3>
 							<div
-								id="developer-content"
+								class="box story"
 								style="
-									max-width: 50%;
-									display: flex;
-									justify-content: center;
-									margin: auto;
-									margin-left: 5% !important;
-									flex-direction: column;
+									background-color: rgb(3, 19, 33);
+									max-width: 600px !important;
 								"
 							>
-								<div class="box story">
-									<p id="target" style="font-style: italic">
-										Mad Libs is a phrasal template word game created by Leonard Stern and Roger Price. It consists of one player prompting others for a list of words to substitute for blanks in a story before reading aloud. 
-									</p>
-									<p id="target" style="font-style: italic">
-										One player chooses a story and then replaces words with blanks containing (noun, verb, part of body plural, celebrity male, etc.). The other player fills in the blanks by saying the type of the word, but without showing where it is in the story and the words around it. A usually nonsensical story will be made.
-									</p>
-									<p id="target" style="font-style: italic">
-										Mad Libs provide an entertaining and engaging way to teach kids about nouns, verbs, adjectives, and adverbs, and they can be used to reinforce essential grammar, reading comprehension, and vocabulary skills.
-									</p>
-									
-								</div>
-								<div class="box story">
-									<p id="target" style="font-style: italic">
-										Personal stories
-									</p>
-									<p id="target" style="font-style: italic">
-										
-									</p>
-									<ul>
-										Next week, this section will be expanded to cover
-										<li>How the app works</li>
-										<li>What some struggles and solutions during the development process were (I copied the original story without adding html at one point, and then realized the cause of the problem when I saw "//" where "< p>" was supposed to be)</li>
-										<li>Perhaps some other fun stories!</li>
-									</ul>
-								</div>
+								<p id="target" style="font-style: italic">
+									( After you've clicked the button, make sure
+									to answer each prompt in the pop-up window!
+									)
+								</p>
+								<p class="remove-me">
+									In <span class="subs">___</span>, computer
+									pioneer <span class="subs">___</span> found
+									herself working on a
+									<span class="subs">___</span> at
+									<span class="subs">___</span>. It was at
+									this time that
+									<span class="subs">___</span> discovered a
+									<span class="subs">___</span> had gotten
+									trapped in one of the
+									<span class="subs">___</span> and was
+									causing an error. The
+									<span class="subs">___</span> removed the
+									<span class="subs">___</span> and taped it
+									in their <span class="subs">___</span>,
+									identifying it as the "first actual case of
+									bug being <span class="subs">___</span>."
+								</p>
+
+								<p class="remove-me">
+									Word got out that the team had "<span
+										class="subs"
+										>___</span
+									>" the <span class="subs">___</span>, hence
+									leading to the phrase’s use in computing and
+									<span class="subs">___</span> culture.
+									<span class="subs">___</span> readily
+									admitted that
+									<span class="subs">___</span> was not there
+									when the incident occurred, but that didn’t
+									stop it from becoming one of
+									<span class="subs">___</span>'s favorite
+									<span class="subs">___</span>s.
+									<span class="subs">___</span>
+									<span class="subs">___</span> of natural
+									causes on January 1,
+									<span class="subs">___</span>, at the age of
+									<span class="subs">___</span>. For those
+									interested, the offending
+									<span class="subs">___</span>'s
+									<span class="subs">___</span>, along with
+									the original <span class="subs">___</span>,
+									can be seen at the
+									<span class="subs">___}</span> in
+									<span class="subs">___</span>.
+								</p>
+
+								<p class="remove-me">
+									And while this is the "<span class="subs"
+										>___</span
+									>" use case of finding a
+									<span class="subs">___</span>
+									<span class="subs">___</span>, the original
+									use of the word dates further back in
+									<span class="subs">___</span> to
+									<span class="subs">___</span>, who in an
+									<span class="subs">___</span>
+									<span class="subs">___</span> used the term
+									"<span class="subs">___</span>" to refer to
+									a technological
+									<span class="subs">___</span>. While he
+									worked on the quadruplex
+									<span class="subs">___</span>, he said it
+									needed a "<span class="subs">___</span>
+									<span class="subs">___</span>" to
+									<span class="subs">___</span> properly.
+								</p>
+							</div>
+						</div>
+						<div
+							style="
+								margin: 1em !important;
+								margin-top: 0em !important;
+							"
+						>
+							<h3>
+								Stories<span style="opacity: 0"> </span>
+								<i class="fa-solid fa-arrow-turn-down"></i>
+							</h3>
+							<!-- Game Explanation -->
+							<div
+								class="box story"
+								style="width: 400px !important"
+							>
+								<p id="target" style="font-style: italic">
+									Mad Libs is a phrasal template word game
+									created by Leonard Stern and Roger Price. It
+									consists of one player prompting others for
+									a list of words to substitute for blanks in
+									a story before reading aloud.
+								</p>
+								<p id="target" style="font-style: italic">
+									One player chooses a story and then replaces
+									words with blanks containing (noun, verb,
+									part of body plural, celebrity male, etc.).
+									The other player fills in the blanks by
+									saying the type of the word, but without
+									showing where it is in the story and the
+									words around it. A usually nonsensical story
+									will be made.
+								</p>
+								<p id="target" style="font-style: italic">
+									Mad Libs provide an entertaining and
+									engaging way to teach kids about nouns,
+									verbs, adjectives, and adverbs, and they can
+									be used to reinforce essential grammar,
+									reading comprehension, and vocabulary
+									skills.
+								</p>
+							</div>
+
+							<!-- War Stories -->
+							<div
+								class="box story"
+								style="width: 400px !important"
+							>
+								<p id="target" style="font-style: italic">
+									Personal stories
+								</p>
+								<p id="target" style="font-style: italic"></p>
+								<ul>
+									Next week, this section will be expanded to
+									cover
+									<li>How the app works</li>
+									<li>
+										What some struggles and solutions during
+										the development process were (I copied
+										the original story without adding html
+										at one point, and then realized the
+										cause of the problem when I saw "//"
+										where "< p>" was supposed to be)
+									</li>
+									<li>Perhaps some other fun stories!</li>
+								</ul>
 							</div>
 						</div>
 					</section>

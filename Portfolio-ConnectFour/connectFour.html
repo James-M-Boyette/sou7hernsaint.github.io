@@ -326,6 +326,7 @@
 				</nav>
 				<!-- Connect Four -->
 				<div class="inner">
+					<!-- Connect Four Header -->
 					<div
 						style="
 							display: flex !important;
@@ -353,7 +354,8 @@
 							</div>
 						</header>
 					</div>
-					<section
+					<!-- Overall App Container -->
+					<div
 						style="
 							display: flex;
 							flex-direction: row !important;
@@ -370,9 +372,9 @@
 								margin-top: 0em !important;
 							"
 						> -->
-						<!-- The app -->
-						<div style="margin: 1em !important">
-							<!-- <div style="padding-left: 0em !important;"> -->
+						<!-- Connect Four -->
+						<div style="margin: 1em !important; margin-top: 0 !important">
+							<!-- The app -->
 							<div
 								id="connectFourContainer"
 								style="margin-bottom: 2em !important"
@@ -458,17 +460,11 @@
 									<div class="taken floor"></div>
 								</div>
 							</div>
-							<!-- </div> -->
+							
+							<!-- Instructions/"The App" -->
 							<div style="width: 500px !important">
 								<h3>The App</h3>
 								<div class="box story">
-									<p>
-										My
-										<span style="font-weight: bold"
-											>Connect Four</span
-										>
-										app is above.
-									</p>
 									<h5>Instructions:</h5>
 									<ul>
 										<span style="font-weight:bold"
@@ -495,67 +491,111 @@
 									</ul>
 								</div>
 							</div>
-							<div style="width: 500px !important">
-								<h3>The Basics</h3>
-								<div class="box story">
-									<h5>What is Connect Four ?</h5>
-									<ul>
-										Connect Four (also known as Four Up,
-										Plot Four, Find Four, Captain's
-										Mistress, Four in a Row, Drop Four, and
-										Gravitrips in the Soviet Union) is a
-										two-player board game. Players choose a
-										color and then take turns dropping their
-										colored tokens into a seven-column,
-										six-row vertical grid.
-									</ul>
-									<h5>The Goal ?</h5>
-									<ul>
-										A player's goal is to deposit their
-										pieces in such a way that, eventually,
-										they occupy four adjacent spaces -
-										forming a connected line. This line can
-										be hoirzontal, vertical, or even
-										diagonal. Once a player has four discs
-										in a row, they've won the game!
-									</ul>
-									<h5>The Challenge ?</h5>
-									<ul>
-										A player needs to think
-										<span style="font-style: italic"
-											>vertically
-										</span>
-										: pieces can only be inserted at the top
-										of the grid. Once inserted, they fall.
-										The results of player moves can produce
-										a visually-disorganized playing field,
-										with bright reds, blues, and yellows
-										scattered throughout the grid. To
-										overcome these obstacles, one must
-										<li
-											style="
-												margin-left: 1.2em !important;
-											"
-										>
-											continually scan the field,
-											searching for potentially-useful
-											patterns for both one's self, and
-											one's opponent, and
-										</li>
-										<li
-											style="
-												margin-left: 1.2em !important;
-											"
-										>
-											use anticipatory strategy to set up
-											(and obstruct) connected lines.
-										</li>
-									</ul>
-								</div>
-							</div>
+							
 						</div>
 						<!-- The Basics -->
-						<!-- Conceptual Challenges -->
+						<div style="width: 500px !important">
+							<h3>The Basics</h3>
+							<div class="box story">
+								<h5>What is Connect Four ?</h5>
+								<ul>
+									Connect Four (also known as Four Up,
+									Plot Four, Find Four, Captain's
+									Mistress, Four in a Row, Drop Four, and
+									Gravitrips in the Soviet Union) is a
+									two-player board game. Players choose a
+									color and then take turns dropping their
+									colored tokens into a seven-column,
+									six-row vertical grid.
+								</ul>
+								<h5>The Goal ?</h5>
+								<ul>
+									A player's goal is to deposit their
+									pieces in such a way that, eventually,
+									they occupy four adjacent spaces -
+									forming a connected line. This line can
+									be hoirzontal, vertical, or even
+									diagonal. Once a player has four discs
+									in a row, they've won the game!
+								</ul>
+								<h5>The Challenge ?</h5>
+								<ul>
+									A player needs to think
+									<span style="font-style: italic"
+										>vertically
+									</span>
+									: pieces can only be inserted at the top
+									of the grid. Once inserted, they fall.
+									The results of player moves can produce
+									a visually-disorganized playing field,
+									with bright reds, blues, and yellows
+									scattered throughout the grid. To
+									overcome these obstacles, one must
+									<li
+										style="
+											margin-left: 1.2em !important;
+										"
+									>
+										continually scan the field,
+										searching for potentially-useful
+										patterns for both one's self, and
+										one's opponent, and
+									</li>
+									<li
+										style="
+											margin-left: 1.2em !important;
+										"
+									>
+										use anticipatory strategy to set up
+										(and obstruct) connected lines.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				<!-- Developer Stories -->
+					<!-- Developer Stories Header -->
+					<div
+						style="
+							display: flex !important;
+							margin: auto !important;
+						"
+					>
+						<header
+							class="major-projects"
+							style="
+								margin: auto !important;
+								margin-top: 2em !important;
+								padding: auto !important;
+							"
+						>
+							<div
+								class="tooltip header2"
+								style="
+									margin: auto !important;
+									padding: auto !important;
+									padding-bottom: 0.425em;
+									margin-bottom: 2em !important;
+								"
+							>
+								Developer Stories
+							</div>
+						</header>
+					</div>
+					<!-- Developer Stories Container -->
+					<div
+						style="
+							display: flex;
+							flex-direction: row !important;
+							flex-wrap: wrap !important;
+							align-items: flex-start !important;
+							justify-content: center !important;
+							margin-top: 0em !important;
+							padding-top: 0em !important;
+						"
+					>
+						<!-- Conceptual Challenges # 1-->
 						<div
 							style="
 								width: 500px !important;
@@ -650,6 +690,15 @@
 										row. All the spaces in that row are
 										pre-set to "taken," which then allows
 										them to be checked just like any other.
+										<div class="code-block">
+											<div class="taken floor"></div>
+										< div class="taken floor">< /div><br />
+										< div class="taken floor">< /div><br />
+										< div class="taken floor">< /div><br />
+										< div class="taken floor">< /div><br />
+										< div class="taken floor">< /div><br />
+										< div class="taken floor">< /div><br />
+										</div>
 									</p>
 								</ul>
 								<h5>Improvements:</h5>
@@ -680,7 +729,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Conceptual Challenges -->
+						<!-- Conceptual Challenges # 2 -->
 						<div
 							style="
 								width: 500px !important;
@@ -792,6 +841,83 @@
 								margin: 1em !important;
 							"
 						>
+							<h3>Development Challenge</h3>
+							<div class="box story">
+								<h5>Making the app 'see' ...</h5>
+								<ul style="list-style-type: none">
+									<p style="margin-bottom:0 !important">
+									<span style="font-weight:bold">Problem</span>: the app needs to be able to read the grid 
+									as humans would, and confirm whether there are any four-segment lines after every move.
+									<span style="font-weight:bold">Solution</span>: Loop through the grid (to be up-front, 
+									I did a lot of googling to figure this out) ...
+									<div class="break-james">-</div>
+									<span style="font-weight:bold">First</span>, the board/grid 
+									is made by wrapping 42 sibbling 'divs' inside of a parent 'div': 
+									<div class="code-block">
+										< div id="grid"> <br />
+										<span style="opacity:0">----</span>< div></ div> <br />
+										<span style="opacity:0">----</span>< div></ div> <br />
+										<span style="opacity:0">----</span>< div></ div> <br />
+										<span style="opacity:0">----</span>. . . etc. <br />
+										
+									</div>
+									<span style="font-weight:bold">Second</span>, these 'divs' are stored in a JS variable:
+									<div class="code-block">
+										const squares = document.querySelectorAll('#grid > div')
+									</div>
+									<div class="break-james">-</div>
+									<span style="font-weight:bold">Third</span>, the app 'looks' at them by using a loop:
+									<div class="code-block">
+										
+											for (let y = 0; y < winningArrays.length; y++) {<br />
+												const square1 = squares[winningArrays[y][0]]<br />
+												const square2 = squares[winningArrays[y][1]]<br />
+												const square3 = squares[winningArrays[y][2]]<br />
+												const square4 = squares[winningArrays[y][3]]<br />
+												
+									</div>
+									<div class="break-james">-</div>
+									I implemented the solution, and it worked beautifully. 
+									<div class="break-james">-</div>
+									<span style="font-weight:bold">Comprehension Problem</span>: when I went back to do 
+									'final checks' on my code, this loop completely confused me - "How exactly is it *seeing* these squares??"
+									How are the 'divs' differentiated from one another without individual IDs etc?
+									<ul>
+										<li>It's obviously storing whatever it sees in the square variables,</li>
+										<li>It's also obviously checking all four elements in each of winningArray's nested combinations,</li>
+										<li>... But what is "squares" doing? How does storing a bunch of random divs help?</li>
+									</ul>
+									<div class="break-james">-</div>
+									<span style="font-weight:bold">Note</span>: at this point, I need to also explain that 
+									I'd just done a bunch of DOM manipulation studying, and been particularly perplexed by the concepts
+									of 'attributes' and 'properties.' These words are pretty vague, and I kept thinking that maybe 'squares'
+									<span style="font-style:italic">wasn't</span> referring to the querySelector-filled variable, but some property
+									... maybe? 
+									<div class="break-james">-</div>
+									I imagine that a number of my issues these days boil down to miss-linking two pieces of information, 
+									not understanding the scope of the problem, or just being mentally overwhelmed. 
+									Thank goodness there's Google. 
+									<div class="break-james">-</div>
+									<span style="font-weight:bold">Clarity</span>:
+									After some more reading, it became clear that the loop wasn't 
+									checking DOM properties; it was using winningArrays' number to store the equivilent DOM element in 
+									the 'squares' "array." I'm still learning about the differences between a true array and HTML collections, 
+									but it hadn't occured to me that they could be searched by index place (if this is wrong, please tell me - 
+									I really, really want to make sure I've got this right! 😁)
+									<div class="break-james">-</div>
+									Since this epiphany, my ability to manipulate the DOM has dramatically increased, and I can now navigate it 
+									far better using the in-browser console! Learning is fun.
+									</p>
+								</ul>
+							</div>
+						</div>
+						<!-- Development Challenges -->
+						<!-- <div
+							style="
+								width: 500px !important;
+								margin: 1em !important;
+							"
+						>
 							<h3>Development Challenges (& their Solutions)</h3>
 							<div class="box story">
 								<h5>Personal stories ...</h5>
@@ -799,9 +925,7 @@
 									<p style="margin-bottom: 1em !important">
 										Next week, this section will be expanded to
 									cover
-										<!-- <span style="font-style: italic"
-											>vertically</span
-										>. -->
+									
 									</p>
 									<ul>
 										<li>How the app works</li>
@@ -817,9 +941,10 @@
 									</ul>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 						<!-- </div> -->
-					</section>
+					
+					</div>
 				</div>
 			</div>
 			<!-- Sidebar -->

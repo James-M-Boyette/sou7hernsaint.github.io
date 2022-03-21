@@ -270,6 +270,7 @@
 
 				<div class="inner">
 					<!-- Mad Libs -->
+					<!-- Mad Libs Header -->
 					<div
 						style="
 							display: flex !important;
@@ -297,6 +298,7 @@
 							</div>
 						</header>
 					</div>
+					<!-- Overall App Container -->
 					<section
 						style="
 							display: flex;
@@ -315,7 +317,7 @@
 								margin-top: 0em !important;
 							"
 						>
-							<!-- The app -->
+							<!-- The App -->
 							<h3>The App</h3>
 							<!-- Start Button -->
 							<div
@@ -370,6 +372,16 @@
 										you can be as literal, or as silly as
 										you like. Mad Libs is a great game to
 										get creative with!
+									</p>
+									<p id="mobile-disclaimer">
+										<span style="font-weight: bold"
+											>Note:
+										</span>
+										If you're on mobile, or a
+										similarly-small screen, you will need to
+										scroll down to see your altered story -
+										it's in a gold box, past the app's
+										action buttons.
 									</p>
 								</ul>
 							</div>
@@ -520,7 +532,7 @@
 							</div>
 						</div>
 
-						<!-- Story Container -->
+						<!-- MadLibs Target Container -->
 						<div
 							style="
 								margin: 1em !important;
@@ -708,7 +720,46 @@
 								</ol>
 							</div>
 						</div>
-
+					</section>
+					<!-- Mad Libs -->
+					<div
+						style="
+							display: flex !important;
+							margin: auto !important;
+						"
+					>
+						<header
+							class="major-projects"
+							style="
+								margin: auto !important;
+								margin-top: 2em !important;
+								padding: auto !important;
+							"
+						>
+							<div
+								class="tooltip header2"
+								style="
+									margin: auto !important;
+									padding: auto !important;
+									padding-bottom: 0.425em;
+									margin-bottom: 2em !important;
+								"
+							>
+								Developer Stories
+							</div>
+						</header>
+					</div>
+					<div
+						style="
+							display: flex;
+							flex-direction: row;
+							flex-wrap: wrap;
+							align-items: flex-start;
+							justify-content: flex-start;
+							margin-top: 0em !important;
+							padding-top: 0em !important;
+						"
+					>
 						<!-- Conceptual Challenges -->
 						<div
 							style="
@@ -837,6 +888,11 @@
 									<div class="break-james">-</div>
 									- how to design the web page's UI so that
 									those options are intuitive.
+									<div class="break-james">-</div>
+									The following three sections encapsulate
+									that process. If you'd like to know what
+									flavor of dumb this junior developer is,
+									read-on!
 								</ul>
 								<h5>'Pre-Populated' Inefficiency</h5>
 								<ul>
@@ -847,26 +903,31 @@
 									But it seemed obvious that someone
 									(including me) might want to just click a
 									button and see the result. Thankfully,
-									during its original creation, I made a
+									during the original creation I made a
 									pre-filled list of user answers to expidite
-									the itterative-testing of the algorithm.
+									the itterative-testing process -
 									<div class="break-james">-</div>
-									... I just didn't make it until half-way
-									through process. I know that eventually,
-									I'll get super fast and savvy at this coding
-									thing, but right now, I tend to still
-									'brute-force' problems more than I feel good
-									about ... After re-running this code file
-									numerous times to work out the bugs, it
-									occured to me, "Hey - maybe speed-clicking
-									the alert 28^ nth times isn't strictly
-									necessary." Then the light dawned and I made
-									the second, "developer" array of user
-									submissions. [face-palm]
+									... I just didn't make it until I was nearly
+									finished. 😖
 									<div class="break-james">-</div>
-									The added logic and array were
-									re-incorporated to produce the
-									"Pre-Populate" action you currently see.
+									I know that eventually, I'll get super fast
+									and savvy at this coding thing. Right now
+									though, I tend to still 'brute-force'
+									problems more often than I'd like ... After
+									re-running this code file numerous times to
+									work out the bugs, it occured to me, "Hey ..
+									maybe speed-clicking the alert
+									<span style="font-style: italic"
+										>28 to the nth 'times</span
+									>
+									isn't strictly necessary." Then the light
+									dawned and I made the second, "developer"
+									array of user submissions. 🤦🏻‍♂️
+									<div class="break-james">-</div>
+									This additional logic and array were
+									re-incorporated to the app in order to
+									produce the "Pre-Populate" action you
+									currently see.
 								</ul>
 							</div>
 						</div>
@@ -902,19 +963,49 @@
 									wasn't getting the pretty, HTML-infused
 									version I'd been serving before. Instead, it
 									was one giant block of text with "//" where
-									the 'p' tags should've been. After 30
-									minutes of frustration, it occured to me
-									that this wasn't a case of bad JavaScript
-									logic, or bad
+									the 'p' tags should've been. 🤯
 									<div class="break-james">-</div>
-									My bootcamp instructor required us to take
+									After 30 minutes of frustration, it occured
+									to me that this wasn't a case of bad
+									JavaScript logic, or a goblin property of
+									CSS ... instead, somewhere along the way
+									that night, I'd begun to subconciously think
+									that JavaScript comments-out the same way
+									that HTML does. I'd literally copied the
+									commented-out version of the story from a
+									.js file and thought it was A-OK to paste
+									as-is.
+									<span style="font-weight: bold"
+										>To be clear</span
+									>, I do actually know that JS handles this
+									differently
+									<div class="code-block">
+										HTML <br />
+										< !-- <br />
+										I'm wrapped,<br />
+										so am I, <br />
+										James sometimes does dumb things<br />
+										--> <br />
+										JS <br />
+										// Individually-commented-out <br />
+										// Individually-commented-out <br />
+										// Individually-in-need-of-more-coffee
+										<br />
+									</div>
+									. . . on this night, I think I might've been
+									at my terminal for a bit too long. My
+									bootcamp instructor required us to take
 									breaks on the hour, every hour. Up until
-									now, I've scoffed at that. "Power-through!!"
-									I've said - but now, I'm thinking tunnel
-									vision and exhaustion might be causing more
-									problems than I thought. Anyway, this is
-									what led to the 'Original' and 'Reset'
-									actions you now see in the app.
+									now, I've thought that was a waste of time:
+									"Power-through!!"
+									<div class="break-james">-</div>
+									Now, I'm thinking tunnel vision and
+									exhaustion might be causing more problems
+									than ancitipated (so maybe more breaks are
+									the solution).
+									<div class="break-james">-</div>
+									Anyway, this is what led to the 'Original'
+									and 'Reset' actions you now see in the app.
 								</ul>
 							</div>
 						</div>
@@ -952,13 +1043,11 @@
 													>App Buttons:
 												</span>
 												currently, the buttons are
-												siloed. This is in-part due to
-												my inexperience with flex-box.
-												In theory, I would like the have
-												the story window first, and then
-												the buttons in the next row
-												after (and then the various
-												stories after that, etc.) TBD.
+												siloed. In the next version, the
+												buttons will have their own flex
+												box, and the descriptions will
+												be hover-triggered 'tool tip'
+												boxes.
 											</li>
 											<li>
 												<span style="font-weight: bold"
@@ -992,7 +1081,7 @@
 								HTML.
 							</p>
 						</div> -->
-					</section>
+					</div>
 				</div>
 			</div>
 			<!-- Sidebar -->

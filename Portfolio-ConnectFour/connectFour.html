@@ -882,21 +882,22 @@
 									<span style="font-weight:bold">Comprehension Problem</span>: when I went back to do 
 									'final checks' on my code, this loop completely confused me - "How exactly is it *seeing* these squares??"
 									How are the 'divs' differentiated from one another without individual IDs etc?
-									<ul>
-										<li>It's obviously storing whatever it sees in the square variables,</li>
+									<ul style="margin-bottom: 0 !important; margin-left: .25em !important">
+										<li>It's obviously storing <span style="font-style:italic">something</span> in the square variables,</li>
 										<li>It's also obviously checking all four elements in each of winningArray's nested combinations,</li>
-										<li>... But what is "squares" doing? How does storing a bunch of random divs help?</li>
+										<li>... But what is "squares" doing?</li>
 									</ul>
 									<div class="break-james">-</div>
-									<span style="font-weight:bold">Note</span>: at this point, I need to also explain that 
-									I'd just done a bunch of DOM manipulation studying, and been particularly perplexed by the concepts
-									of 'attributes' and 'properties.' These words are pretty vague, and I kept thinking that maybe 'squares'
-									<span style="font-style:italic">wasn't</span> referring to the querySelector-filled variable, but some property
-									... maybe? 
+									I resorted to using my bootcamp's "Peter Jang Notation" - where you spell out each thing that happens:
+									"use 'y' to go through each sub-set of winningArrays, and then grab the 0th element in that sub-set;
+									with that number in-hand (say, 39), get ?something? with a property of 39 in the DOM?" I'd obviously lost track 
+									of what was being stored in the 'squares' variable by this point, and having just done significant DOM manipulation studying, 
+									I was also getting side-tracked by 'attributes' and 'properties' concepts.
+									I just couldn't figure out how the DOM elements were being stored in that variable.
 									<div class="break-james">-</div>
-									I imagine that a number of my issues these days boil down to miss-linking two pieces of information, 
-									not understanding the scope of the problem, or just being mentally overwhelmed. 
-									Thank goodness there's Google. 
+									<!-- I imagine that a number of my issues these days boil down to miss-linking two pieces of information, 
+									not understanding the scope of the problem, or just being mentally overwhelmed.  -->
+									Thank goodness there's Google. And Stack Overflow. 
 									<div class="break-james">-</div>
 									<span style="font-weight:bold">Clarity</span>:
 									After some more reading, it became clear that the loop wasn't 
@@ -905,8 +906,8 @@
 									but it hadn't occured to me that they could be searched by index place (if this is wrong, please tell me - 
 									I really, really want to make sure I've got this right! 😁)
 									<div class="break-james">-</div>
-									Since this epiphany, my ability to manipulate the DOM has dramatically increased, and I can now navigate it 
-									far better using the in-browser console! Learning is fun.
+									This epiphany has greatly increased my ability to manipulate the DOM and navigate it -
+									using the in-browser console is starting to feel like my local terminal! Learning is fun.
 									</p>
 								</ul>
 							</div>

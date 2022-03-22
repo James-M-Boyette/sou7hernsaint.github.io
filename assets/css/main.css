@@ -4259,8 +4259,16 @@ ul.actions.fit.stacked {
 /* Mad Libs */
 .story-bordered {
 	background-color: rgb(3, 19, 33);
-	box-shadow: inset 0 0 0 1px rgb(107, 126, 143), 0 0 0 3px rgb(243, 166, 13),
+	box-shadow: inset 0 0 0 2px rgb(107, 126, 143), 0 0 0 3px rgb(243, 166, 13),
 		0 0 0 3px rgb(49, 56, 62) !important;
+	border-radius: 0.375em !important;
+}
+/* Front Page Cards */
+.card-bordered {
+	background-color: rgb(3, 19, 33);
+	box-shadow: inset 0 0 0 2px rgba(210, 215, 217, 0.75),
+		0 0 0 2px rgb(82, 96, 109) !important;
+	border-color: 0 0 0 3px rgb(243, 166, 13) !important;
 	border-radius: 0.375em !important;
 }
 

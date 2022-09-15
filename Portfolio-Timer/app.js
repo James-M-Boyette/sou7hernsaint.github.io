@@ -1,7 +1,7 @@
 class Timer {
   constructor(root) {
     // console.log(root);
-    console.log(`app.js was run`);
+    // console.log(`app.js was run`);
     root.innerHTML = Timer.getHTML();
 
     this.elements = {

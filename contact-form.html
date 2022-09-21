@@ -1,0 +1,66 @@
+<form
+  action="https://formsubmit.co/el/conopu"
+  method="POST"
+  onsubmit="reset(); return false;"
+>
+  <!-- <form method="post" action="" onsubmit="sendEmail(); reset(); return false;"> -->
+  <div class="row gtr-uniform">
+    <!-- <div class="col-6 col-12-xsmall">
+      <input type="text" name="name" id="name" placeholder="Name" />
+    </div> -->
+    <div class="col-12">
+      <input
+        type="text"
+        name="subject"
+        id="subject"
+        placeholder="Subject ..."
+        required
+      />
+    </div>
+    <div class="col-12">
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Your mesage ..."
+        rows="4"
+        required
+      ></textarea>
+    </div>
+    <div class="col-6 col-12-xsmall">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Your email ..."
+        required
+      />
+      <!-- <div style="margin-top: 1em !important;">
+        <input type="checkbox" id="demo-copy" name="demo-copy" s/>
+        <label for="demo-copy">Email me a copy</label>
+      </div> -->
+    </div>
+    <!-- <div class="col-6 col-12-small">
+      <input
+        type="checkbox"
+        id="demo-human"
+        name="demo-human"
+        required
+      />
+      <label for="demo-human">Not a 💻</label>
+    </div> -->
+    <div class="col-6 col-12-small">
+      <input type="checkbox" id="demo-copy" name="demo-copy" s />
+      <label for="demo-copy">Email me a copy</label>
+      <input type="checkbox" id="demo-human" name="demo-human" required />
+      <label for="demo-human">Not a 💻</label>
+    </div>
+    <div class="col-12">
+      <ul class="actions special">
+        <li>
+          <input type="submit" value="Send Message" class="primary" />
+        </li>
+      </ul>
+    </div>
+    <input type="text" name="_honey" style="display: none" />
+  </div>
+</form>

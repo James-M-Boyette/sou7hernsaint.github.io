@@ -2753,7 +2753,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: rgba(144, 144, 144, 0.075);
+  background-color: #90909013;
   color: #61686b !important;
 }
 
@@ -2762,7 +2762,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
-  background-color: rgba(144, 144, 144, 0.15);
+  background-color: #90909026;
   color: #61686b !important;
 }
 
@@ -2876,6 +2876,57 @@ button:disabled,
   box-shadow: 0px 15px 20px rgba(214, 98, 43, 0.4) !important;
   border: 1px solid var(--border-highlight);
   border-radius: 3px;
+}
+
+/* Copy Email button */
+.my-copy {
+  border-radius: 10px !important;
+  border: 2px solid #cad6da;
+  padding: 10px;
+  margin-left: 10px;
+}
+.my-copy:hover {
+  border-radius: 10px !important;
+  background: var(--bright-orange);
+  border: 2px solid #ffffff15;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.my-copy:active {
+  background: var(--bright-orange-2);
+  transform: translateY(-1px);
+  /* border: 2px solid var(--bright-orange) */
+}
+
+/* Tooltip container */
+.tooltip {
+  /* position: relative; */
+  display: inline-block;
+  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: #616868;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: "Raleway", "Helvetica", sans-serif;
+  font-weight: bold;
+  transform: translateY(-4px) translateX(-10px);
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /* Main BG */

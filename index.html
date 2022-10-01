@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/rows.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"> -->
   </head>
   <body class="is-preload">
     <nav id="header">
@@ -219,8 +220,10 @@
             <header class="major">
               <h2>Get in touch</h2>
             </header>
-            <a href="mailto:inquiries@james-boyette.com">inquiries@james-boyette.com</a>
-            
+            <a href="" id="contact-email">inquiries@james-boyette.com</a>
+            <!-- <button onclick="copyToClipBoard()" class="far fa-copy"></button> -->
+            <div onclick="copyToClipBoard()" class="far fa-copy my-copy tooltip"><span id="tool-text-email" class="tooltiptext">Copy</span></div>
+
           </div>
 					<footer>
 						<ul class="copyright">
@@ -240,6 +243,8 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+
     <!-- <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script>

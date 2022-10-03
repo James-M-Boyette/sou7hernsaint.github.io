@@ -2883,7 +2883,7 @@ button:disabled,
   border-radius: 10px !important;
   border: 2px solid #cad6da;
   padding: 10px;
-  margin-left: 10px;
+  margin-top: 20px;
 }
 .my-copy:hover {
   border-radius: 10px !important;
@@ -2901,25 +2901,21 @@ button:disabled,
 
 /* Tooltip container */
 .tooltip {
-  /* position: relative; */
   display: inline-block;
-  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+  
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  /* background-color: black; */
   color: #616868;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
   font-family: "Raleway", "Helvetica", sans-serif;
   font-weight: bold;
-  transform: translateY(-4px) translateX(-10px);
- 
-  /* Position the tooltip text - see examples below! */
+  transform: translateY(-4px) translateX(+10px);
   position: absolute;
   z-index: 1;
 }
